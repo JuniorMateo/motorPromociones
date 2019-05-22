@@ -1,1 +1,8 @@
 -- Subir  archivos  repositorio remote:   git push origin master
+
+ESUMEN
+Iniciar un repositorio local con git init
+Añadir archivos al staging area con git add . o git add <<archivo>>
+Confirmar los cambios en el repositorio con git commit -m ‘comentario’
+Ver el estado de un archivo git status -s
+Ver la diferencia entre archivos que están añadidos y los cambios que aún no están con git diff
