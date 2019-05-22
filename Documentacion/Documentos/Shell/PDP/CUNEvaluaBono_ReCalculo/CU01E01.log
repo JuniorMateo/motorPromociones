@@ -1,0 +1,1687 @@
+[INFO ] [2019-05-10 17:51:26] (MainClass:67) - [loadLog4J idTx=14725836988][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-10 17:51:26] (MainClass:68) - [loadLog4J idTx=14725836988][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 17 milisegundos.
+[INFO ] [2019-05-10 17:51:26] (MainClass:39) - [main idTx=14725836988][INICIO de metodo: main]
+[INFO ] [2019-05-10 17:51:26] (MainClass:77) - [launch idTx=14725836988][INICIO de metodo: launch]
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:63) - 14725836988[INICIO - SH06_MOTPROM_EvaluaBono_ReCalculo ]
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:103) - 14725836988INICIO  :  Carga Cambio Plan
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:105) - 14725836988 BSCSC Evalua
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:64) - 14725836988[obtener Cambio plan Replica] [INICIO] - METODO: obtener Cambio plan Replica
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:78) - 14725836988 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:79) - 14725836988 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:80) - 14725836988 SP a ejecutar: [pkg_motprom_proces_transbk.promss_dnnum_maxfamilia]
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:81) - 14725836988 Ejecutando SP 
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:132) - 14725836988 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:133) - 14725836988 [OUTPUT]: 
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:134) - 14725836988 [po_cod_err] = 0
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:135) - 14725836988 [po_des_err] = OK
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:142) - 14725836988 [SIZE LIST] = 5
+[INFO ] [2019-05-10 17:51:27] (MotorPromDAOImpl:161) - 14725836988 - Fin del método Obtener- Tiempo total de proceso : 109 milisegundos.
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:111) - 14725836988 SIZE INICIO LIST :5
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:117) - 14725836988 ************ ITERACCION ******** :0
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :0CONTR0000002776
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :1CONTR0000002776
+[ERROR] [2019-05-10 17:51:27] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]CONTR0000002776
+[INFO ] [2019-05-10 17:51:27] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:27] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:27] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:28] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-05-10 17:51:28] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-05-10 17:51:28] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType
+[INFO ] [2019-05-10 17:51:29] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:28.815-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:28.815-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000002776</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:29] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:29] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:33] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType
+[INFO ] [2019-05-10 17:51:34] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>024E07</codeResponse>
+    <descriptionResponse>An error occured when calling ECM.productOffering method</descriptionResponse>
+    <errorLocation>BSS_AGREEMENTMANAGEMENT</errorLocation>
+    <date>2019-05-10T17:51:35.777-05:00</date>
+    <origin/>
+    <errorDetails/>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:34] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:34] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 6664.0
+[INFO ] [2019-05-10 17:51:34] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[ERROR] [2019-05-10 17:51:34] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]CONTR0000002132
+[INFO ] [2019-05-10 17:51:34] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:34] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:34] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:35] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:35.049-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:35.049-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000002132</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:35] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:35] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:36] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>024E07</codeResponse>
+    <descriptionResponse>An error occured when calling ECM.productOffering method</descriptionResponse>
+    <errorLocation>BSS_AGREEMENTMANAGEMENT</errorLocation>
+    <date>2019-05-10T17:51:39.300-05:00</date>
+    <origin/>
+    <errorDetails/>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:36] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:36] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 2554.0
+[INFO ] [2019-05-10 17:51:36] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:36] (MainServiceImpl:157) - 14725836988 Procesar  Recalculo Con Numero de Documento :46636093
+[INFO ] [2019-05-10 17:51:36] (MainServiceImpl:158) - 14725836988 Linea Encontra con mismo Documento 1:51919956800
+[INFO ] [2019-05-10 17:51:36] (MainServiceImpl:159) - 14725836988 Linea Encontra con mismo Documento 2:51919952042
+[INFO ] [2019-05-10 17:51:36] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:36] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:36] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:37] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:37.549-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:37.549-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <partyId>46636093</partyId>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>1</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:37] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:37] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:40] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-10T17:51:42.788-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <ID>CUST0000000566</ID>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000001506</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_79_CROne</ID>
+                  <name>Max Internacional 79.90 (SF)</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000004753</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-01T19:48:22-05:00</startDateTime>
+                    <endDateTime>2019-02-01T19:48:22-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>2</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>06</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919956803</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+      <_productLine>
+        <name>1</name>
+      </_productLine>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:40] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:40] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 3517.0
+[INFO ] [2019-05-10 17:51:40] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:40] (MainServiceImpl:531) - 14725836988  SIZE LIST : 1
+[INFO ] [2019-05-10 17:51:40] (MainServiceImpl:593) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-CAA-0002 ======
+[INFO ] [2019-05-10 17:51:40] (INTCAA0002ClientImpl:51) -  datos BSCS obtenidos a Recalcular [GetProductsOfferingPerContract] [INICIO] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-05-10 17:51:41] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType
+[INFO ] [2019-05-10 17:51:42] (INTCAA0002ClientImpl:105) -  datos BSCS obtenidos a Recalcular 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>app_GetProductsOfferingPerContract</ns2:channel>
+  <ns2:idApplication>E01</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:41.105-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ES</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:41.105-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000004753</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+[INFO ] [2019-05-10 17:51:42] (BssProductOrderingManzgementClientHandler:60) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:42] (BssProductOrderingManzgementClientHandler:76) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:42] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType
+[INFO ] [2019-05-10 17:51:43] (INTCAA0002ClientImpl:113) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-03-29T11:47:26.540-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001119</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T14:43:19-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15781279</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>bonoInternetClaro4GBOptOne</ID>
+                <name>Bono Internet Claro 4GB</name>
+                <description>Bono Internet Claro 4GB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:36-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232783553</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>bonoInternetClaro4GBOptOne</ID>
+                <name>Bono Internet Claro 4GB</name>
+                <description>Bono Internet Claro 4GB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:43-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>o</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232785880</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internetClaroSF1024MBOptOne</ID>
+                <name>Internet Claro SF 1024 MB</name>
+                <description>Internet Claro SF 1024 MB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:36-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232783643</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internetClaroSF1024MBOptOne</ID>
+                <name>Internet Claro SF 1024 MB</name>
+                <description>Internet Claro SF 1024 MB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:42-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>o</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232785879</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>claroMax_Internacional_29_One</ID>
+                <name>Max Internacional 29.90 (SF)</name>
+                <description>Max Internacional 29.90 (SF)</description>
+                <validFor>
+                  <startDateTime>2018-09-12T20:25:58-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>B</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15240730</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+  </responseData>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+[INFO ] [2019-05-10 17:51:43] (INTCAA0002ClientImpl:127) -  datos BSCS obtenidos a Recalcular [GetProductsOfferingPerContract] [FIN] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-05-10 17:51:43] (INTCAA0002ClientImpl:128) -  datos BSCS obtenidos a Recalcular [GetProductsOfferingPerContract]  ::FIN - TiempoEjecucion(ms): 2968.0
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:622) -  datos BSCS obtenidos a Recalcular  ======= SIZE LIST======6
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:639) -  datos BSCS obtenidos a Recalcular  =======Ubicado  productOfferingType : ======B
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:643) -  datos BSCS obtenidos a Recalcular  =======Ubicado Plan : ======claroMax_Internacional_29_One
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:692) -  datos BSCS obtenidos a Recalcular  =======Ubicado Unidad : ======PEN
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:700) -  datos BSCS obtenidos a Recalcular  =======Ubicado Monto : ======29.90
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:737) -  datos BSCS obtenidos a Recalcular  ======= FIN  Prueba INT-CAA-0002 ======
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:514) - 14725836988 - Inicio  Recalcular Bono
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:528) - 14725836988 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:529) - 14725836988 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:530) - 14725836988 SP a ejecutar: [pkg_motprom_proces_transbk.promss_recal_maxfamilia]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:531) - 14725836988 Ejecutando SP 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:532) - 14725836988 [INPUT] 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:533) - 14725836988 [pi_num]= [2]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:534) - 14725836988 [size]= [1]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:545) - SIZE:1
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:621) - 14725836988 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:622) - 14725836988 [OUTPUT]: 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:623) - 14725836988 [po_cod_err] = 0
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:624) - 14725836988 [po_des_err] = OK
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:631) - 14725836988 [SIZE LIST] = 1
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:635) - 14725836988-0 [getBillingaccountbase]: BA0000001506
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:636) - 14725836988-0 [getContractIdBbase]: CONTR0000004753
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:637) - 14725836988-0 [getCustomeridextbase]: CUST0000000566
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:638) - 14725836988-0 [getFecactivacionbase]: 2019-02-01 19:48:22
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:639) - 14725836988-0 [getLineaBase]: 51919956803
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:640) - 14725836988-0 [getOrden]: 1
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:641) - 14725836988-0 [getPoidbase]: claroMax_Internacional_79_CROne
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:642) - 14725836988-0 [getPonamebase]: Max Internacional 79.90 (SF)
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:643) - 14725836988-0 [getCargofijoplanbase]: 29.9
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:644) - 14725836988-0 [ciclo_fact_base]: 06
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:666) - 14725836988 - Fin  Recalcular Bono- Tiempo total de proceso : 63 milisegundos.
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:186) - 14725836988 Menor I:0 CONTR0000002776 Cargo Fijo  149.9
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:186) - 14725836988 Menor I:2 CONTR0000004753 Cargo Fijo  29.9
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:189) - 14725836988 Eliminar de lista :2  : 52
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:197) - 14725836988 Menor II:2 CONTR0000002776 Cargo Fijo  149.9
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:200) - 14725836988 Menor II :CONTR0000002776
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:207) - 14725836988 Linea  A Activar:51919956803
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:472) -  datos BSCS obtenidos a Recalcular  Inicio Activacion Bono
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:177) -  datos BSCS obtenidos a Recalcular [Obtener Informacion Bono] [INICIO] - METODO: Obtener Informacion Bono
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:194) -  datos BSCS obtenidos a Recalcular  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:195) -  datos BSCS obtenidos a Recalcular  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:196) -  datos BSCS obtenidos a Recalcular  SP a ejecutar: [pkg_motprom_proces_transbk.promss_venta_bonos_mf2]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:197) -  datos BSCS obtenidos a Recalcular  Ejecutando SP 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:198) -  datos BSCS obtenidos a Recalcular  [pi_campania]= [MAX FAMILIA]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:199) -  datos BSCS obtenidos a Recalcular  [pi_motivo_act]= [PORTA]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:200) -  datos BSCS obtenidos a Recalcular  [pi_plan]= [claroMax_Internacional_79_CROne]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:201) -  datos BSCS obtenidos a Recalcular  [pi_fec_proc]= [Fri May 10 00:00:00 COT 2019]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:242) -  datos BSCS obtenidos a Recalcular  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:243) -  datos BSCS obtenidos a Recalcular  [OUTPUT]: 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:244) -  datos BSCS obtenidos a Recalcular  [po_cod_err] = 0
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:245) -  datos BSCS obtenidos a Recalcular  [po_des_err] = OK
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:253) -  datos BSCS obtenidos a Recalcular  [SIZE LIST] = 1
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:272) -  datos BSCS obtenidos a Recalcular Fin Obtener Informacion Bono - Tiempo total de proceso : 17 milisegundos.
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:496) -  datos BSCS obtenidos a Recalcular Fecha Activacion de Bono: 2019-02-01 19:48:22
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:415) -  datos BSCS obtenidos a Recalcular  - Inicio RecalcularEvaluacion
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:427) -  datos BSCS obtenidos a Recalcular  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:428) -  datos BSCS obtenidos a Recalcular  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:429) -  datos BSCS obtenidos a Recalcular  SP a ejecutar: [pkg_motprom_proces_transbk.promsi_contrato_valida]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:430) -  datos BSCS obtenidos a Recalcular  Ejecutando SP 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:431) -  datos BSCS obtenidos a Recalcular  [INPUT] 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:432) -  datos BSCS obtenidos a Recalcular  [pi_customer_id_ext]= [CUST0000000566]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:433) -  datos BSCS obtenidos a Recalcular  [pi_billing_account]= [BA0000001506]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:434) -  datos BSCS obtenidos a Recalcular  [pi_po_basic]= [claroMax_Internacional_79_CROne]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:435) -  datos BSCS obtenidos a Recalcular  [pi_cargo_fijo]= [29.9]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:436) -  datos BSCS obtenidos a Recalcular  [pi_linea]= [51919956803]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:437) -  datos BSCS obtenidos a Recalcular  [pi_campania]= [MAX FAMILIA]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:438) -  datos BSCS obtenidos a Recalcular  [pi_contract_id_ext]= [CONTR0000004753]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:439) -  datos BSCS obtenidos a Recalcular  [pi_tipo_documento]= [DNI]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:440) -  datos BSCS obtenidos a Recalcular  [pi_numero_documento]= [46636093]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:441) -  datos BSCS obtenidos a Recalcular  [pi_billcycle]= [06]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:478) -  datos BSCS obtenidos a Recalcular  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:479) -  datos BSCS obtenidos a Recalcular  [OUTPUT]: 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:480) -  datos BSCS obtenidos a Recalcular  [po_cod_err] = 0
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:481) -  datos BSCS obtenidos a Recalcular  [po_des_err] = OK
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:504) -  datos BSCS obtenidos a Recalcular  - Fin del método Obtener- Tiempo total de proceso : 8 milisegundos.
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:282) -  datos BSCS obtenidos a Recalcular  - Inicio insertar Bono Interno
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:294) -  datos BSCS obtenidos a Recalcular  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:295) -  datos BSCS obtenidos a Recalcular  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:296) -  datos BSCS obtenidos a Recalcular  SP a ejecutar: [pkg_motprom_proces_transbk.promsi_program_bono_recalculo]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:297) -  datos BSCS obtenidos a Recalcular  Ejecutando SP 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:298) -  datos BSCS obtenidos a Recalcular  [INPUT] 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:299) -  datos BSCS obtenidos a Recalcular  [pi_linea]= [51919956803]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:300) -  datos BSCS obtenidos a Recalcular  [pi_bono_id]= [106001]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:301) -  datos BSCS obtenidos a Recalcular  [pi_po_bono]= [dsctoClaroMaxPromotion]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:302) -  datos BSCS obtenidos a Recalcular  [pi_po_ontop]= [null]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:303) -  datos BSCS obtenidos a Recalcular  [pi_po_plan]= [claroMax_Internacional_79_CROne]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:304) -  datos BSCS obtenidos a Recalcular  [pi_order_id]= [null]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:305) -  datos BSCS obtenidos a Recalcular  [pi_fec_act_bono]= [Fri Feb 01 19:48:22 COT 2019]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:306) -  datos BSCS obtenidos a Recalcular  [pi_fec_vigencia]= [Mon May 04 00:00:00 COT 2020]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:307) -  datos BSCS obtenidos a Recalcular  [pi_est_bono]= [A]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:308) -  datos BSCS obtenidos a Recalcular  [pi_est_proc]= [CA]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:309) -  datos BSCS obtenidos a Recalcular  [pi_periodo]= [12]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:310) -  datos BSCS obtenidos a Recalcular  [pi_tipo_bono]= [null]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:311) -  datos BSCS obtenidos a Recalcular  [pi_ciclo_fact]= [06]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:312) -  datos BSCS obtenidos a Recalcular  [pi_bono_periodico]= [null]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:313) -  datos BSCS obtenidos a Recalcular  [pi_tipo_opera]= [PORTA]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:314) -  datos BSCS obtenidos a Recalcular  [pi_shopping_cart_id]= [null]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:315) -  datos BSCS obtenidos a Recalcular  [pi_activacion]= [activacion]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:379) -  datos BSCS obtenidos a Recalcular  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:380) -  datos BSCS obtenidos a Recalcular  [OUTPUT]: 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:381) -  datos BSCS obtenidos a Recalcular  [po_cod_err] = 0
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:382) -  datos BSCS obtenidos a Recalcular  [po_des_err] = OK
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:405) -  datos BSCS obtenidos a Recalcular  - Fin del método Obtener- Tiempo total de proceso : 11 milisegundos.
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:517) -  datos BSCS obtenidos a Recalcular  FIn Activacion Bono: 
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:211) - 14725836988 Exito al Insertar Bono:52
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:214) - 14725836988 Linea  A Desactivar:51919956800
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:678) -  datos BSCS obtenidos a Recalcular  - Inicio del Actualizar Bono
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:691) -  datos BSCS obtenidos a Recalcular  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:692) -  datos BSCS obtenidos a Recalcular  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:693) -  datos BSCS obtenidos a Recalcular  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:694) -  datos BSCS obtenidos a Recalcular  Ejecutando SP 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:695) -  datos BSCS obtenidos a Recalcular  [INPUT] 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:696) -  datos BSCS obtenidos a Recalcular  [pi_program_id]= [52]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:697) -  datos BSCS obtenidos a Recalcular  [pi_observacion]= [Desactivacion por Recalculo]
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:718) -  datos BSCS obtenidos a Recalcular  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:719) -  datos BSCS obtenidos a Recalcular  [OUTPUT]: 
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:720) -  datos BSCS obtenidos a Recalcular  [po_cod_err] = 0
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:721) -  datos BSCS obtenidos a Recalcular  [po_des_err] = OK
+[INFO ] [2019-05-10 17:51:43] (MotorPromDAOImpl:747) -  datos BSCS obtenidos a Recalcular  - Fin del método registrar- Tiempo total de proceso : 6 milisegundos.
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:218) - 14725836988 Exito al Desactivar Bono:52
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:247) - 14725836988 Sin Accion:51919952042
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:248) - 14725836988 Sin Accion:51919956800
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:306) - 14725836988 LINEA  A ELIMINAR DE LISTA :51919952042
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :2CONTR0000002776
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :3CONTR0000002776
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:117) - 14725836988 ************ ITERACCION ******** :1
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :0null
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :1null
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :2null
+[ERROR] [2019-05-10 17:51:43] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]null
+[INFO ] [2019-05-10 17:51:43] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:43] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:43] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:44] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:44.119-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:44.119-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>0</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:44] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:44] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:44] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>010E08</codeResponse>
+    <descriptionResponse>Invalid value type : identificationType</descriptionResponse>
+    <errorLocation>BSS_AGREEMENTMANAGEMENT</errorLocation>
+    <date>2019-05-10T17:51:47.070-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:44] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:44] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1072.0
+[INFO ] [2019-05-10 17:51:44] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[ERROR] [2019-05-10 17:51:44] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]CONTR0000005018
+[INFO ] [2019-05-10 17:51:44] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:44] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:44] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:45] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:45.193-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:45.193-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000005018</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:45] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:45] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:46] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-10T17:51:49.532-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <ID>CUST0000002874</ID>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000024029</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_69_CROne</ID>
+                  <name>Max Internacional 69.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005018</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T15:37:57-05:00</startDateTime>
+                    <endDateTime>2019-02-19T15:37:57-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>2</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>18</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919955577</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+      <_productLine>
+        <name>1</name>
+      </_productLine>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:46] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:46] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 2553.0
+[INFO ] [2019-05-10 17:51:46] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:46] (MainServiceImpl:147) - 14725836988 PLan 2:claroMax_Internacional_69_CROne Contrato 2:CONTR0000005018
+[INFO ] [2019-05-10 17:51:46] (MainServiceImpl:157) - 14725836988 Procesar  Recalculo Con Numero de Documento :48148549
+[INFO ] [2019-05-10 17:51:46] (MainServiceImpl:158) - 14725836988 Linea Encontra con mismo Documento 1:925312852
+[INFO ] [2019-05-10 17:51:46] (MainServiceImpl:159) - 14725836988 Linea Encontra con mismo Documento 2:945312853
+[INFO ] [2019-05-10 17:51:46] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:46] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:46] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:47] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:47.754-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:47.754-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <partyId>48148549</partyId>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>1</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:47] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:47] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:48] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>010E05</codeResponse>
+    <descriptionResponse>No contract(s) found</descriptionResponse>
+    <errorLocation>DAT_GET_CUSTOMER_INFO</errorLocation>
+    <date>2019-05-10T17:51:51.257-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode>1</errorCode>
+      <errorDescription>Customer not found for the given criteria</errorDescription>
+    </errorDetails>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:48] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:48] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1637.0
+[INFO ] [2019-05-10 17:51:48] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:48] (MainServiceImpl:318) - 14725836988 No existe Lineas para el documento INT-COP-0223:48148549
+[INFO ] [2019-05-10 17:51:48] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :3null
+[ERROR] [2019-05-10 17:51:48] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]null
+[INFO ] [2019-05-10 17:51:48] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:48] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:48] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:49] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:49.414-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:49.414-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>0</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:49] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:49] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:49] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>010E08</codeResponse>
+    <descriptionResponse>Invalid value type : identificationType</descriptionResponse>
+    <errorLocation>BSS_AGREEMENTMANAGEMENT</errorLocation>
+    <date>2019-05-10T17:51:52.359-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:49] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:49] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1104.0
+[INFO ] [2019-05-10 17:51:49] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:49] (MainServiceImpl:342) - 1 linea  para  el Documento: 48148549
+[INFO ] [2019-05-10 17:51:49] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:49] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:49] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:50] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:50.474-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:50.474-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <partyId>48148549</partyId>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>1</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:50] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:50] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:51] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>010E05</codeResponse>
+    <descriptionResponse>No contract(s) found</descriptionResponse>
+    <errorLocation>DAT_GET_CUSTOMER_INFO</errorLocation>
+    <date>2019-05-10T17:51:54.052-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode>1</errorCode>
+      <errorDescription>Customer not found for the given criteria</errorDescription>
+    </errorDetails>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:51] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:51] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1784.0
+[INFO ] [2019-05-10 17:51:51] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:51] (MainServiceImpl:387) - 14725836988 No existe Lineas para el documento INT-COP-0223:48148549
+[INFO ] [2019-05-10 17:51:51] (MainServiceImpl:117) - 14725836988 ************ ITERACCION ******** :2
+[INFO ] [2019-05-10 17:51:51] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :0CONTR0000005018
+[INFO ] [2019-05-10 17:51:51] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :1CONTR0000005018
+[ERROR] [2019-05-10 17:51:51] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]CONTR0000005018
+[INFO ] [2019-05-10 17:51:51] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:51] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:51] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:52] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:52.305-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:52.305-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000005018</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:52] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:52] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:53] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-10T17:51:56.615-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <ID>CUST0000002874</ID>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000024029</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_69_CROne</ID>
+                  <name>Max Internacional 69.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005018</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T15:37:57-05:00</startDateTime>
+                    <endDateTime>2019-02-19T15:37:57-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>2</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>18</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919955577</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+      <_productLine>
+        <name>1</name>
+      </_productLine>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:53] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:53] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 2552.0
+[INFO ] [2019-05-10 17:51:53] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:53] (MainServiceImpl:140) - 14725836988 PLan 1:claroMax_Internacional_69_CROne Contrato 1:CONTR0000005018
+[ERROR] [2019-05-10 17:51:53] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]null
+[INFO ] [2019-05-10 17:51:53] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:53] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:53] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:54] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:54.814-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:54.814-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>0</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:54] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:54] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:55] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>010E08</codeResponse>
+    <descriptionResponse>Invalid value type : identificationType</descriptionResponse>
+    <errorLocation>BSS_AGREEMENTMANAGEMENT</errorLocation>
+    <date>2019-05-10T17:51:57.935-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:55] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:55] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1330.0
+[INFO ] [2019-05-10 17:51:55] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:55] (MainServiceImpl:157) - 14725836988 Procesar  Recalculo Con Numero de Documento :48148549
+[INFO ] [2019-05-10 17:51:55] (MainServiceImpl:158) - 14725836988 Linea Encontra con mismo Documento 1:945312853
+[INFO ] [2019-05-10 17:51:55] (MainServiceImpl:159) - 14725836988 Linea Encontra con mismo Documento 2:925312852
+[INFO ] [2019-05-10 17:51:55] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:55] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:55] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:56] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:56.219-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:56.219-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <partyId>48148549</partyId>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>1</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:56] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:56] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:56] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>010E05</codeResponse>
+    <descriptionResponse>No contract(s) found</descriptionResponse>
+    <errorLocation>DAT_GET_CUSTOMER_INFO</errorLocation>
+    <date>2019-05-10T17:51:59.545-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode>1</errorCode>
+      <errorDescription>Customer not found for the given criteria</errorDescription>
+    </errorDetails>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:56] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:56] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1605.0
+[INFO ] [2019-05-10 17:51:56] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:56] (MainServiceImpl:318) - 14725836988 No existe Lineas para el documento INT-COP-0223:48148549
+[INFO ] [2019-05-10 17:51:56] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :2CONTR0000005018
+[INFO ] [2019-05-10 17:51:56] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :3CONTR0000005018
+[ERROR] [2019-05-10 17:51:56] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]CONTR0000005018
+[INFO ] [2019-05-10 17:51:56] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:56] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:56] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:57] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:51:57.752-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:51:57.752-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000005018</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:51:57] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:51:57] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:51:59] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-10T17:52:02.072-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <ID>CUST0000002874</ID>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000024029</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_69_CROne</ID>
+                  <name>Max Internacional 69.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005018</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T15:37:57-05:00</startDateTime>
+                    <endDateTime>2019-02-19T15:37:57-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>2</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>18</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919955577</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+      <_productLine>
+        <name>1</name>
+      </_productLine>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:51:59] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:59] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 2546.0
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:390) - 14725836988 No existe Recalculo para el Contrad ID: 697
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:117) - 14725836988 ************ ITERACCION ******** :3
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :0null
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :1null
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :2null
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:122) - 14725836988 --------------------------------------------- AA :3null
+[ERROR] [2019-05-10 17:51:59] (MainServiceImpl:572) - 14725836988[Contrato AA11 :]null
+[INFO ] [2019-05-10 17:51:59] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:51:59] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:51:59] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:52:00] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:52:00.294-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:52:00.294-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>0</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:52:00] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:52:00] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:52:00] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>010E08</codeResponse>
+    <descriptionResponse>Invalid value type : identificationType</descriptionResponse>
+    <errorLocation>BSS_AGREEMENTMANAGEMENT</errorLocation>
+    <date>2019-05-10T17:52:03.409-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:52:00] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:52:00] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1331.0
+[INFO ] [2019-05-10 17:52:00] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:52:00] (MainServiceImpl:342) - 1 linea  para  el Documento: 07534333
+[INFO ] [2019-05-10 17:52:00] (MainServiceImpl:749) -  datos BSCS obtenidos a Recalcular  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-10 17:52:00] (INTCOP0223ClientImpl:49) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - WS: http://localhost:8088/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-10 17:52:00] (INTCOP0223ClientImpl:50) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:52:01] (INTCOP0223ClientImpl:100) -  datos BSCS obtenidos a Recalcular 
+ Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-10T17:52:01.656-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-10T17:52:01.656-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_party>
+      <partyId>07534333</partyId>
+      <_partyUser>
+        <_partyUserExtension>
+          <type>1</type>
+        </_partyUserExtension>
+      </_partyUser>
+    </_party>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-10 17:52:01] (BssAgreementManagementClientHandler:55) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-10 17:52:01] (BssAgreementManagementClientHandler:71) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-10 17:52:03] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}] datos BSCS obtenidos a Recalcular 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-10T17:52:06.052-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <ID>CUST0000001049</ID>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000001998</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMaxIntnacional_79Chip_CROne</ID>
+                  <name>Max Internacional 79.90 Chip</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000004266</ID>
+                  <interactionDate>
+                    <startDateTime>2019-01-19T17:41:04-05:00</startDateTime>
+                    <endDateTime>2019-01-19T16:12:59-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>3</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2033</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>04</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51918020328</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+      <_productLine>
+        <name>1</name>
+      </_productLine>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-10 17:52:03] (INTCOP0223ClientImpl:120) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-10 17:52:03] (INTCOP0223ClientImpl:121) -  datos BSCS obtenidos a Recalcular [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 2653.0
+[INFO ] [2019-05-10 17:52:03] (MainServiceImpl:871) -  datos BSCS obtenidos a Recalcular  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-10 17:52:03] (MainServiceImpl:531) - 14725836988  SIZE LIST : 0
+[INFO ] [2019-05-10 17:52:03] (MainServiceImpl:384) - 14725836988 No existe Informacion en INT-CAA-0002 :null
+[INFO ] [2019-05-10 17:52:03] (MainServiceImpl:394) - 14725836988 FIN - INSERT RECALCULAR
+[INFO ] [2019-05-10 17:52:03] (MainServiceImpl:401) - 14725836988 FIN :  Carga Cambio Plan
+[INFO ] [2019-05-10 17:52:03] (MainServiceImpl:412) - 14725836988[Fin de metodo: run]
+[INFO ] [2019-05-10 17:52:03] (MainServiceImpl:89) - 14725836988[Fin - SH06_MOTPROM_EvaluaBono_ReCalculo ]
+[INFO ] [2019-05-10 17:52:03] (MainClass:86) - [launch idTx=14725836988][FIN de metodo: launch] Tiempo total de proceso(ms): 36664 milisegundos.
+[INFO ] [2019-05-10 17:52:03] (MainClass:52) - [main idTx=14725836988][FIN de metodo: main] Tiempo total de proceso(ms): 37299 milisegundos.
+[INFO ] [2019-05-10 17:52:03] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4629104a: startup date [Fri May 10 17:51:26 COT 2019]; root of context hierarchy
+[INFO ] [2019-05-10 17:52:03] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@527740a2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,INTCAA0002ClientImpl,INTCOP0223ClientImpl,motorPromDAOImpl,mainClass,mainServiceImpl,EAIUtil,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy

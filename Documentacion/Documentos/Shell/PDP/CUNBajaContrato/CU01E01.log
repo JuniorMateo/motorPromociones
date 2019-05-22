@@ -1,0 +1,1153 @@
+[INFO ] [2019-05-09 16:36:46] (MainClass:66) - [loadLog4J idTx=1212122][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-09 16:36:46] (MainClass:67) - [loadLog4J idTx=1212122][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 19 milisegundos.
+[INFO ] [2019-05-09 16:36:46] (MainClass:39) - [main idTx=1212122][INICIO de metodo: main]
+[INFO ] [2019-05-09 16:36:46] (MainClass:76) - [launch idTx=1212122][INICIO de metodo: launch]
+[INFO ] [2019-05-09 16:36:49] (MainServiceImpl:45) - 1212122[INICIO - SH06_MOTPROM_ValidaDes_BajaContrato ]
+[INFO ] [2019-05-09 16:36:49] (MainServiceImpl:89) - 1212122INICIO  por : Desactivacion Por Baja de Contrato
+[INFO ] [2019-05-09 16:36:49] (MotorPromDAOImpl:48) - 1212122[obtener Bonos Por Baja Contrato] [INICIO] - METODO: obtener Bonos Por Baja Contrato
+[INFO ] [2019-05-09 16:36:49] (MotorPromDAOImpl:62) - 1212122 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:49] (MotorPromDAOImpl:63) - 1212122 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:49] (MotorPromDAOImpl:64) - 1212122 SP a ejecutar: [pkg_motprom_proces_transbk.promss_desa_baja_contrato]
+[INFO ] [2019-05-09 16:36:49] (MotorPromDAOImpl:65) - 1212122 Ejecutando SP 
+[INFO ] [2019-05-09 16:36:49] (MotorPromDAOImpl:66) - 1212122 [INPUT] 
+[INFO ] [2019-05-09 16:36:50] (MotorPromDAOImpl:94) - 1212122 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:50] (MotorPromDAOImpl:95) - 1212122 [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:50] (MotorPromDAOImpl:96) - 1212122 [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:50] (MotorPromDAOImpl:97) - 1212122 [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:50] (MotorPromDAOImpl:104) - 1212122 [SIZE LIST] = 11
+[INFO ] [2019-05-09 16:36:50] (MotorPromDAOImpl:122) - 1212122 - Fin  - Tiempo total de proceso : 513 milisegundos.
+[INFO ] [2019-05-09 16:36:50] (MainServiceImpl:94) - 1212122- datos obtenidos a desactivar 11
+[INFO ] [2019-05-09 16:36:50] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:50] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:36:50] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:51] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-05-09 16:36:51] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-05-09 16:36:51] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType
+[INFO ] [2019-05-09 16:36:52] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:36:51.628-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:36:51.628-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>983555722</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:36:52] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:36:52] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:36:52] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType
+[INFO ] [2019-05-09 16:36:53] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:36:53] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:53] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 3680.0
+[INFO ] [2019-05-09 16:36:53] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:53] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:53] (MainServiceImpl:110) - 1212122Bono a Desactivar : 10
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [10]
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:53] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 69 milisegundos.
+[INFO ] [2019-05-09 16:36:53] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 10
+[INFO ] [2019-05-09 16:36:53] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:53] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:36:53] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:54] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:36:54.835-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:36:54.835-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>51994883555</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:36:54] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:36:54] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:36:54] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:36:54] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:54] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1052.0
+[INFO ] [2019-05-09 16:36:54] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:54] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:54] (MainServiceImpl:110) - 1212122Bono a Desactivar : 11
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [11]
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:54] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 22 milisegundos.
+[INFO ] [2019-05-09 16:36:54] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 11
+[INFO ] [2019-05-09 16:36:54] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:54] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:36:54] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:55] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:36:55.903-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:36:55.903-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>51983711898</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:36:55] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:36:55] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:36:55] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:36:55] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:55] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1040.0
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:110) - 1212122Bono a Desactivar : 3
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [3]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 11 milisegundos.
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 3
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:104) - 1212122 Linea cargada: 51983711898
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:110) - 1212122Bono a Desactivar : 1
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [1]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 8 milisegundos.
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 1
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:104) - 1212122 Linea cargada: 51983711898
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:110) - 1212122Bono a Desactivar : 2
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [2]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:55] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 7 milisegundos.
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 2
+[INFO ] [2019-05-09 16:36:55] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:55] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:36:55] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:56] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:36:56.950-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:36:56.950-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>5777777</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:36:56] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:36:56] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:36:56] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:36:56] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:56] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1024.0
+[INFO ] [2019-05-09 16:36:56] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:56] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:56] (MainServiceImpl:110) - 1212122Bono a Desactivar : 37
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [37]
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:56] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 14 milisegundos.
+[INFO ] [2019-05-09 16:36:56] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 37
+[INFO ] [2019-05-09 16:36:56] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:56] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:36:56] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:57] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:36:57.966-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:36:57.966-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>51983712052</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:36:57] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:36:57] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:36:57] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:36:57] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:57] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 995.0
+[INFO ] [2019-05-09 16:36:57] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:57] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:57] (MainServiceImpl:110) - 1212122Bono a Desactivar : 38
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [38]
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:57] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 11 milisegundos.
+[INFO ] [2019-05-09 16:36:57] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 38
+[INFO ] [2019-05-09 16:36:57] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:57] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:36:57] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:59] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:36:59.133-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:36:59.133-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>51984575414</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:36:59] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:36:59] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:36:59] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:36:59] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:36:59] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1157.0
+[INFO ] [2019-05-09 16:36:59] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:59] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:36:59] (MainServiceImpl:110) - 1212122Bono a Desactivar : 40
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [40]
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:36:59] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 24 milisegundos.
+[INFO ] [2019-05-09 16:36:59] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 40
+[INFO ] [2019-05-09 16:36:59] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:36:59] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:36:59] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:37:00] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:37:00.135-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:37:00.135-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>51924575711</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:37:00] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:37:00] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:37:00] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:37:00] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:37:00] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 975.0
+[INFO ] [2019-05-09 16:37:00] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:37:00] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:37:00] (MainServiceImpl:110) - 1212122Bono a Desactivar : 47
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [47]
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:37:00] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 12 milisegundos.
+[INFO ] [2019-05-09 16:37:00] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 47
+[INFO ] [2019-05-09 16:37:00] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:37:00] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:37:00] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:37:01] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:37:01.185-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:37:01.185-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>51919956800</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:37:01] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:37:01] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:37:01] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:37:01] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:37:01] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1038.0
+[INFO ] [2019-05-09 16:37:01] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:37:01] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:37:01] (MainServiceImpl:110) - 1212122Bono a Desactivar : 52
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [52]
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:37:01] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 11 milisegundos.
+[INFO ] [2019-05-09 16:37:01] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 52
+[INFO ] [2019-05-09 16:37:01] (MainServiceImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-09 16:37:01] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - WS: http://mdp3728:8084/?WSDL
+[INFO ] [2019-05-09 16:37:01] (INTCOP0223ClientImpl:50) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:37:02] (INTCOP0223ClientImpl:100) - [Descativar Bono Por Cambio Plan idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-09T16:37:02.161-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-09T16:37:02.161-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_partyOrderItem>
+      <_product>
+        <_productOffering>
+          <_partyProfileType>
+            <ID>51919952042</ID>
+          </_partyProfileType>
+        </_productOffering>
+      </_product>
+    </_partyOrderItem>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-09 16:37:02] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-09 16:37:02] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-09 16:37:02] (INTCOP0223ClientImpl:106) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=1212122] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-05-09T16:34:34.339-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000015659</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_Internacional_99_CROne</ID>
+                  <name>Max Internacional 99.90</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000005011</ID>
+                  <interactionDate>
+                    <startDateTime>2019-02-19T12:52:25-05:00</startDateTime>
+                    <endDateTime>2019-02-19T12:52:25-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>4</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>12</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919953936</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>274068</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-05-09 16:37:02] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-09 16:37:02] (INTCOP0223ClientImpl:121) - [Descativar Bono Por Cambio Plan idTx=1212122] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 964.0
+[INFO ] [2019-05-09 16:37:02] (MainServiceImpl:216) - [Descativar Bono Por Cambio Plan idTx=1212122]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-05-09 16:37:02] (MainServiceImpl:108) - 1212122 Bono a Procesar con Contrato : CONTR0000005011
+[INFO ] [2019-05-09 16:37:02] (MainServiceImpl:110) - 1212122Bono a Desactivar : 56
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:133) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:146) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:147) - [Descativar Bono Por Cambio Plan idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:148) - [Descativar Bono Por Cambio Plan idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:149) - [Descativar Bono Por Cambio Plan idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:150) - [Descativar Bono Por Cambio Plan idTx=1212122]  [INPUT] 
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:151) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_program_id]= [56]
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:152) - [Descativar Bono Por Cambio Plan idTx=1212122]  [pi_bono_id]= [Desactivacion Por Baja de Contrato]
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:173) - [Descativar Bono Por Cambio Plan idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:174) - [Descativar Bono Por Cambio Plan idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:175) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:176) - [Descativar Bono Por Cambio Plan idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-05-09 16:37:02] (MotorPromDAOImpl:199) - [Descativar Bono Por Cambio Plan idTx=1212122]  - Fin - Tiempo total de proceso : 319 milisegundos.
+[INFO ] [2019-05-09 16:37:02] (MainServiceImpl:114) - 1212122Exito al desactivar Bono: 56
+[INFO ] [2019-05-09 16:37:02] (MainServiceImpl:132) - 1212122FIN  POR : Desactivacion Por Baja de Contrato
+[INFO ] [2019-05-09 16:37:02] (MainServiceImpl:143) - 1212122[Fin de metodo: run]
+[INFO ] [2019-05-09 16:37:02] (MainServiceImpl:71) - 1212122[Fin - SH06_MOTPROM_ValidaDes_BajaContrato ]
+[INFO ] [2019-05-09 16:37:02] (MainClass:85) - [launch idTx=1212122][FIN de metodo: launch] Tiempo total de proceso(ms): 16361 milisegundos.
+[INFO ] [2019-05-09 16:37:02] (MainClass:51) - [main idTx=1212122][FIN de metodo: main] Tiempo total de proceso(ms): 17046 milisegundos.
+[INFO ] [2019-05-09 16:37:02] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@2d38eb89: startup date [Thu May 09 16:36:45 COT 2019]; root of context hierarchy
+[INFO ] [2019-05-09 16:37:02] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e9ba398: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,INTCOP0223ClientImpl,motorPromDAOImpl,mainClass,mainServiceImpl,EAIUtil,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy

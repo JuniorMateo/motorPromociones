@@ -1,0 +1,150 @@
+ INFO  @ [INICIO del proceso][2019-04-04@17:20:39]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Usuario: 01/04/2016 
+ INFO  @ Transaccion: 20190404172039
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-04-04@17:20:39]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-04-04 17:20:40] (MainClass:66) - [loadLog4J idTx=20190404172039][INICIO de metodo: loadLog4J]
+[INFO ] [2019-04-04 17:20:40] (MainClass:67) - [loadLog4J idTx=20190404172039][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 30 milisegundos.
+[INFO ] [2019-04-04 17:20:40] (MainClass:39) - [main idTx=20190404172039][INICIO de metodo: main]
+[INFO ] [2019-04-04 17:20:40] (MainClass:76) - [launch idTx=20190404172039][INICIO de metodo: launch]
+[INFO ] [2019-04-04 17:20:40] (MainServiceImpl:41) - 20190404172039[INICIO - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist ]
+[INFO ] [2019-04-04 17:20:40] (MainServiceImpl:84) - 20190404172039INICIO  :  Carga Cambio Plan
+[INFO ] [2019-04-04 17:20:40] (MainServiceImpl:87) - 20190404172039 Inicio - Obtener Datos Cambio Plan BSCS
+[INFO ] [2019-04-04 17:20:40] (MotorPromDAOImpl:57) - 20190404172039[obtener Cambio plan Replica] [INICIO] - METODO: obtener Cambio plan Replica
+[INFO ] [2019-04-04 17:20:40] (MotorPromDAOImpl:71) - 20190404172039 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-04 17:20:40] (MotorPromDAOImpl:72) - 20190404172039 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-04 17:20:40] (MotorPromDAOImpl:73) - 20190404172039 SP a ejecutar: [pkg_motprom_bscs.sp_cons_cambio_plan]
+[INFO ] [2019-04-04 17:20:40] (MotorPromDAOImpl:74) - 20190404172039 Ejecutando SP 
+[INFO ] [2019-04-04 17:20:40] (MotorPromDAOImpl:75) - 20190404172039 [INPUT] 
+[INFO ] [2019-04-04 17:20:40] (MotorPromDAOImpl:76) - 20190404172039 [FECHA DE  CONSULTA: ] 01/04/2016
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:114) - 20190404172039 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:115) - 20190404172039 [OUTPUT]: 
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:116) - 20190404172039 [po_cod_err] = 0
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:117) - 20190404172039 [po_des_err] = Proceso Satisfactorio
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:124) - 20190404172039 [SIZE LIST] = 111
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:143) - 20190404172039 - Fin del método Obtener- Tiempo total de proceso : 8913 milisegundos.
+[INFO ] [2019-04-04 17:20:49] (MainServiceImpl:90) - 20190404172039- datos BSCS obtenidos a cargar0
+[INFO ] [2019-04-04 17:20:49] (MainServiceImpl:93) - 20190404172039 Inicio - Insert Carga Datos Cambio Plan BSCS
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:154) - 20190404172039 - Inicio del Actualizar Bono
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:167) - 20190404172039 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:168) - 20190404172039 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:169) - 20190404172039 SP a ejecutar: [pkg_motprom_proces_trans.promtsi_cambioplan_hist]
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:170) - 20190404172039 Ejecutando SP 
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:171) - 20190404172039 [INPUT] 
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:172) - 20190404172039 [size]= [111]
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:183) - SIZE:111
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:227) - 20190404172039 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:228) - 20190404172039 [OUTPUT]: 
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:229) - 20190404172039 [po_cod_err] = 0
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:230) - 20190404172039 [po_des_err] = Registro de transaccion exitosa.
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:255) - 20190404172039 - Fin del método Obtener- Tiempo total de proceso : 444 milisegundos.
+[INFO ] [2019-04-04 17:20:49] (MainServiceImpl:97) - 20190404172039 Exito Carga datos Replica Cambio Plan BSCS
+[INFO ] [2019-04-04 17:20:49] (MainServiceImpl:107) - 20190404172039 Inicio - Obtener Datos Cambio Plan BSCSIX
+[INFO ] [2019-04-04 17:20:49] (BSCSIXDAOImpl:37) - 20190404172039[INICIO] - METODO:  Obtener Cambio plan BSCSIX FECHA: 01042016
+[INFO ] [2019-04-04 17:20:49] (BSCSIXDAOImpl:94) - 20190404172039 SIZE Lista:  971
+[INFO ] [2019-04-04 17:20:49] (BSCSIXDAOImpl:99) - 20190404172039 FIN - Carga Objetos SQl : 
+[INFO ] [2019-04-04 17:20:49] (BSCSIXDAOImpl:116) - 20190404172039 - Fin del método Obtener- Tiempo total de proceso : 260 milisegundos.
+[INFO ] [2019-04-04 17:20:49] (MainServiceImpl:111) - 20190404172039- datos BSCSIX obtenidos a cargar111
+[INFO ] [2019-04-04 17:20:49] (MainServiceImpl:114) - 20190404172039 Inicio - Insert Carga Datos Cambio Plan BSCS
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:154) - 20190404172039 - Inicio del Actualizar Bono
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:167) - 20190404172039 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:168) - 20190404172039 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:169) - 20190404172039 SP a ejecutar: [pkg_motprom_proces_trans.promtsi_cambioplan_hist]
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:170) - 20190404172039 Ejecutando SP 
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:171) - 20190404172039 [INPUT] 
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:172) - 20190404172039 [size]= [971]
+[INFO ] [2019-04-04 17:20:49] (MotorPromDAOImpl:183) - SIZE:971
+[INFO ] [2019-04-04 17:20:50] (MotorPromDAOImpl:227) - 20190404172039 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-04 17:20:50] (MotorPromDAOImpl:228) - 20190404172039 [OUTPUT]: 
+[INFO ] [2019-04-04 17:20:50] (MotorPromDAOImpl:229) - 20190404172039 [po_cod_err] = 0
+[INFO ] [2019-04-04 17:20:50] (MotorPromDAOImpl:230) - 20190404172039 [po_des_err] = Registro de transaccion exitosa.
+[INFO ] [2019-04-04 17:20:50] (MotorPromDAOImpl:255) - 20190404172039 - Fin del método Obtener- Tiempo total de proceso : 278 milisegundos.
+[INFO ] [2019-04-04 17:20:50] (MainServiceImpl:118) - 20190404172039 Exito Carga datos Replica Cambio Plan BSCSIX
+[INFO ] [2019-04-04 17:20:50] (MainServiceImpl:127) - 20190404172039 FIN :  Carga Cambio Plan
+[INFO ] [2019-04-04 17:20:50] (MainServiceImpl:138) - 20190404172039[Fin de metodo: run]
+[INFO ] [2019-04-04 17:20:50] (MainServiceImpl:67) - 20190404172039[Fin - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist ]
+[INFO ] [2019-04-04 17:20:50] (MainClass:85) - [launch idTx=20190404172039][FIN de metodo: launch] Tiempo total de proceso(ms): 10128 milisegundos.
+[INFO ] [2019-04-04 17:20:50] (MainClass:51) - [main idTx=20190404172039][FIN de metodo: main] Tiempo total de proceso(ms): 10917 milisegundos.
+[INFO ] [2019-04-04 17:20:50] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4534b60d: startup date [Thu Apr 04 17:20:39 PET 2019]; root of context hierarchy
+[INFO ] [2019-04-04 17:20:50] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5bc79255: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,BSCSIXDAOImpl,motorPromDAOImpl,mainServiceImpl,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+04-04-2019 17:20:39 INFO  @ [FIN de ejecucion de la Shell - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist -][2019-04-04@17:20:50]
+2019-04-04@17:20:50 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist/LOG/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist.log
+*************************************************************************************************************************************
+ INFO  @ [INICIO del proceso][2019-04-04@18:31:42]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Usuario: 01/04/2016 
+ INFO  @ Transaccion: 20190404183142
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-04-04@18:31:42]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-04-04 18:31:43] (MainClass:66) - [loadLog4J idTx=20190404183142][INICIO de metodo: loadLog4J]
+[INFO ] [2019-04-04 18:31:43] (MainClass:67) - [loadLog4J idTx=20190404183142][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 33 milisegundos.
+[INFO ] [2019-04-04 18:31:43] (MainClass:39) - [main idTx=20190404183142][INICIO de metodo: main]
+[INFO ] [2019-04-04 18:31:43] (MainClass:76) - [launch idTx=20190404183142][INICIO de metodo: launch]
+[INFO ] [2019-04-04 18:31:43] (MainServiceImpl:41) - 20190404183142[INICIO - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist ]
+[INFO ] [2019-04-04 18:31:43] (MainServiceImpl:84) - 20190404183142INICIO  :  Carga Cambio Plan
+[INFO ] [2019-04-04 18:31:43] (MainServiceImpl:87) - 20190404183142 Inicio - Obtener Datos Cambio Plan BSCS
+[INFO ] [2019-04-04 18:31:44] (MotorPromDAOImpl:57) - 20190404183142[obtener Cambio plan Replica] [INICIO] - METODO: obtener Cambio plan Replica
+[INFO ] [2019-04-04 18:31:44] (MotorPromDAOImpl:71) - 20190404183142 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-04 18:31:44] (MotorPromDAOImpl:72) - 20190404183142 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-04 18:31:44] (MotorPromDAOImpl:73) - 20190404183142 SP a ejecutar: [pkg_motprom_bscs.sp_cons_cambio_plan]
+[INFO ] [2019-04-04 18:31:44] (MotorPromDAOImpl:74) - 20190404183142 Ejecutando SP 
+[INFO ] [2019-04-04 18:31:44] (MotorPromDAOImpl:75) - 20190404183142 [INPUT] 
+[INFO ] [2019-04-04 18:31:44] (MotorPromDAOImpl:76) - 20190404183142 [FECHA DE  CONSULTA: ] 01/04/2016
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:114) - 20190404183142 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:115) - 20190404183142 [OUTPUT]: 
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:116) - 20190404183142 [po_cod_err] = 0
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:117) - 20190404183142 [po_des_err] = Proceso Satisfactorio
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:124) - 20190404183142 [SIZE LIST] = 111
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:143) - 20190404183142 - Fin del método Obtener- Tiempo total de proceso : 9035 milisegundos.
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:90) - 20190404183142- datos BSCS obtenidos a cargar0
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:93) - 20190404183142 Inicio - Insert Carga Datos Cambio Plan BSCS
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:154) - 20190404183142 - Inicio del Actualizar Bono
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:167) - 20190404183142 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:168) - 20190404183142 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:169) - 20190404183142 SP a ejecutar: [pkg_motprom_proces_trans.promtsi_cambioplan_hist]
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:170) - 20190404183142 Ejecutando SP 
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:171) - 20190404183142 [INPUT] 
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:172) - 20190404183142 [size]= [111]
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:183) - SIZE:111
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:227) - 20190404183142 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:228) - 20190404183142 [OUTPUT]: 
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:229) - 20190404183142 [po_cod_err] = 0
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:230) - 20190404183142 [po_des_err] = Registro de transaccion exitosa.
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:255) - 20190404183142 - Fin del método Obtener- Tiempo total de proceso : 201 milisegundos.
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:97) - 20190404183142 Exito Carga datos Replica Cambio Plan BSCS
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:107) - 20190404183142 Inicio - Obtener Datos Cambio Plan BSCSIX
+[INFO ] [2019-04-04 18:31:53] (BSCSIXDAOImpl:37) - 20190404183142[INICIO] - METODO:  Obtener Cambio plan BSCSIX FECHA: 01042016
+[INFO ] [2019-04-04 18:31:53] (BSCSIXDAOImpl:94) - 20190404183142 SIZE Lista:  971
+[INFO ] [2019-04-04 18:31:53] (BSCSIXDAOImpl:99) - 20190404183142 FIN - Carga Objetos SQl : 
+[INFO ] [2019-04-04 18:31:53] (BSCSIXDAOImpl:116) - 20190404183142 - Fin del método Obtener- Tiempo total de proceso : 317 milisegundos.
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:111) - 20190404183142- datos BSCSIX obtenidos a cargar111
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:114) - 20190404183142 Inicio - Insert Carga Datos Cambio Plan BSCS
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:154) - 20190404183142 - Inicio del Actualizar Bono
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:167) - 20190404183142 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:168) - 20190404183142 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:169) - 20190404183142 SP a ejecutar: [pkg_motprom_proces_trans.promtsi_cambioplan_hist]
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:170) - 20190404183142 Ejecutando SP 
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:171) - 20190404183142 [INPUT] 
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:172) - 20190404183142 [size]= [971]
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:183) - SIZE:971
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:227) - 20190404183142 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:228) - 20190404183142 [OUTPUT]: 
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:229) - 20190404183142 [po_cod_err] = 0
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:230) - 20190404183142 [po_des_err] = Registro de transaccion exitosa.
+[INFO ] [2019-04-04 18:31:53] (MotorPromDAOImpl:255) - 20190404183142 - Fin del método Obtener- Tiempo total de proceso : 336 milisegundos.
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:118) - 20190404183142 Exito Carga datos Replica Cambio Plan BSCSIX
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:127) - 20190404183142 FIN :  Carga Cambio Plan
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:138) - 20190404183142[Fin de metodo: run]
+[INFO ] [2019-04-04 18:31:53] (MainServiceImpl:67) - 20190404183142[Fin - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist ]
+[INFO ] [2019-04-04 18:31:53] (MainClass:85) - [launch idTx=20190404183142][FIN de metodo: launch] Tiempo total de proceso(ms): 10149 milisegundos.
+[INFO ] [2019-04-04 18:31:53] (MainClass:51) - [main idTx=20190404183142][FIN de metodo: main] Tiempo total de proceso(ms): 10907 milisegundos.
+[INFO ] [2019-04-04 18:31:53] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4534b60d: startup date [Thu Apr 04 18:31:43 PET 2019]; root of context hierarchy
+[INFO ] [2019-04-04 18:31:53] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5bc79255: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,BSCSIXDAOImpl,motorPromDAOImpl,mainServiceImpl,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+04-04-2019 18:31:42 INFO  @ [FIN de ejecucion de la Shell - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist -][2019-04-04@18:31:53]
+2019-04-04@18:31:53 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist/LOG/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist.log
+*************************************************************************************************************************************

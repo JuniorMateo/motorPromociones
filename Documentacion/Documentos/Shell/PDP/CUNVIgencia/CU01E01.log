@@ -1,0 +1,27 @@
+[INFO ] [2019-05-09 15:09:59] (MainClass:66) - [loadLog4J idTx=1212122][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-09 15:09:59] (MainClass:67) - [loadLog4J idTx=1212122][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 22 milisegundos.
+[INFO ] [2019-05-09 15:09:59] (MainClass:40) - [main idTx=1212122][INICIO de metodo: main]
+[INFO ] [2019-05-09 15:09:59] (MainClass:76) - [launch idTx=1212122][INICIO de metodo: launch]
+[INFO ] [2019-05-09 15:10:02] (MainServiceImpl:32) - 1212122[INICIO - SH09_MOTPROM_ValidaDes_Facturacion ]
+[INFO ] [2019-05-09 15:10:02] (MainServiceImpl:72) - 1212122INICIO  : Desactivacion Cambio Plan Por Vigencia
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:39) - 1212122 - Inicio del método ejecutar Desactivacion Fecha Vigencia
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:54) - 1212122 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:55) - 1212122 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:56) - 1212122 SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_vigen_bono]
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:57) - 1212122 Ejecutando SP 
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:58) - 1212122 [INPUT] 
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:59) - 1212122 [pi_fec_proc]= [05/05/2020]
+[INFO ] [2019-05-09 15:10:02] (MotorPromDAOImpl:60) - 1212122 [pi_dias]= [0]
+[INFO ] [2019-05-09 15:10:03] (MotorPromDAOImpl:83) - 1212122 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 15:10:03] (MotorPromDAOImpl:84) - 1212122 [OUTPUT]: 
+[INFO ] [2019-05-09 15:10:03] (MotorPromDAOImpl:85) - 1212122 [po_cod_err] = 0
+[INFO ] [2019-05-09 15:10:03] (MotorPromDAOImpl:86) - 1212122 [po_des_err] = OK
+[INFO ] [2019-05-09 15:10:03] (MotorPromDAOImpl:109) - 1212122 - FIN del método ejecutar Desactivacion Fecha Vigencia : 467 milisegundos.
+[INFO ] [2019-05-09 15:10:03] (MainServiceImpl:75) - 1212122 Exito al desacitvar Bonos
+[INFO ] [2019-05-09 15:10:03] (MainServiceImpl:79) - 1212122 FIN : Desactivacion Cambio Plan Por Vigencia
+[INFO ] [2019-05-09 15:10:03] (MainServiceImpl:90) - 1212122[Fin de metodo: run]
+[INFO ] [2019-05-09 15:10:03] (MainServiceImpl:58) - 1212122[Fin - SH09_MOTPROM_ValidaDes_Facturacion ]
+[INFO ] [2019-05-09 15:10:03] (MainClass:84) - [launch idTx=1212122][FIN de metodo: launch] Tiempo total de proceso(ms): 3529 milisegundos.
+[INFO ] [2019-05-09 15:10:03] (MainClass:51) - [main idTx=1212122][FIN de metodo: main] Tiempo total de proceso(ms): 4164 milisegundos.
+[INFO ] [2019-05-09 15:10:03] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@792bf678: startup date [Thu May 09 15:09:59 COT 2019]; root of context hierarchy
+[INFO ] [2019-05-09 15:10:03] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@317916a0: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,motorPromDAOImpl,mainClass,mainServiceImpl,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy

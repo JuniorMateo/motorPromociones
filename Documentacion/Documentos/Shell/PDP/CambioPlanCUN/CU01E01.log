@@ -1,0 +1,2471 @@
+ INFO  @ [INICIO del proceso][2019-03-27@20:38:35]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Transaccion: 20190327203835
+ INFO  @ FecProc: 27/03/2019
+ INFO  @ Dias: 0
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH03_MOTPROM_ValidaDes_CambioPlan/SH03_MOTPROM_ValidaDes_CambioPlan.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-03-27@20:38:35]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-03-27 20:38:36] (MainClass:66) - [loadLog4J idTx=20190327203835][INICIO de metodo: loadLog4J]
+[INFO ] [2019-03-27 20:38:36] (MainClass:67) - [loadLog4J idTx=20190327203835][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 28 milisegundos.
+[INFO ] [2019-03-27 20:38:36] (MainClass:40) - [main idTx=20190327203835][INICIO de metodo: main]
+[INFO ] [2019-03-27 20:38:36] (MainClass:76) - [launch idTx=20190327203835][INICIO de metodo: launch]
+[INFO ] [2019-03-27 20:38:36] (MainServiceImpl:55) - 20190327203835[INICIO - SH03_MOTPROM_ValidaDes_CambioPlan ]
+[INFO ] [2019-03-27 20:38:36] (MainServiceImpl:63) - 20190327203835  CAMBIOPLANLINEA
+[INFO ] [2019-03-27 20:38:36] (MainServiceImpl:155) - 20190327203835INICIO  por : Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:52) - 20190327203835[obtenerCambioPlan] [INICIO] - METODO: obtenerCambioPlan
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:71) - 20190327203835 Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:72) - 20190327203835 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:73) - 20190327203835 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:74) - 20190327203835 Ejecutando SP 
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:75) - 20190327203835 [INPUT] 
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:76) - 20190327203835 [pi_fec_proc]= [27/03/2019]
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:77) - 20190327203835 [pi_dias]= [0]
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:113) - 20190327203835 Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:114) - 20190327203835 [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:115) - 20190327203835 [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:116) - 20190327203835 [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:123) - 20190327203835 [SIZE LIST] = 5
+[INFO ] [2019-03-27 20:38:36] (MotorPromDAOImpl:142) - 20190327203835 - Fin del método registrar- Tiempo total de proceso : 125 milisegundos.
+[INFO ] [2019-03-27 20:38:36] (MainServiceImpl:160) - 20190327203835- datos obtenidos a desactivar 5
+[INFO ] [2019-03-27 20:38:36] (MainServiceImpl:352) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= Inicia Invocacion  INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:36] (INTCAA0002ClientImpl:53) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [INICIO] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:38] (JAXBUtilitarios:26) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-03-27 20:38:38] (JAXBUtilitarios:26) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-03-27 20:38:38] (JAXBUtilitarios:26) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType
+[INFO ] [2019-03-27 20:38:38] (INTCAA0002ClientImpl:107) - [Descativar Bono Por Cambio Plan idTx=20190327203835] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>app_GetProductsOfferingPerContract</ns2:channel>
+  <ns2:idApplication>172.19.91.211</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190327203835</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190327203835</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-27T20:38:38.049-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ES</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190327203835</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-27T20:38:38.049-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51919951775</ID>
+      </_service>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000001120</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <_productSpecificationType>
+            <name>1</name>
+          </_productSpecificationType>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+[INFO ] [2019-03-27 20:38:38] (BssAgreementManagementClientHandler:59) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-27 20:38:38] (BssAgreementManagementClientHandler:75) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-27 20:38:40] (JAXBUtilitarios:26) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType
+[INFO ] [2019-03-27 20:38:41] (INTCAA0002ClientImpl:115) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=20190327203835] 
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-03-27T20:38:39.109-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001120</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-18T16:06:21-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15620949</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-18T16:07:44-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15621748</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-18T16:08:01-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15622696</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T11:19:56-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15702118</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T11:36:22-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15707949</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T11:54:58-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15721576</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T11:57:52-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15723094</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T12:36:45-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15726709</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T13:07:24-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15745071</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T13:15:43-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15748398</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T14:43:23-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15785645</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T17:36:55-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>d</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15792538</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T15:11:36-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15794901</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T15:16:09-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15797745</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T15:39:58-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15800406</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T16:31:12-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15811159</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T17:37:32-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15892761</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>cargaMontonNoche20SOne</ID>
+                <name>Cargamonton NOCHE de S/.20</name>
+                <description>Cargamonton NOCHE de S/.20</description>
+                <validFor>
+                  <startDateTime>2018-09-27T00:09:23-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>16248497</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>5.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>facebookTwitter1SAddOnOne</ID>
+                <name>Facebook y Twitter -> s/.1</name>
+                <description>Facebook y Twitter -> s/.1</description>
+                <validFor>
+                  <startDateTime>2018-09-27T00:09:52-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>16250768</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>0.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>bono500MBAddOnOne</ID>
+                <name>Bono 500 MB</name>
+                <description>Bono 500 MB</description>
+                <validFor>
+                  <startDateTime>2018-09-27T00:09:39-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>16254785</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>0.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>conexion25ME_One</ID>
+                <name>Conexi��n 25-ME</name>
+                <description>Conexion 25-ME</description>
+                <validFor>
+                  <startDateTime>2018-09-12T20:36:15-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>B</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15244485</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>25.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+  </responseData>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+[INFO ] [2019-03-27 20:38:41] (INTCAA0002ClientImpl:129) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [FIN] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:41] (INTCAA0002ClientImpl:130) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract]  ::FIN - TiempoEjecucion(ms): 4485.0
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:394) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= SIZE LIST======21
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:411) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado  productOfferingType : ======B
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:415) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Plan : ======conexion25ME_One
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:462) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Unidad : ======PEN
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:470) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Monto : ======25.00
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:540) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= FIN  Prueba INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:174) - 20190327203835Bono a Desactivar : 7280
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:259) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:272) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:273) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:274) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:275) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:276) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:277) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [4]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:278) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [7280]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:279) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [Desactivacion por Cambio de plan de la línea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:302) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:303) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:304) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:305) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:331) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 35 milisegundos.
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:178) - 20190327203835Exito  al Procesar Bono 7280 Por Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:169) - 20190327203835 ContractidExterno - Linea  : CONTR0000001120-51919951775  cargados
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:174) - 20190327203835Bono a Desactivar : 7282
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:259) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:272) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:273) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:274) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:275) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:276) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:277) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [4]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:278) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [7282]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:279) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [Desactivacion por Cambio de plan de la línea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:302) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:303) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:304) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:305) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:331) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 9 milisegundos.
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:178) - 20190327203835Exito  al Procesar Bono 7282 Por Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:169) - 20190327203835 ContractidExterno - Linea  : CONTR0000001120-51919951775  cargados
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:174) - 20190327203835Bono a Desactivar : 7283
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:259) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:272) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:273) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:274) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:275) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:276) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:277) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [4]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:278) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [7283]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:279) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [Desactivacion por Cambio de plan de la línea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:302) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:303) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:304) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:305) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:331) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 6 milisegundos.
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:178) - 20190327203835Exito  al Procesar Bono 7283 Por Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:169) - 20190327203835 ContractidExterno - Linea  : CONTR0000001120-51919951775  cargados
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:174) - 20190327203835Bono a Desactivar : 7284
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:259) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:272) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:273) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:274) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:275) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:276) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:277) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [4]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:278) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [7284]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:279) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [Desactivacion por Cambio de plan de la línea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:302) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:303) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:304) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:305) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:331) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 12 milisegundos.
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:178) - 20190327203835Exito  al Procesar Bono 7284 Por Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:169) - 20190327203835 ContractidExterno - Linea  : CONTR0000001120-51919951775  cargados
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:174) - 20190327203835Bono a Desactivar : 7285
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:259) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:272) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:273) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:274) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:275) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:276) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:277) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [4]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:278) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [7285]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:279) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [Desactivacion por Cambio de plan de la línea]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:302) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:303) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:304) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:305) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:331) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 4 milisegundos.
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:178) - 20190327203835Exito  al Procesar Bono 7285 Por Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:225) - 20190327203835FIN  POR : Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:235) - 20190327203835[Fin de metodo: run]
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:72) - 20190327203835  CAMBIOPLANLINEADOWNGRADE
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:155) - 20190327203835INICIO  por : Desactivacion por Cambio de plan Downgrade
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:52) - 20190327203835[obtenerCambioPlan] [INICIO] - METODO: obtenerCambioPlan
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:71) - 20190327203835 Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:72) - 20190327203835 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:73) - 20190327203835 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_downgrade]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:74) - 20190327203835 Ejecutando SP 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:75) - 20190327203835 [INPUT] 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:76) - 20190327203835 [pi_fec_proc]= [27/03/2019]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:77) - 20190327203835 [pi_dias]= [0]
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:113) - 20190327203835 Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:114) - 20190327203835 [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:115) - 20190327203835 [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:116) - 20190327203835 [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:123) - 20190327203835 [SIZE LIST] = 3
+[INFO ] [2019-03-27 20:38:41] (MotorPromDAOImpl:142) - 20190327203835 - Fin del método registrar- Tiempo total de proceso : 9 milisegundos.
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:160) - 20190327203835- datos obtenidos a desactivar 3
+[INFO ] [2019-03-27 20:38:41] (MainServiceImpl:352) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= Inicia Invocacion  INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:41] (INTCAA0002ClientImpl:53) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [INICIO] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:41] (INTCAA0002ClientImpl:107) - [Descativar Bono Por Cambio Plan idTx=20190327203835] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>app_GetProductsOfferingPerContract</ns2:channel>
+  <ns2:idApplication>172.19.91.211</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190327203835</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190327203835</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-27T20:38:41.834-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ES</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190327203835</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-27T20:38:41.834-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51994883764</ID>
+      </_service>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000001431</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <_productSpecificationType>
+            <name>1</name>
+          </_productSpecificationType>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+[INFO ] [2019-03-27 20:38:41] (BssAgreementManagementClientHandler:59) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-27 20:38:41] (BssAgreementManagementClientHandler:75) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-27 20:38:42] (INTCAA0002ClientImpl:115) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=20190327203835] 
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+  <responseStatus>
+    <status>1</status>
+    <codeResponse>024E04</codeResponse>
+    <descriptionResponse>An error occured when calling BSCS.ProductCfsRead method</descriptionResponse>
+    <errorLocation>BSS_PRODUCTORDERING</errorLocation>
+    <date>2019-03-27T20:38:41.931-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode>faul:CMS.RC6700</errorCode>
+      <errorDescription>No contract with id CONTR0000001431 exists in the database.</errorDescription>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_productListType/>
+  </responseData>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+[INFO ] [2019-03-27 20:38:42] (INTCAA0002ClientImpl:129) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [FIN] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:42] (INTCAA0002ClientImpl:130) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract]  ::FIN - TiempoEjecucion(ms): 620.0
+[INFO ] [2019-03-27 20:38:42] (MainServiceImpl:540) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= FIN  Prueba INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:42] (MainServiceImpl:213) - 20190327203835 No Existe Bono: 1007250 con   Contractid :68
+[INFO ] [2019-03-27 20:38:42] (MainServiceImpl:352) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= Inicia Invocacion  INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:42] (INTCAA0002ClientImpl:53) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [INICIO] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:42] (INTCAA0002ClientImpl:107) - [Descativar Bono Por Cambio Plan idTx=20190327203835] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>app_GetProductsOfferingPerContract</ns2:channel>
+  <ns2:idApplication>172.19.91.211</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190327203835</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190327203835</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-27T20:38:42.426-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ES</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190327203835</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-27T20:38:42.426-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51983711898</ID>
+      </_service>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000001117</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <_productSpecificationType>
+            <name>1</name>
+          </_productSpecificationType>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+[INFO ] [2019-03-27 20:38:42] (BssAgreementManagementClientHandler:59) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-27 20:38:42] (BssAgreementManagementClientHandler:75) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-27 20:38:43] (INTCAA0002ClientImpl:115) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=20190327203835] 
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-03-27T20:38:42.595-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001117</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>claroMax_Internacional_29_One</ID>
+                <name>Max Internacional 29.90 (SF)</name>
+                <description>Max Internacional 29.90 (SF)</description>
+                <validFor>
+                  <startDateTime>2018-09-12T19:37:11-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>B</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15232748</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+  </responseData>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+[INFO ] [2019-03-27 20:38:43] (INTCAA0002ClientImpl:129) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [FIN] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:43] (INTCAA0002ClientImpl:130) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract]  ::FIN - TiempoEjecucion(ms): 1295.0
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:394) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= SIZE LIST======1
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:411) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado  productOfferingType : ======B
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:415) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Plan : ======claroMax_Internacional_29_One
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:462) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Unidad : ======PEN
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:470) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Monto : ======29.90
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:540) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= FIN  Prueba INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:208) - 20190327203835 No Existe Bono: 6932 con   Contractid :92
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:169) - 20190327203835 ContractidExterno - Linea  : CONTR0000001118-51983711898  cargados
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:186) - 20190327203835Bono a Desactivar : 7259
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:259) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:272) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:273) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:274) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:275) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:276) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:277) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [104]
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:278) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [7259]
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:279) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [Desactivacion por Cambio de plan Downgrade]
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:302) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:303) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:304) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:305) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:331) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 7 milisegundos.
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:190) - 20190327203835Exito al Procesar Bono 7259 Por Desactivacion por Cambio de plan Downgrade
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:225) - 20190327203835FIN  POR : Desactivacion por Cambio de plan Downgrade
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:235) - 20190327203835[Fin de metodo: run]
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:81) - 20190327203835  CAMBIOPLANLINEAUPGRADE
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:155) - 20190327203835INICIO  por : Desactivacion por Cambio de plan Upgrade
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:52) - 20190327203835[obtenerCambioPlan] [INICIO] - METODO: obtenerCambioPlan
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:71) - 20190327203835 Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:72) - 20190327203835 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:73) - 20190327203835 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_upgrade]
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:74) - 20190327203835 Ejecutando SP 
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:75) - 20190327203835 [INPUT] 
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:76) - 20190327203835 [pi_fec_proc]= [27/03/2019]
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:77) - 20190327203835 [pi_dias]= [0]
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:113) - 20190327203835 Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:114) - 20190327203835 [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:115) - 20190327203835 [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:116) - 20190327203835 [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:123) - 20190327203835 [SIZE LIST] = 1
+[INFO ] [2019-03-27 20:38:43] (MotorPromDAOImpl:142) - 20190327203835 - Fin del método registrar- Tiempo total de proceso : 10 milisegundos.
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:160) - 20190327203835- datos obtenidos a desactivar 1
+[INFO ] [2019-03-27 20:38:43] (MainServiceImpl:352) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= Inicia Invocacion  INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:43] (INTCAA0002ClientImpl:53) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [INICIO] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:43] (INTCAA0002ClientImpl:107) - [Descativar Bono Por Cambio Plan idTx=20190327203835] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>app_GetProductsOfferingPerContract</ns2:channel>
+  <ns2:idApplication>172.19.91.211</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190327203835</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190327203835</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-27T20:38:43.745-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ES</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190327203835</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-27T20:38:43.745-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51983711898</ID>
+      </_service>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000001117</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <_productSpecificationType>
+            <name>1</name>
+          </_productSpecificationType>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+[INFO ] [2019-03-27 20:38:43] (BssAgreementManagementClientHandler:59) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-27 20:38:43] (BssAgreementManagementClientHandler:75) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-27 20:38:44] (INTCAA0002ClientImpl:115) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=20190327203835] 
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-03-27T20:38:43.908-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001117</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>claroMax_Internacional_29_One</ID>
+                <name>Max Internacional 29.90 (SF)</name>
+                <description>Max Internacional 29.90 (SF)</description>
+                <validFor>
+                  <startDateTime>2018-09-12T19:37:11-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>B</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15232748</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+  </responseData>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+[INFO ] [2019-03-27 20:38:44] (INTCAA0002ClientImpl:129) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [FIN] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:44] (INTCAA0002ClientImpl:130) - [Descativar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract]  ::FIN - TiempoEjecucion(ms): 1113.0
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:394) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= SIZE LIST======1
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:411) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado  productOfferingType : ======B
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:415) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Plan : ======claroMax_Internacional_29_One
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:462) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Unidad : ======PEN
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:470) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Monto : ======29.90
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:540) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  ======= FIN  Prueba INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:199) - Bono a Desactivar : 6932
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:259) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:272) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:273) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:274) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:275) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:276) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:277) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [92]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:278) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [6932]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:279) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [Desactivacion por Cambio de plan Upgrade]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:302) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:303) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:304) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:305) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:331) - [Descativar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 6 milisegundos.
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:203) - 20190327203835Exito  al Procesar Bono 6932 Por Desactivacion por Cambio de plan Upgrade
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:225) - 20190327203835FIN  POR : Desactivacion por Cambio de plan Upgrade
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:235) - 20190327203835[Fin de metodo: run]
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:90) - 20190327203835  CAMBIOPLANPREPAGO
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:559) - 20190327203835- INICIO 1 :DESACTIVACION  cambio Plan  Prepago
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:425) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:438) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:439) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:440) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planprepago]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:441) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:442) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:463) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:464) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:465) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:466) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:491) - [Descativar Bono  Cambio Plan prepago idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 9 milisegundos.
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:562) - 20190327203835- datos obtenidos a desactivar 
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:568) - 20190327203835- FIN 1 :DESACTIVACION  cambio Plan  Prepago 
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:569) - ------------------------------------------------
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:580) - 20190327203835[Fin de metodo:]
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:99) - 20190327203835  CAMBIOPLANLINEANOMATRIZ
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:258) - 20190327203835- INICIO 1 :DESACTIVACION  Obtener  cambio Plan Linea No Matriz 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:157) - 20190327203835[CambioPlanNoMatriz] [INICIO] - METODO: CambioPlanNoMatriz
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:161) - 20190327203835 - Inicio del método Obtener Cambio Plan
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:178) - 20190327203835 Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:179) - 20190327203835 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:180) - 20190327203835 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambionomatriz]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:181) - 20190327203835 Ejecutando SP 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:182) - 20190327203835 [INPUT] 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:183) - 20190327203835 [pi_fec_proc]= [27/03/2019]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:184) - 20190327203835 [pi_dias]= [0]
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:221) - 20190327203835 Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:222) - 20190327203835 [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:223) - 20190327203835 [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:224) - 20190327203835 [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:231) - 20190327203835 [SIZE LIST] = 1
+[INFO ] [2019-03-27 20:38:44] (MotorPromDAOImpl:250) - 20190327203835 - Fin del método registrar- Tiempo total de proceso : 16 milisegundos.
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:267) - - datos obtenidos a desactivar 1
+[INFO ] [2019-03-27 20:38:44] (MainServiceImpl:352) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  ======= Inicia Invocacion  INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:44] (INTCAA0002ClientImpl:53) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [INICIO] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:45] (INTCAA0002ClientImpl:107) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>app_GetProductsOfferingPerContract</ns2:channel>
+  <ns2:idApplication>172.19.91.211</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190327203835</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190327203835</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-27T20:38:45.034-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ES</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190327203835</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-27T20:38:45.034-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51919951775</ID>
+      </_service>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000001119</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <_productSpecificationType>
+            <name>1</name>
+          </_productSpecificationType>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+[INFO ] [2019-03-27 20:38:45] (BssAgreementManagementClientHandler:59) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-27 20:38:45] (BssAgreementManagementClientHandler:75) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-27 20:38:45] (INTCAA0002ClientImpl:115) - {} XML [RESPONSE]: response: [{}][Desactivar Bono Por Cambio Plan idTx=20190327203835] 
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-03-27T20:38:45.237-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001119</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internet2GBAddOnOne</ID>
+                <name>Paquete Internet 2GB</name>
+                <description>Paquete Internet 2GB</description>
+                <validFor>
+                  <startDateTime>2018-09-19T14:43:19-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>A</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15781279</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>35.00</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>bonoInternetClaro4GBOptOne</ID>
+                <name>Bono Internet Claro 4GB</name>
+                <description>Bono Internet Claro 4GB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:36-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232783553</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>bonoInternetClaro4GBOptOne</ID>
+                <name>Bono Internet Claro 4GB</name>
+                <description>Bono Internet Claro 4GB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:43-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>o</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232785880</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internetClaroSF1024MBOptOne</ID>
+                <name>Internet Claro SF 1024 MB</name>
+                <description>Internet Claro SF 1024 MB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:36-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>g</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232783643</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>internetClaroSF1024MBOptOne</ID>
+                <name>Internet Claro SF 1024 MB</name>
+                <description>Internet Claro SF 1024 MB</description>
+                <validFor>
+                  <startDateTime>2019-02-15T18:25:42-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>O</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>o</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>232785879</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>claroMax_Internacional_29_One</ID>
+                <name>Max Internacional 29.90 (SF)</name>
+                <description>Max Internacional 29.90 (SF)</description>
+                <validFor>
+                  <startDateTime>2018-09-12T20:25:58-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>B</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15240730</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+  </responseData>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+[INFO ] [2019-03-27 20:38:45] (INTCAA0002ClientImpl:129) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [FIN] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:45] (INTCAA0002ClientImpl:130) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract]  ::FIN - TiempoEjecucion(ms): 1500.0
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:394) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  ======= SIZE LIST======6
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:411) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado  productOfferingType : ======B
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:415) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Plan : ======claroMax_Internacional_29_One
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:462) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Unidad : ======PEN
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:470) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Monto : ======29.90
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:540) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  ======= FIN  Prueba INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:341) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:353) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:354) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:355) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambionomatriz]
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:356) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:357) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:358) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [14]
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:359) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [125550]
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:360) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_campania]= [Cambio de Plan Especial No matriz]
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:361) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_basic]= [claroMax_Internacional_29_One]
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:388) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:389) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:390) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:391) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:417) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 13 milisegundos.
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:285) - 20190327203835Exito  al desactivar Bono : 125550
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:328) - 20190327203835- FIN 1 :DESACTIVACION  Obtener  cambio Plan Linea No Matriz 
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:342) - 20190327203835[Fin de metodo: run]
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:109) - 20190327203835  CAMBIOPLANLINEAUPGRADENOMATIZ
+[INFO ] [2019-03-27 20:38:45] (MainServiceImpl:260) - 20190327203835- INICIO 1 :DESACTIVACION  Obtener  cambio Plan Linea Upgrade No Matriz 
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:157) - 20190327203835[CambioPlanNoMatriz] [INICIO] - METODO: CambioPlanNoMatriz
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:161) - 20190327203835 - Inicio del método Obtener Cambio Plan
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:178) - 20190327203835 Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:179) - 20190327203835 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:180) - 20190327203835 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambioupnomatriz]
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:181) - 20190327203835 Ejecutando SP 
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:182) - 20190327203835 [INPUT] 
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:183) - 20190327203835 [pi_fec_proc]= [27/03/2019]
+[INFO ] [2019-03-27 20:38:45] (MotorPromDAOImpl:184) - 20190327203835 [pi_dias]= [0]
+[INFO ] [2019-03-27 20:38:46] (MotorPromDAOImpl:221) - 20190327203835 Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:46] (MotorPromDAOImpl:222) - 20190327203835 [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:46] (MotorPromDAOImpl:223) - 20190327203835 [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:46] (MotorPromDAOImpl:224) - 20190327203835 [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:46] (MotorPromDAOImpl:231) - 20190327203835 [SIZE LIST] = 2
+[INFO ] [2019-03-27 20:38:46] (MotorPromDAOImpl:250) - 20190327203835 - Fin del método registrar- Tiempo total de proceso : 7 milisegundos.
+[INFO ] [2019-03-27 20:38:46] (MainServiceImpl:267) - - datos obtenidos a desactivar 2
+[INFO ] [2019-03-27 20:38:46] (MainServiceImpl:352) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  ======= Inicia Invocacion  INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:46] (INTCAA0002ClientImpl:53) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [INICIO] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:46] (INTCAA0002ClientImpl:107) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>app_GetProductsOfferingPerContract</ns2:channel>
+  <ns2:idApplication>172.19.91.211</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190327203835</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190327203835</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-27T20:38:46.685-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ES</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190327203835</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-27T20:38:46.685-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51983711898</ID>
+      </_service>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000001117</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <_productSpecificationType>
+            <name>1</name>
+          </_productSpecificationType>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractRequestType>
+[INFO ] [2019-03-27 20:38:46] (BssAgreementManagementClientHandler:59) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-27 20:38:46] (BssAgreementManagementClientHandler:75) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-27 20:38:47] (INTCAA0002ClientImpl:115) - {} XML [RESPONSE]: response: [{}][Desactivar Bono Por Cambio Plan idTx=20190327203835] 
+<pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-03-27T20:38:46.894-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001117</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+    <_productListType>
+      <_customerAccount>
+        <_partyAccount>
+          <_partyPayment>
+            <_paymentMethod>
+              <ID/>
+            </_paymentMethod>
+          </_partyPayment>
+        </_partyAccount>
+        <_partyRole>
+          <_partyRoleProductOffering>
+            <_agreementItem>
+              <_productOffering>
+                <ID>claroMax_Internacional_29_One</ID>
+                <name>Max Internacional 29.90 (SF)</name>
+                <description>Max Internacional 29.90 (SF)</description>
+                <validFor>
+                  <startDateTime>2018-09-12T19:37:11-05:00</startDateTime>
+                </validFor>
+                <_partyProfileType>
+                  <name>B</name>
+                </_partyProfileType>
+                <_product>
+                  <productStatus>a</productStatus>
+                </_product>
+              </_productOffering>
+            </_agreementItem>
+          </_partyRoleProductOffering>
+          <_partyRoleProductSpecification>
+            <_productSpecification>
+              <ID>15232748</ID>
+            </_productSpecification>
+          </_partyRoleProductSpecification>
+          <_partyDemographic>
+            <_geographicArea>
+              <name/>
+            </_geographicArea>
+          </_partyDemographic>
+          <_productOffering>
+            <_product>
+              <_productPrice>
+                <_productOfferingPrice>
+                  <_businessInteractionItemPrice>
+                    <price>
+                      <units>PEN</units>
+                      <amount>29.90</amount>
+                    </price>
+                  </_businessInteractionItemPrice>
+                </_productOfferingPrice>
+              </_productPrice>
+            </_product>
+          </_productOffering>
+        </_partyRole>
+      </_customerAccount>
+    </_productListType>
+  </responseData>
+</pe.com.claro.esb.message.bssproductordering.getproductsofferingpercontract.v2.GetProductsOfferingPerContractResponseType>
+[INFO ] [2019-03-27 20:38:47] (INTCAA0002ClientImpl:129) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract] [FIN] - METODO: GetProductsOfferingPerContract
+[INFO ] [2019-03-27 20:38:47] (INTCAA0002ClientImpl:130) - [Desactivar Bono Por Cambio Plan idTx=20190327203835] [GetProductsOfferingPerContract]  ::FIN - TiempoEjecucion(ms): 1501.0
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:394) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  ======= SIZE LIST======1
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:411) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado  productOfferingType : ======B
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:415) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Plan : ======claroMax_Internacional_29_One
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:462) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Unidad : ======PEN
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:470) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  =======Ubicado Monto : ======29.90
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:540) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  ======= FIN  Prueba INT-CAA-0002 ======
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:341) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:353) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:354) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:355) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambionomatriz]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:356) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:357) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:358) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [92]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:359) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [100036]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:360) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_campania]= [CLARO MAX FAMILIA]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:361) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_basic]= [claroMax_Internacional_29_One]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:388) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:389) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:390) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:391) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:417) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 8 milisegundos.
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:302) - 20190327203835Exito  al desactivar Bono : 100036
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:276) - 20190327203835 ContractidExterno - Linea  : CONTR0000001117-51983711898  cargados
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:341) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:353) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:354) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:355) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambionomatriz]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:356) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Ejecutando SP 
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:357) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [INPUT] 
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:358) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_contract_id]= [92]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:359) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_bono_id]= [100037]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:360) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_campania]= [CLARO MAX FAMILIA]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:361) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [pi_basic]= [claroMax_Internacional_29_One]
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:388) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:389) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [OUTPUT]: 
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:390) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [po_cod_err] = 0
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:391) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  [po_des_err] = OK
+[INFO ] [2019-03-27 20:38:47] (MotorPromDAOImpl:417) - [Desactivar Bono Por Cambio Plan idTx=20190327203835]  - Fin del método registrar- Tiempo total de proceso : 7 milisegundos.
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:302) - 20190327203835Exito  al desactivar Bono : 100037
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:330) - 20190327203835- FIN 1 :DESACTIVACION  Obtener  cambio Plan Linea Upgrade No Matriz 
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:342) - 20190327203835[Fin de metodo: run]
+[INFO ] [2019-03-27 20:38:47] (MainServiceImpl:128) - 20190327203835[Fin - SH03_MOTPROM_ValidaDes_CambioPlan ]
+[INFO ] [2019-03-27 20:38:47] (MainClass:85) - [launch idTx=20190327203835][FIN de metodo: launch] Tiempo total de proceso(ms): 11321 milisegundos.
+[INFO ] [2019-03-27 20:38:47] (MainClass:51) - [main idTx=20190327203835][FIN de metodo: main] Tiempo total de proceso(ms): 12168 milisegundos.
+[INFO ] [2019-03-27 20:38:47] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@7ab2bfe1: startup date [Wed Mar 27 20:38:35 PET 2019]; root of context hierarchy
+[INFO ] [2019-03-27 20:38:47] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2a17b7b6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,INTCAA0002ClientImpl,INTCOP0223ClientImpl,motorPromDAOImpl,mainServiceImpl,constantes,EAIUtil,JAXBUtilitarios,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+27-03-2019 20:38:35 INFO  @ [FIN de ejecucion de la Shell - SH03_MOTPROM_CambioPlan -][2019-03-27@20:38:47]
+2019-03-27@20:38:47 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH03_MOTPROM_ValidaDes_CambioPlan/LOG/SH03_MOTPROM_ValidaDes_CambioPlan.log
+*************************************************************************************************************************************

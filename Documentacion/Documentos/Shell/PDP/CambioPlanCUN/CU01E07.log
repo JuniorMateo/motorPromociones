@@ -1,0 +1,238 @@
+ INFO  @ [INICIO del proceso][2019-04-05@15:02:49]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Transaccion: 20190405150249
+ INFO  @ FecProc: 01/04/2019
+ INFO  @ Dias: 0
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH03_MOTPROM_ValidaDes_CambioPlan/SH03_MOTPROM_ValidaDes_CambioPlan.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-04-05@15:02:49]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-04-05 15:02:51] (MainClass:66) - [loadLog4J idTx=20190405150249][INICIO de metodo: loadLog4J]
+[INFO ] [2019-04-05 15:02:51] (MainClass:67) - [loadLog4J idTx=20190405150249][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 51 milisegundos.
+[INFO ] [2019-04-05 15:02:51] (MainClass:40) - [main idTx=20190405150249][INICIO de metodo: main]
+[INFO ] [2019-04-05 15:02:51] (MainClass:76) - [launch idTx=20190405150249][INICIO de metodo: launch]
+[INFO ] [2019-04-05 15:02:51] (MainServiceImpl:54) - 20190405150249[INICIO - SH03_MOTPROM_ValidaDes_CambioPlan ]
+[INFO ] [2019-04-05 15:02:51] (MainServiceImpl:62) - 20190405150249  CAMBIOPLANLINEA
+[INFO ] [2019-04-05 15:02:51] (MainServiceImpl:154) - 20190405150249INICIO  por : Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:52) - 20190405150249[obtenerCambioPlan] [INICIO] - METODO: obtenerCambioPlan
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:71) - 20190405150249 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:72) - 20190405150249 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:73) - 20190405150249 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_planlinea21]
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:74) - 20190405150249 Ejecutando SP 
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:75) - 20190405150249 [INPUT] 
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:76) - 20190405150249 [pi_fec_proc]= [01/04/2019]
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:77) - 20190405150249 [pi_dias]= [0]
+[INFO ] [2019-04-05 15:02:51] (XmlBeanDefinitionReader:315) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[INFO ] [2019-04-05 15:02:51] (SQLErrorCodesFactory:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[ERROR] [2019-04-05 15:02:51] (MotorPromDAOImpl:137) - -2
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:143) - 20190405150249 - Fin del método registrar- Tiempo total de proceso : 180 milisegundos.
+[ERROR] [2019-04-05 15:02:51] (MainServiceImpl:227) - 20190405150249- Error en la BD BSCS - null.pkg_motprom_proces_trans.promss_desa_cambio_planlinea21. Error: Recurso no disponible - SP pkg_motprom_proces_trans.promss_desa_cambio_planlinea21 - JNDI tim
+claro.com.pe.cambioplan.exception.DBException: Error: Recurso no disponible - SP pkg_motprom_proces_trans.promss_desa_cambio_planlinea21 - JNDI tim
+	at claro.com.pe.cambioplan.dao.MotorPromDAOImpl.obtenerCambioPlan(MotorPromDAOImpl.java:139)
+	at claro.com.pe.cambioplan.service.MainServiceImpl.cambioplanLinea(MainServiceImpl.java:156)
+	at claro.com.pe.cambioplan.service.MainServiceImpl.run(MainServiceImpl.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.cambioplan.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.cambioplan.MainClass.main(MainClass.java:41)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: CallableStatementCallback; bad SQL grammar [{call TIM.PKG_MOTPROM_PROCES_TRANS.PROMSS_DESA_CAMBIO_PLANLINEA21(?, ?, ?, ?, ?)}]; nested exception is java.sql.SQLException: ORA-06550: line 1, column 36:
+PLS-00302: component 'PROMSS_DESA_CAMBIO_PLANLINEA21' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1030)
+	at org.springframework.jdbc.core.JdbcTemplate.call(JdbcTemplate.java:1064)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.executeCallInternal(AbstractJdbcCall.java:388)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.doExecute(AbstractJdbcCall.java:351)
+	at org.springframework.jdbc.core.simple.SimpleJdbcCall.execute(SimpleJdbcCall.java:181)
+	at claro.com.pe.cambioplan.dao.MotorPromDAOImpl.obtenerCambioPlan(MotorPromDAOImpl.java:111)
+	... 15 more
+Caused by: java.sql.SQLException: ORA-06550: line 1, column 36:
+PLS-00302: component 'PROMSS_DESA_CAMBIO_PLANLINEA21' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:173)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1030)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:191)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:944)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1222)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3381)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3482)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:3856)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1373)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1066)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1014)
+	... 20 more
+[INFO ] [2019-04-05 15:02:51] (MainServiceImpl:234) - 20190405150249[Fin de metodo: run]
+[INFO ] [2019-04-05 15:02:51] (MainServiceImpl:59) - 20190405150249[se procede  al Reintento :]1
+[INFO ] [2019-04-05 15:02:51] (MainServiceImpl:62) - 20190405150249  CAMBIOPLANLINEA
+[INFO ] [2019-04-05 15:02:51] (MainServiceImpl:154) - 20190405150249INICIO  por : Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:52) - 20190405150249[obtenerCambioPlan] [INICIO] - METODO: obtenerCambioPlan
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:71) - 20190405150249 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:72) - 20190405150249 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:73) - 20190405150249 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_planlinea21]
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:74) - 20190405150249 Ejecutando SP 
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:75) - 20190405150249 [INPUT] 
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:76) - 20190405150249 [pi_fec_proc]= [01/04/2019]
+[INFO ] [2019-04-05 15:02:51] (MotorPromDAOImpl:77) - 20190405150249 [pi_dias]= [0]
+[ERROR] [2019-04-05 15:02:52] (MotorPromDAOImpl:137) - -2
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:143) - 20190405150249 - Fin del método registrar- Tiempo total de proceso : 11 milisegundos.
+[ERROR] [2019-04-05 15:02:52] (MainServiceImpl:227) - 20190405150249- Error en la BD BSCS - null.pkg_motprom_proces_trans.promss_desa_cambio_planlinea21. Error: Recurso no disponible - SP pkg_motprom_proces_trans.promss_desa_cambio_planlinea21 - JNDI tim
+claro.com.pe.cambioplan.exception.DBException: Error: Recurso no disponible - SP pkg_motprom_proces_trans.promss_desa_cambio_planlinea21 - JNDI tim
+	at claro.com.pe.cambioplan.dao.MotorPromDAOImpl.obtenerCambioPlan(MotorPromDAOImpl.java:139)
+	at claro.com.pe.cambioplan.service.MainServiceImpl.cambioplanLinea(MainServiceImpl.java:156)
+	at claro.com.pe.cambioplan.service.MainServiceImpl.run(MainServiceImpl.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.cambioplan.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.cambioplan.MainClass.main(MainClass.java:41)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: CallableStatementCallback; bad SQL grammar [{call TIM.PKG_MOTPROM_PROCES_TRANS.PROMSS_DESA_CAMBIO_PLANLINEA21(?, ?, ?, ?, ?)}]; nested exception is java.sql.SQLException: ORA-06550: line 1, column 36:
+PLS-00302: component 'PROMSS_DESA_CAMBIO_PLANLINEA21' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1030)
+	at org.springframework.jdbc.core.JdbcTemplate.call(JdbcTemplate.java:1064)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.executeCallInternal(AbstractJdbcCall.java:388)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.doExecute(AbstractJdbcCall.java:351)
+	at org.springframework.jdbc.core.simple.SimpleJdbcCall.execute(SimpleJdbcCall.java:181)
+	at claro.com.pe.cambioplan.dao.MotorPromDAOImpl.obtenerCambioPlan(MotorPromDAOImpl.java:111)
+	... 15 more
+Caused by: java.sql.SQLException: ORA-06550: line 1, column 36:
+PLS-00302: component 'PROMSS_DESA_CAMBIO_PLANLINEA21' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:173)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1030)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:191)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:944)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1222)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3381)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3482)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:3856)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1373)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1066)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1014)
+	... 20 more
+[INFO ] [2019-04-05 15:02:52] (MainServiceImpl:234) - 20190405150249[Fin de metodo: run]
+[INFO ] [2019-04-05 15:02:52] (MainServiceImpl:59) - 20190405150249[se procede  al Reintento :]2
+[INFO ] [2019-04-05 15:02:52] (MainServiceImpl:62) - 20190405150249  CAMBIOPLANLINEA
+[INFO ] [2019-04-05 15:02:52] (MainServiceImpl:154) - 20190405150249INICIO  por : Desactivacion por Cambio de plan de la línea
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:52) - 20190405150249[obtenerCambioPlan] [INICIO] - METODO: obtenerCambioPlan
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:71) - 20190405150249 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:72) - 20190405150249 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:73) - 20190405150249 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_planlinea21]
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:74) - 20190405150249 Ejecutando SP 
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:75) - 20190405150249 [INPUT] 
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:76) - 20190405150249 [pi_fec_proc]= [01/04/2019]
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:77) - 20190405150249 [pi_dias]= [0]
+[ERROR] [2019-04-05 15:02:52] (MotorPromDAOImpl:137) - -2
+[INFO ] [2019-04-05 15:02:52] (MotorPromDAOImpl:143) - 20190405150249 - Fin del método registrar- Tiempo total de proceso : 11 milisegundos.
+[ERROR] [2019-04-05 15:02:52] (MainServiceImpl:227) - 20190405150249- Error en la BD BSCS - null.pkg_motprom_proces_trans.promss_desa_cambio_planlinea21. Error: Recurso no disponible - SP pkg_motprom_proces_trans.promss_desa_cambio_planlinea21 - JNDI tim
+claro.com.pe.cambioplan.exception.DBException: Error: Recurso no disponible - SP pkg_motprom_proces_trans.promss_desa_cambio_planlinea21 - JNDI tim
+	at claro.com.pe.cambioplan.dao.MotorPromDAOImpl.obtenerCambioPlan(MotorPromDAOImpl.java:139)
+	at claro.com.pe.cambioplan.service.MainServiceImpl.cambioplanLinea(MainServiceImpl.java:156)
+	at claro.com.pe.cambioplan.service.MainServiceImpl.run(MainServiceImpl.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.cambioplan.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.cambioplan.MainClass.main(MainClass.java:41)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: CallableStatementCallback; bad SQL grammar [{call TIM.PKG_MOTPROM_PROCES_TRANS.PROMSS_DESA_CAMBIO_PLANLINEA21(?, ?, ?, ?, ?)}]; nested exception is java.sql.SQLException: ORA-06550: line 1, column 36:
+PLS-00302: component 'PROMSS_DESA_CAMBIO_PLANLINEA21' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1030)
+	at org.springframework.jdbc.core.JdbcTemplate.call(JdbcTemplate.java:1064)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.executeCallInternal(AbstractJdbcCall.java:388)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.doExecute(AbstractJdbcCall.java:351)
+	at org.springframework.jdbc.core.simple.SimpleJdbcCall.execute(SimpleJdbcCall.java:181)
+	at claro.com.pe.cambioplan.dao.MotorPromDAOImpl.obtenerCambioPlan(MotorPromDAOImpl.java:111)
+	... 15 more
+Caused by: java.sql.SQLException: ORA-06550: line 1, column 36:
+PLS-00302: component 'PROMSS_DESA_CAMBIO_PLANLINEA21' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:173)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1030)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:191)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:944)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1222)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3381)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3482)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:3856)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1373)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1066)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1014)
+	... 20 more
+[INFO ] [2019-04-05 15:02:52] (MainServiceImpl:234) - 20190405150249[Fin de metodo: run]
+[INFO ] [2019-04-05 15:02:52] (MainServiceImpl:124) - 20190405150249Error al ejecutar Transaccion
+[INFO ] [2019-04-05 15:02:52] (MainServiceImpl:127) - 20190405150249[Fin - SH03_MOTPROM_ValidaDes_CambioPlan ]
+[ERROR] [2019-04-05 15:02:52] (MainClass:81) - [launch idTx=20190405150249]Error: java.lang.Exception: update exception.
+[INFO ] [2019-04-05 15:02:52] (MainClass:85) - [launch idTx=20190405150249][FIN de metodo: launch] Tiempo total de proceso(ms): 919 milisegundos.
+[INFO ] [2019-04-05 15:02:52] (MainClass:47) - [main idTx=20190405150249][ERROR: ENVIAR CORREO CON DETALLE]
+[INFO ] [2019-04-05 15:02:52] (MainClass:51) - [main idTx=20190405150249][FIN de metodo: main] Tiempo total de proceso(ms): 2116 milisegundos.
+[INFO ] [2019-04-05 15:02:52] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@1ed6993a: startup date [Fri Apr 05 15:02:50 PET 2019]; root of context hierarchy
+[INFO ] [2019-04-05 15:02:52] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7c29daf3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,INTCAA0002ClientImpl,motorPromDAOImpl,mainServiceImpl,constantes,EAIUtil,JAXBUtilitarios,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Exception in thread "main" java.lang.NumberFormatException: For input string: "OK"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at claro.com.pe.cambioplan.MainClass.main(MainClass.java:48)
+05-04-2019 15:02:49 INFO  @ [FIN de ejecucion de la Shell - SH03_MOTPROM_CambioPlan -][2019-04-05@15:02:52]
+2019-04-05@15:02:52 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH03_MOTPROM_ValidaDes_CambioPlan/LOG/SH03_MOTPROM_ValidaDes_CambioPlan.log
+*************************************************************************************************************************************

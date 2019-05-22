@@ -1,0 +1,236 @@
+ INFO  @ [INICIO del proceso][2019-05-20@11:25:27]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Transaccion: 20190520112527
+ INFO  @ FecProc: 05/05/2020
+ INFO  @ Dias: 0
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH02_MOTPROM_ValidaDes_Vigencia/SH02_MOTPROM_ValidaDes_Vigencia.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-05-20@11:25:27]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-05-20 11:25:28] (MainClass:66) - [loadLog4J idTx=20190520112527][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-20 11:25:28] (MainClass:67) - [loadLog4J idTx=20190520112527][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 33 milisegundos.
+[INFO ] [2019-05-20 11:25:28] (MainClass:40) - [main idTx=20190520112527][INICIO de metodo: main]
+[INFO ] [2019-05-20 11:25:28] (MainClass:76) - [launch idTx=20190520112527][INICIO de metodo: launch]
+[INFO ] [2019-05-20 11:25:28] (MainServiceImpl:32) - 20190520112527[INICIO - SH09_MOTPROM_ValidaDes_Facturacion ]
+[INFO ] [2019-05-20 11:25:28] (MainServiceImpl:72) - 20190520112527INICIO  : Desactivacion Cambio Plan Por Vigencia
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:39) - 20190520112527 - Inicio del método ejecutar Desactivacion Fecha Vigencia
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:54) - 20190520112527 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:55) - 20190520112527 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:56) - 20190520112527 SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_vigen_bono2]
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:57) - 20190520112527 Ejecutando SP 
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:58) - 20190520112527 [INPUT] 
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:59) - 20190520112527 [pi_fec_proc]= [05/05/2020]
+[INFO ] [2019-05-20 11:25:28] (MotorPromDAOImpl:60) - 20190520112527 [pi_dias]= [0]
+[INFO ] [2019-05-20 11:25:29] (XmlBeanDefinitionReader:315) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[INFO ] [2019-05-20 11:25:29] (SQLErrorCodesFactory:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[ERROR] [2019-05-20 11:25:29] (MotorPromDAOImpl:103) - -2
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:109) - 20190520112527 - FIN del método ejecutar Desactivacion Fecha Vigencia : 192 milisegundos.
+[ERROR] [2019-05-20 11:25:29] (MainServiceImpl:82) - 20190520112527- Error en la BD BSCS - pkg_motprom_proces_transbk.promsu_desa_vigen_bono2. Error: Recurso no disponible - SP pkg_motprom_proces_transbk.promsu_desa_vigen_bono2 - JNDI tim
+claro.com.pe.validavigencia.exception.DBException: Error: Recurso no disponible - SP pkg_motprom_proces_transbk.promsu_desa_vigen_bono2 - JNDI tim
+	at claro.com.pe.validavigencia.dao.MotorPromDAOImpl.ejecutarTransaccionFechaVigencia(MotorPromDAOImpl.java:105)
+	at claro.com.pe.validavigencia.service.MainServiceImpl.jecutarIncumplimientoPago(MainServiceImpl.java:73)
+	at claro.com.pe.validavigencia.service.MainServiceImpl.run(MainServiceImpl.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy11.run(Unknown Source)
+	at claro.com.pe.validavigencia.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.validavigencia.MainClass.main(MainClass.java:41)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: CallableStatementCallback; bad SQL grammar [{call TIM.PKG_MOTPROM_PROCES_TRANSBK.PROMSU_DESA_VIGEN_BONO2(?, ?, ?, ?, ?)}]; nested exception is java.sql.SQLException: ORA-06550: line 1, column 38:
+PLS-00302: component 'PROMSU_DESA_VIGEN_BONO2' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1030)
+	at org.springframework.jdbc.core.JdbcTemplate.call(JdbcTemplate.java:1064)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.executeCallInternal(AbstractJdbcCall.java:388)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.doExecute(AbstractJdbcCall.java:351)
+	at org.springframework.jdbc.core.simple.SimpleJdbcCall.execute(SimpleJdbcCall.java:181)
+	at claro.com.pe.validavigencia.dao.MotorPromDAOImpl.ejecutarTransaccionFechaVigencia(MotorPromDAOImpl.java:81)
+	... 15 more
+Caused by: java.sql.SQLException: ORA-06550: line 1, column 38:
+PLS-00302: component 'PROMSU_DESA_VIGEN_BONO2' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:173)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1030)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:191)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:944)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1222)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3381)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3482)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:3856)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1373)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1066)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1014)
+	... 20 more
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:90) - 20190520112527[Fin de metodo: run]
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:37) - 20190520112527[se procede  al Reintento :]1
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:72) - 20190520112527INICIO  : Desactivacion Cambio Plan Por Vigencia
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:39) - 20190520112527 - Inicio del método ejecutar Desactivacion Fecha Vigencia
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:54) - 20190520112527 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:55) - 20190520112527 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:56) - 20190520112527 SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_vigen_bono2]
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:57) - 20190520112527 Ejecutando SP 
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:58) - 20190520112527 [INPUT] 
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:59) - 20190520112527 [pi_fec_proc]= [05/05/2020]
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:60) - 20190520112527 [pi_dias]= [0]
+[ERROR] [2019-05-20 11:25:29] (MotorPromDAOImpl:103) - -2
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:109) - 20190520112527 - FIN del método ejecutar Desactivacion Fecha Vigencia : 10 milisegundos.
+[ERROR] [2019-05-20 11:25:29] (MainServiceImpl:82) - 20190520112527- Error en la BD BSCS - pkg_motprom_proces_transbk.promsu_desa_vigen_bono2. Error: Recurso no disponible - SP pkg_motprom_proces_transbk.promsu_desa_vigen_bono2 - JNDI tim
+claro.com.pe.validavigencia.exception.DBException: Error: Recurso no disponible - SP pkg_motprom_proces_transbk.promsu_desa_vigen_bono2 - JNDI tim
+	at claro.com.pe.validavigencia.dao.MotorPromDAOImpl.ejecutarTransaccionFechaVigencia(MotorPromDAOImpl.java:105)
+	at claro.com.pe.validavigencia.service.MainServiceImpl.jecutarIncumplimientoPago(MainServiceImpl.java:73)
+	at claro.com.pe.validavigencia.service.MainServiceImpl.run(MainServiceImpl.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy11.run(Unknown Source)
+	at claro.com.pe.validavigencia.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.validavigencia.MainClass.main(MainClass.java:41)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: CallableStatementCallback; bad SQL grammar [{call TIM.PKG_MOTPROM_PROCES_TRANSBK.PROMSU_DESA_VIGEN_BONO2(?, ?, ?, ?, ?)}]; nested exception is java.sql.SQLException: ORA-06550: line 1, column 38:
+PLS-00302: component 'PROMSU_DESA_VIGEN_BONO2' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1030)
+	at org.springframework.jdbc.core.JdbcTemplate.call(JdbcTemplate.java:1064)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.executeCallInternal(AbstractJdbcCall.java:388)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.doExecute(AbstractJdbcCall.java:351)
+	at org.springframework.jdbc.core.simple.SimpleJdbcCall.execute(SimpleJdbcCall.java:181)
+	at claro.com.pe.validavigencia.dao.MotorPromDAOImpl.ejecutarTransaccionFechaVigencia(MotorPromDAOImpl.java:81)
+	... 15 more
+Caused by: java.sql.SQLException: ORA-06550: line 1, column 38:
+PLS-00302: component 'PROMSU_DESA_VIGEN_BONO2' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:173)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1030)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:191)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:944)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1222)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3381)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3482)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:3856)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1373)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1066)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1014)
+	... 20 more
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:90) - 20190520112527[Fin de metodo: run]
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:37) - 20190520112527[se procede  al Reintento :]2
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:72) - 20190520112527INICIO  : Desactivacion Cambio Plan Por Vigencia
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:39) - 20190520112527 - Inicio del método ejecutar Desactivacion Fecha Vigencia
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:54) - 20190520112527 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:55) - 20190520112527 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:56) - 20190520112527 SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_vigen_bono2]
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:57) - 20190520112527 Ejecutando SP 
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:58) - 20190520112527 [INPUT] 
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:59) - 20190520112527 [pi_fec_proc]= [05/05/2020]
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:60) - 20190520112527 [pi_dias]= [0]
+[ERROR] [2019-05-20 11:25:29] (MotorPromDAOImpl:103) - -2
+[INFO ] [2019-05-20 11:25:29] (MotorPromDAOImpl:109) - 20190520112527 - FIN del método ejecutar Desactivacion Fecha Vigencia : 8 milisegundos.
+[ERROR] [2019-05-20 11:25:29] (MainServiceImpl:82) - 20190520112527- Error en la BD BSCS - pkg_motprom_proces_transbk.promsu_desa_vigen_bono2. Error: Recurso no disponible - SP pkg_motprom_proces_transbk.promsu_desa_vigen_bono2 - JNDI tim
+claro.com.pe.validavigencia.exception.DBException: Error: Recurso no disponible - SP pkg_motprom_proces_transbk.promsu_desa_vigen_bono2 - JNDI tim
+	at claro.com.pe.validavigencia.dao.MotorPromDAOImpl.ejecutarTransaccionFechaVigencia(MotorPromDAOImpl.java:105)
+	at claro.com.pe.validavigencia.service.MainServiceImpl.jecutarIncumplimientoPago(MainServiceImpl.java:73)
+	at claro.com.pe.validavigencia.service.MainServiceImpl.run(MainServiceImpl.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy11.run(Unknown Source)
+	at claro.com.pe.validavigencia.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.validavigencia.MainClass.main(MainClass.java:41)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: CallableStatementCallback; bad SQL grammar [{call TIM.PKG_MOTPROM_PROCES_TRANSBK.PROMSU_DESA_VIGEN_BONO2(?, ?, ?, ?, ?)}]; nested exception is java.sql.SQLException: ORA-06550: line 1, column 38:
+PLS-00302: component 'PROMSU_DESA_VIGEN_BONO2' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1030)
+	at org.springframework.jdbc.core.JdbcTemplate.call(JdbcTemplate.java:1064)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.executeCallInternal(AbstractJdbcCall.java:388)
+	at org.springframework.jdbc.core.simple.AbstractJdbcCall.doExecute(AbstractJdbcCall.java:351)
+	at org.springframework.jdbc.core.simple.SimpleJdbcCall.execute(SimpleJdbcCall.java:181)
+	at claro.com.pe.validavigencia.dao.MotorPromDAOImpl.ejecutarTransaccionFechaVigencia(MotorPromDAOImpl.java:81)
+	... 15 more
+Caused by: java.sql.SQLException: ORA-06550: line 1, column 38:
+PLS-00302: component 'PROMSU_DESA_VIGEN_BONO2' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.SQLStateMapping.newSQLException(SQLStateMapping.java:70)
+	at oracle.jdbc.driver.DatabaseError.newSQLException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:173)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:455)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:413)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:1030)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:191)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:944)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1222)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3381)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3482)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:3856)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1373)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1066)
+	at org.springframework.jdbc.core.JdbcTemplate$6.doInCallableStatement(JdbcTemplate.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1014)
+	... 20 more
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:90) - 20190520112527[Fin de metodo: run]
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:55) - 20190520112527Error al ejecutar Transaccion
+[INFO ] [2019-05-20 11:25:29] (MainServiceImpl:58) - 20190520112527[Fin - SH09_MOTPROM_ValidaDes_Facturacion ]
+[ERROR] [2019-05-20 11:25:29] (MainClass:81) - [launch idTx=20190520112527]Error: java.lang.Exception: update exception.
+[INFO ] [2019-05-20 11:25:29] (MainClass:84) - [launch idTx=20190520112527][FIN de metodo: launch] Tiempo total de proceso(ms): 721 milisegundos.
+[INFO ] [2019-05-20 11:25:29] (MainClass:43) - [main idTx=20190520112527][ERROR GEENERICO A2586]
+[ERROR] [2019-05-20 11:25:29] (MainClass:47) - [main idTx=20190520112527]Error al Levantar Contexto: java.lang.Exception.
+[INFO ] [2019-05-20 11:25:29] (MainClass:51) - [main idTx=20190520112527][FIN de metodo: main] Tiempo total de proceso(ms): 1492 milisegundos.
+[INFO ] [2019-05-20 11:25:29] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4534b60d: startup date [Mon May 20 11:25:27 PET 2019]; root of context hierarchy
+[INFO ] [2019-05-20 11:25:29] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6325a3ee: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,motorPromDAOImpl,mainServiceImpl,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Exception in thread "main" java.lang.NumberFormatException: For input string: "OK"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at claro.com.pe.validavigencia.MainClass.main(MainClass.java:48)
+20-05-2019 11:25:27 INFO  @ [FIN de ejecucion de la Shell - SH02_MOTPROM_Valida_Vigencia -][2019-05-20@11:25:29]
+2019-05-20@11:25:29 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH02_MOTPROM_ValidaDes_Vigencia/LOG/SH02_MOTPROM_ValidaDes_Vigencia.log
+*************************************************************************************************************************************

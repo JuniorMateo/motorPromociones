@@ -1,0 +1,190 @@
+ INFO  @ [INICIO del proceso][2019-04-05@11:16:20]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Usuario: 01/04/2016 
+ INFO  @ Transaccion: 20190405111620
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-04-05@11:16:20]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-04-05 11:16:21] (MainClass:66) - [loadLog4J idTx=20190405111620][INICIO de metodo: loadLog4J]
+[INFO ] [2019-04-05 11:16:21] (MainClass:67) - [loadLog4J idTx=20190405111620][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 36 milisegundos.
+[INFO ] [2019-04-05 11:16:21] (MainClass:39) - [main idTx=20190405111620][INICIO de metodo: main]
+[INFO ] [2019-04-05 11:16:21] (MainClass:76) - [launch idTx=20190405111620][INICIO de metodo: launch]
+[INFO ] [2019-04-05 11:16:21] (MainServiceImpl:41) - 20190405111620[INICIO - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist ]
+[INFO ] [2019-04-05 11:16:21] (MainServiceImpl:84) - 20190405111620INICIO  :  Carga Cambio Plan
+[INFO ] [2019-04-05 11:16:21] (MainServiceImpl:87) - 20190405111620 Inicio - Obtener Datos Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:21] (MotorPromDAOImpl:57) - 20190405111620[obtener Cambio plan Replica] [INICIO] - METODO: obtener Cambio plan Replica
+[INFO ] [2019-04-05 11:16:21] (MotorPromDAOImpl:71) - 20190405111620 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 11:16:21] (MotorPromDAOImpl:72) - 20190405111620 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 11:16:21] (MotorPromDAOImpl:73) - 20190405111620 SP a ejecutar: [pkg_motprom_bscs.sp_cons_cambio_plan]
+[INFO ] [2019-04-05 11:16:21] (MotorPromDAOImpl:74) - 20190405111620 Ejecutando SP 
+[INFO ] [2019-04-05 11:16:21] (MotorPromDAOImpl:75) - 20190405111620 [INPUT] 
+[INFO ] [2019-04-05 11:16:21] (MotorPromDAOImpl:76) - 20190405111620 [FECHA DE  CONSULTA: ] 01/04/2016
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:114) - 20190405111620 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:115) - 20190405111620 [OUTPUT]: 
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:116) - 20190405111620 [po_cod_err] = 0
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:117) - 20190405111620 [po_des_err] = Proceso Satisfactorio
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:124) - 20190405111620 [SIZE LIST] = 111
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:143) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 10319 milisegundos.
+[INFO ] [2019-04-05 11:16:31] (MainServiceImpl:90) - 20190405111620- datos BSCS obtenidos a cargar0
+[INFO ] [2019-04-05 11:16:31] (MainServiceImpl:93) - 20190405111620 Inicio - Insert Carga Datos Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:154) - 20190405111620 - Inicio del Actualizar Bono
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:167) - 20190405111620 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:168) - 20190405111620 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:169) - 20190405111620 SP a ejecutar: [pkg_motprom_proces_trans.promsi_cambioplan_hist]
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:170) - 20190405111620 Ejecutando SP 
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:171) - 20190405111620 [INPUT] 
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:172) - 20190405111620 [size]= [111]
+[INFO ] [2019-04-05 11:16:31] (MotorPromDAOImpl:183) - SIZE:111
+[INFO ] [2019-04-05 11:16:32] (MotorPromDAOImpl:227) - 20190405111620 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-05 11:16:32] (MotorPromDAOImpl:228) - 20190405111620 [OUTPUT]: 
+[INFO ] [2019-04-05 11:16:32] (MotorPromDAOImpl:229) - 20190405111620 [po_cod_err] = 0
+[INFO ] [2019-04-05 11:16:32] (MotorPromDAOImpl:230) - 20190405111620 [po_des_err] = Registro de transaccion exitosa.
+[INFO ] [2019-04-05 11:16:32] (MotorPromDAOImpl:255) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 97 milisegundos.
+[INFO ] [2019-04-05 11:16:32] (MainServiceImpl:97) - 20190405111620 Exito Carga datos Replica Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:32] (MainServiceImpl:107) - 20190405111620 Inicio - Obtener Datos Cambio Plan BSCSIX
+[INFO ] [2019-04-05 11:16:32] (BSCSIXDAOImpl:37) - 20190405111620[INICIO] - METODO:  Obtener Cambio plan BSCSIX FECHA: 01042016
+[INFO ] [2019-04-05 11:16:33] (BSCSIXDAOImpl:116) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 1033 milisegundos.
+[ERROR] [2019-04-05 11:16:33] (MainServiceImpl:134) - 20190405111620Error Interno: null
+java.lang.NullPointerException
+	at claro.com.pe.carga.datos.replica.cambio.plan.dao.BSCSIXDAOImpl.obtenerConsCambioplanBSCSIX(BSCSIXDAOImpl.java:75)
+	at claro.com.pe.carga.datos.replica.cambio.plan.service.MainServiceImpl.replicambioPlanHist(MainServiceImpl.java:109)
+	at claro.com.pe.carga.datos.replica.cambio.plan.service.MainServiceImpl.runReplicambioPlanHist(MainServiceImpl.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy11.runReplicambioPlanHist(Unknown Source)
+	at claro.com.pe.carga.datos.replica.cambio.plan.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.carga.datos.replica.cambio.plan.MainClass.main(MainClass.java:40)
+[INFO ] [2019-04-05 11:16:33] (MainServiceImpl:138) - 20190405111620[Fin de metodo: run]
+[INFO ] [2019-04-05 11:16:33] (MainServiceImpl:46) - 20190405111620[se procede  al Reintento :]1
+[INFO ] [2019-04-05 11:16:33] (MainServiceImpl:84) - 20190405111620INICIO  :  Carga Cambio Plan
+[INFO ] [2019-04-05 11:16:33] (MainServiceImpl:87) - 20190405111620 Inicio - Obtener Datos Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:33] (MotorPromDAOImpl:57) - 20190405111620[obtener Cambio plan Replica] [INICIO] - METODO: obtener Cambio plan Replica
+[INFO ] [2019-04-05 11:16:33] (MotorPromDAOImpl:71) - 20190405111620 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 11:16:33] (MotorPromDAOImpl:72) - 20190405111620 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 11:16:33] (MotorPromDAOImpl:73) - 20190405111620 SP a ejecutar: [pkg_motprom_bscs.sp_cons_cambio_plan]
+[INFO ] [2019-04-05 11:16:33] (MotorPromDAOImpl:74) - 20190405111620 Ejecutando SP 
+[INFO ] [2019-04-05 11:16:33] (MotorPromDAOImpl:75) - 20190405111620 [INPUT] 
+[INFO ] [2019-04-05 11:16:33] (MotorPromDAOImpl:76) - 20190405111620 [FECHA DE  CONSULTA: ] 01/04/2016
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:114) - 20190405111620 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:115) - 20190405111620 [OUTPUT]: 
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:116) - 20190405111620 [po_cod_err] = 0
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:117) - 20190405111620 [po_des_err] = Proceso Satisfactorio
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:124) - 20190405111620 [SIZE LIST] = 111
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:143) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 10096 milisegundos.
+[INFO ] [2019-04-05 11:16:43] (MainServiceImpl:90) - 20190405111620- datos BSCS obtenidos a cargar0
+[INFO ] [2019-04-05 11:16:43] (MainServiceImpl:93) - 20190405111620 Inicio - Insert Carga Datos Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:154) - 20190405111620 - Inicio del Actualizar Bono
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:167) - 20190405111620 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:168) - 20190405111620 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:169) - 20190405111620 SP a ejecutar: [pkg_motprom_proces_trans.promsi_cambioplan_hist]
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:170) - 20190405111620 Ejecutando SP 
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:171) - 20190405111620 [INPUT] 
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:172) - 20190405111620 [size]= [111]
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:183) - SIZE:111
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:227) - 20190405111620 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:228) - 20190405111620 [OUTPUT]: 
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:229) - 20190405111620 [po_cod_err] = 0
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:230) - 20190405111620 [po_des_err] = Registro de transaccion exitosa.
+[INFO ] [2019-04-05 11:16:43] (MotorPromDAOImpl:255) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 62 milisegundos.
+[INFO ] [2019-04-05 11:16:43] (MainServiceImpl:97) - 20190405111620 Exito Carga datos Replica Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:43] (MainServiceImpl:107) - 20190405111620 Inicio - Obtener Datos Cambio Plan BSCSIX
+[INFO ] [2019-04-05 11:16:43] (BSCSIXDAOImpl:37) - 20190405111620[INICIO] - METODO:  Obtener Cambio plan BSCSIX FECHA: 01042016
+[INFO ] [2019-04-05 11:16:44] (BSCSIXDAOImpl:116) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 1058 milisegundos.
+[ERROR] [2019-04-05 11:16:44] (MainServiceImpl:134) - 20190405111620Error Interno: null
+java.lang.NullPointerException
+	at claro.com.pe.carga.datos.replica.cambio.plan.dao.BSCSIXDAOImpl.obtenerConsCambioplanBSCSIX(BSCSIXDAOImpl.java:75)
+	at claro.com.pe.carga.datos.replica.cambio.plan.service.MainServiceImpl.replicambioPlanHist(MainServiceImpl.java:109)
+	at claro.com.pe.carga.datos.replica.cambio.plan.service.MainServiceImpl.runReplicambioPlanHist(MainServiceImpl.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy11.runReplicambioPlanHist(Unknown Source)
+	at claro.com.pe.carga.datos.replica.cambio.plan.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.carga.datos.replica.cambio.plan.MainClass.main(MainClass.java:40)
+[INFO ] [2019-04-05 11:16:44] (MainServiceImpl:138) - 20190405111620[Fin de metodo: run]
+[INFO ] [2019-04-05 11:16:44] (MainServiceImpl:46) - 20190405111620[se procede  al Reintento :]2
+[INFO ] [2019-04-05 11:16:44] (MainServiceImpl:84) - 20190405111620INICIO  :  Carga Cambio Plan
+[INFO ] [2019-04-05 11:16:44] (MainServiceImpl:87) - 20190405111620 Inicio - Obtener Datos Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:44] (MotorPromDAOImpl:57) - 20190405111620[obtener Cambio plan Replica] [INICIO] - METODO: obtener Cambio plan Replica
+[INFO ] [2019-04-05 11:16:44] (MotorPromDAOImpl:71) - 20190405111620 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 11:16:44] (MotorPromDAOImpl:72) - 20190405111620 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 11:16:44] (MotorPromDAOImpl:73) - 20190405111620 SP a ejecutar: [pkg_motprom_bscs.sp_cons_cambio_plan]
+[INFO ] [2019-04-05 11:16:44] (MotorPromDAOImpl:74) - 20190405111620 Ejecutando SP 
+[INFO ] [2019-04-05 11:16:44] (MotorPromDAOImpl:75) - 20190405111620 [INPUT] 
+[INFO ] [2019-04-05 11:16:44] (MotorPromDAOImpl:76) - 20190405111620 [FECHA DE  CONSULTA: ] 01/04/2016
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:114) - 20190405111620 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:115) - 20190405111620 [OUTPUT]: 
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:116) - 20190405111620 [po_cod_err] = 0
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:117) - 20190405111620 [po_des_err] = Proceso Satisfactorio
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:124) - 20190405111620 [SIZE LIST] = 111
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:143) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 9386 milisegundos.
+[INFO ] [2019-04-05 11:16:53] (MainServiceImpl:90) - 20190405111620- datos BSCS obtenidos a cargar0
+[INFO ] [2019-04-05 11:16:53] (MainServiceImpl:93) - 20190405111620 Inicio - Insert Carga Datos Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:154) - 20190405111620 - Inicio del Actualizar Bono
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:167) - 20190405111620 Se establecio conexion con la BD BSCS
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:168) - 20190405111620 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:169) - 20190405111620 SP a ejecutar: [pkg_motprom_proces_trans.promsi_cambioplan_hist]
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:170) - 20190405111620 Ejecutando SP 
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:171) - 20190405111620 [INPUT] 
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:172) - 20190405111620 [size]= [111]
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:183) - SIZE:111
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:227) - 20190405111620 Se ejecuto exitosamente el SP
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:228) - 20190405111620 [OUTPUT]: 
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:229) - 20190405111620 [po_cod_err] = 0
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:230) - 20190405111620 [po_des_err] = Registro de transaccion exitosa.
+[INFO ] [2019-04-05 11:16:53] (MotorPromDAOImpl:255) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 70 milisegundos.
+[INFO ] [2019-04-05 11:16:53] (MainServiceImpl:97) - 20190405111620 Exito Carga datos Replica Cambio Plan BSCS
+[INFO ] [2019-04-05 11:16:53] (MainServiceImpl:107) - 20190405111620 Inicio - Obtener Datos Cambio Plan BSCSIX
+[INFO ] [2019-04-05 11:16:53] (BSCSIXDAOImpl:37) - 20190405111620[INICIO] - METODO:  Obtener Cambio plan BSCSIX FECHA: 01042016
+[INFO ] [2019-04-05 11:16:54] (BSCSIXDAOImpl:116) - 20190405111620 - Fin del método Obtener- Tiempo total de proceso : 1052 milisegundos.
+[ERROR] [2019-04-05 11:16:54] (MainServiceImpl:134) - 20190405111620Error Interno: null
+java.lang.NullPointerException
+	at claro.com.pe.carga.datos.replica.cambio.plan.dao.BSCSIXDAOImpl.obtenerConsCambioplanBSCSIX(BSCSIXDAOImpl.java:75)
+	at claro.com.pe.carga.datos.replica.cambio.plan.service.MainServiceImpl.replicambioPlanHist(MainServiceImpl.java:109)
+	at claro.com.pe.carga.datos.replica.cambio.plan.service.MainServiceImpl.runReplicambioPlanHist(MainServiceImpl.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy11.runReplicambioPlanHist(Unknown Source)
+	at claro.com.pe.carga.datos.replica.cambio.plan.MainClass.launch(MainClass.java:79)
+	at claro.com.pe.carga.datos.replica.cambio.plan.MainClass.main(MainClass.java:40)
+[INFO ] [2019-04-05 11:16:54] (MainServiceImpl:138) - 20190405111620[Fin de metodo: run]
+[INFO ] [2019-04-05 11:16:54] (MainServiceImpl:64) - 20190405111620Error en procesar carga
+[INFO ] [2019-04-05 11:16:54] (MainServiceImpl:67) - 20190405111620[Fin - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist ]
+[ERROR] [2019-04-05 11:16:54] (MainClass:81) - [launch idTx=20190405111620]Error: java.lang.Exception: exception.
+[INFO ] [2019-04-05 11:16:54] (MainClass:85) - [launch idTx=20190405111620][FIN de metodo: launch] Tiempo total de proceso(ms): 33482 milisegundos.
+[ERROR] [2019-04-05 11:16:54] (MainClass:46) - [main idTx=20190405111620]Error al Levantar Contexto: java.lang.Exception.
+[INFO ] [2019-04-05 11:16:54] (MainClass:51) - [main idTx=20190405111620][FIN de metodo: main] Tiempo total de proceso(ms): 34298 milisegundos.
+[INFO ] [2019-04-05 11:16:54] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4534b60d: startup date [Fri Apr 05 11:16:20 PET 2019]; root of context hierarchy
+[INFO ] [2019-04-05 11:16:54] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5bc79255: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,BSCSIXDAOImpl,motorPromDAOImpl,mainServiceImpl,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Exception in thread "main" java.lang.NumberFormatException: For input string: "OK"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at claro.com.pe.carga.datos.replica.cambio.plan.MainClass.main(MainClass.java:47)
+05-04-2019 11:16:20 INFO  @ [FIN de ejecucion de la Shell - SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist -][2019-04-05@11:16:54]
+2019-04-05@11:16:54 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist/LOG/SH16_MOTPROM_CargaDatos_ReplicaCambPlanHist.log
+*************************************************************************************************************************************

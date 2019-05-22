@@ -1,0 +1,428 @@
+[INFO ] [2019-05-02 15:02:38] (MainClass:67) - [loadLog4J idTx=14725836988][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-02 15:02:38] (MainClass:68) - [loadLog4J idTx=14725836988][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 23 milisegundos.
+[INFO ] [2019-05-02 15:02:38] (MainClass:38) - [main idTx=14725836988][INICIO de metodo: main]
+[INFO ] [2019-05-02 15:02:38] (MainClass:77) - [launch idTx=14725836988][INICIO de metodo: launch]
+[INFO ] [2019-05-02 15:02:39] (MainServiceImpl:47) - 14725836988[INICIO - SH06_MOTPROM_ValidaDes_BajaContrato ]
+[INFO ] [2019-05-02 15:02:39] (MainServiceImpl:91) - 14725836988INICIO  por : Descativar Bono Por Bloqueo/Suspension
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:47) - 14725836988[obtener Bonos Por Baja Contrato] [INICIO] - METODO: obtener Bonos Por Baja Contrato
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:61) - 14725836988 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:62) - 14725836988 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:63) - 14725836988 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_bloqueopago]
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:64) - 14725836988 Ejecutando SP 
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:65) - 14725836988 [INPUT] 
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:96) - 14725836988 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:97) - 14725836988 [OUTPUT]: 
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:98) - 14725836988 [po_cod_err] = 0
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:99) - 14725836988 [po_des_err] = OK
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:106) - 14725836988 [SIZE LIST] = 2
+[INFO ] [2019-05-02 15:02:39] (MotorPromDAOImpl:124) - 14725836988 - Fin  - Tiempo total de proceso : 146 milisegundos.
+[INFO ] [2019-05-02 15:02:39] (MainServiceImpl:96) - 14725836988- datos obtenidos a desactivar 2
+[INFO ] [2019-05-02 15:02:39] (MainServiceImpl:154) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-02 15:02:39] (INTCOP0223ClientImpl:48) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [INICIO] - WS: http://172.19.172.37:80/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:39] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:40] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-05-02 15:02:41] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-05-02 15:02:41] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType
+[INFO ] [2019-05-02 15:02:41] (INTCOP0223ClientImpl:99) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-02T15:02:40.909-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-02T15:02:40.909-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000005011</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-02 15:02:41] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-02 15:02:42] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[ERROR] [2019-05-02 15:02:47] (INTCOP0223ClientImpl:107) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] ERROR: [Exception] 1javax.xml.ws.WebServiceException: java.net.SocketTimeoutException: connect timed out
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.readResponseCodeAndMessage(HttpClientTransport.java:195)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.createResponsePacket(HttpTransportPipe.java:226)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:217)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:124)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:862)
+	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:448)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:178)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:93)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:77)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:147)
+	at com.sun.proxy.$Proxy44.retrieveSubscriptions(Unknown Source)
+	at claro.com.pe.bloqueosusp.client.INTCOP0223ClientImpl.retrieveSubscriptionsResponse(INTCOP0223ClientImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.retrieveSubscriptions(MainServiceImpl.java:176)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.descativaPoBloqueoSuspension(MainServiceImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.run(MainServiceImpl.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.bloqueosusp.MainClass.launch(MainClass.java:80)
+	at claro.com.pe.bloqueosusp.MainClass.main(MainClass.java:39)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:667)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1535)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.readResponseCodeAndMessage(HttpClientTransport.java:191)
+	... 31 more
+
+[ERROR] [2019-05-02 15:02:47] (INTCOP0223ClientImpl:110) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] Error producido por timeout en el Servicio http://172.19.172.37:80/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:47] (INTCOP0223ClientImpl:119) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:47] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 7708.0
+[INFO ] [2019-05-02 15:02:47] (MainServiceImpl:231) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988]  ======= Error Invocacion INT-COP-0223 ======Error: Superó tiempo de espera del WS 'INT-COP-0223' - Metodo 'retrieveSubscriptions'
+[ERROR] [2019-05-02 15:02:47] (MainServiceImpl:141) - 14725836988Error Interno: update exception
+java.lang.Exception: update exception
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.retrieveSubscriptions(MainServiceImpl.java:232)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.descativaPoBloqueoSuspension(MainServiceImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.run(MainServiceImpl.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.bloqueosusp.MainClass.launch(MainClass.java:80)
+	at claro.com.pe.bloqueosusp.MainClass.main(MainClass.java:39)
+[INFO ] [2019-05-02 15:02:47] (MainServiceImpl:145) - 14725836988[Fin de metodo: run]
+[INFO ] [2019-05-02 15:02:47] (MainServiceImpl:52) - 14725836988[se procede  al Reintento :]1
+[INFO ] [2019-05-02 15:02:47] (MainServiceImpl:91) - 14725836988INICIO  por : Descativar Bono Por Bloqueo/Suspension
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:47) - 14725836988[obtener Bonos Por Baja Contrato] [INICIO] - METODO: obtener Bonos Por Baja Contrato
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:61) - 14725836988 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:62) - 14725836988 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:63) - 14725836988 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_bloqueopago]
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:64) - 14725836988 Ejecutando SP 
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:65) - 14725836988 [INPUT] 
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:96) - 14725836988 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:97) - 14725836988 [OUTPUT]: 
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:98) - 14725836988 [po_cod_err] = 0
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:99) - 14725836988 [po_des_err] = OK
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:106) - 14725836988 [SIZE LIST] = 2
+[INFO ] [2019-05-02 15:02:47] (MotorPromDAOImpl:124) - 14725836988 - Fin  - Tiempo total de proceso : 37 milisegundos.
+[INFO ] [2019-05-02 15:02:47] (MainServiceImpl:96) - 14725836988- datos obtenidos a desactivar 2
+[INFO ] [2019-05-02 15:02:47] (MainServiceImpl:154) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-02 15:02:47] (INTCOP0223ClientImpl:48) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [INICIO] - WS: http://172.19.172.37:80/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:47] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:48] (INTCOP0223ClientImpl:99) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-02T15:02:48.158-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-02T15:02:48.158-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000005011</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-02 15:02:48] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-02 15:02:48] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[ERROR] [2019-05-02 15:02:53] (INTCOP0223ClientImpl:107) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] ERROR: [Exception] 1com.sun.xml.internal.ws.client.ClientTransportException: Error de transporte HTTP: java.net.SocketTimeoutException: connect timed out
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:117)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:208)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:124)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:862)
+	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:448)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:178)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:93)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:77)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:147)
+	at com.sun.proxy.$Proxy44.retrieveSubscriptions(Unknown Source)
+	at claro.com.pe.bloqueosusp.client.INTCOP0223ClientImpl.retrieveSubscriptionsResponse(INTCOP0223ClientImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.retrieveSubscriptions(MainServiceImpl.java:176)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.descativaPoBloqueoSuspension(MainServiceImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.run(MainServiceImpl.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.bloqueosusp.MainClass.launch(MainClass.java:80)
+	at claro.com.pe.bloqueosusp.MainClass.main(MainClass.java:39)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1282)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1257)
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:104)
+	... 30 more
+
+[ERROR] [2019-05-02 15:02:53] (INTCOP0223ClientImpl:110) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] Error producido por timeout en el Servicio http://172.19.172.37:80/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:53] (INTCOP0223ClientImpl:119) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:53] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 6061.0
+[INFO ] [2019-05-02 15:02:53] (MainServiceImpl:231) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988]  ======= Error Invocacion INT-COP-0223 ======Error: Superó tiempo de espera del WS 'INT-COP-0223' - Metodo 'retrieveSubscriptions'
+[ERROR] [2019-05-02 15:02:53] (MainServiceImpl:141) - 14725836988Error Interno: update exception
+java.lang.Exception: update exception
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.retrieveSubscriptions(MainServiceImpl.java:232)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.descativaPoBloqueoSuspension(MainServiceImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.run(MainServiceImpl.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.bloqueosusp.MainClass.launch(MainClass.java:80)
+	at claro.com.pe.bloqueosusp.MainClass.main(MainClass.java:39)
+[INFO ] [2019-05-02 15:02:53] (MainServiceImpl:145) - 14725836988[Fin de metodo: run]
+[INFO ] [2019-05-02 15:02:53] (MainServiceImpl:52) - 14725836988[se procede  al Reintento :]2
+[INFO ] [2019-05-02 15:02:53] (MainServiceImpl:91) - 14725836988INICIO  por : Descativar Bono Por Bloqueo/Suspension
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:47) - 14725836988[obtener Bonos Por Baja Contrato] [INICIO] - METODO: obtener Bonos Por Baja Contrato
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:61) - 14725836988 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:62) - 14725836988 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:63) - 14725836988 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_bloqueopago]
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:64) - 14725836988 Ejecutando SP 
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:65) - 14725836988 [INPUT] 
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:96) - 14725836988 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:97) - 14725836988 [OUTPUT]: 
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:98) - 14725836988 [po_cod_err] = 0
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:99) - 14725836988 [po_des_err] = OK
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:106) - 14725836988 [SIZE LIST] = 2
+[INFO ] [2019-05-02 15:02:53] (MotorPromDAOImpl:124) - 14725836988 - Fin  - Tiempo total de proceso : 71 milisegundos.
+[INFO ] [2019-05-02 15:02:53] (MainServiceImpl:96) - 14725836988- datos obtenidos a desactivar 2
+[INFO ] [2019-05-02 15:02:53] (MainServiceImpl:154) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-05-02 15:02:53] (INTCOP0223ClientImpl:48) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [INICIO] - WS: http://172.19.172.37:80/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:53] (INTCOP0223ClientImpl:49) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:54] (INTCOP0223ClientImpl:99) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>14725836988</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>14725836988</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-02T15:02:54.259-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>14725836988</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-02T15:02:54.259-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000005011</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-05-02 15:02:54] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-02 15:02:54] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[ERROR] [2019-05-02 15:02:59] (INTCOP0223ClientImpl:107) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] ERROR: [Exception] 1com.sun.xml.internal.ws.client.ClientTransportException: Error de transporte HTTP: java.net.SocketTimeoutException: connect timed out
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:117)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:208)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:124)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:862)
+	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:448)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:178)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:93)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:77)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:147)
+	at com.sun.proxy.$Proxy44.retrieveSubscriptions(Unknown Source)
+	at claro.com.pe.bloqueosusp.client.INTCOP0223ClientImpl.retrieveSubscriptionsResponse(INTCOP0223ClientImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.retrieveSubscriptions(MainServiceImpl.java:176)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.descativaPoBloqueoSuspension(MainServiceImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.run(MainServiceImpl.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.bloqueosusp.MainClass.launch(MainClass.java:80)
+	at claro.com.pe.bloqueosusp.MainClass.main(MainClass.java:39)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1282)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1257)
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:104)
+	... 30 more
+
+[ERROR] [2019-05-02 15:02:59] (INTCOP0223ClientImpl:110) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] Error producido por timeout en el Servicio http://172.19.172.37:80/v1.0/postventa/customer_Domain/custInfo/bssAgreementManagement/retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:59] (INTCOP0223ClientImpl:119) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-05-02 15:02:59] (INTCOP0223ClientImpl:120) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 6028.0
+[INFO ] [2019-05-02 15:02:59] (MainServiceImpl:231) - [Descativar Bono Por Bloqueo/Suspension idTx=14725836988]  ======= Error Invocacion INT-COP-0223 ======Error: Superó tiempo de espera del WS 'INT-COP-0223' - Metodo 'retrieveSubscriptions'
+[ERROR] [2019-05-02 15:02:59] (MainServiceImpl:141) - 14725836988Error Interno: update exception
+java.lang.Exception: update exception
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.retrieveSubscriptions(MainServiceImpl.java:232)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.descativaPoBloqueoSuspension(MainServiceImpl.java:104)
+	at claro.com.pe.bloqueosusp.service.MainServiceImpl.run(MainServiceImpl.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.bloqueosusp.MainClass.launch(MainClass.java:80)
+	at claro.com.pe.bloqueosusp.MainClass.main(MainClass.java:39)
+[INFO ] [2019-05-02 15:02:59] (MainServiceImpl:145) - 14725836988[Fin de metodo: run]
+[INFO ] [2019-05-02 15:02:59] (MainServiceImpl:70) - 14725836988Error al ejecutar Transaccion
+[INFO ] [2019-05-02 15:02:59] (MainServiceImpl:73) - 14725836988[FIN - SH06_MOTPROM_ValidaDes_BajaContrato ]
+[ERROR] [2019-05-02 15:02:59] (MainClass:82) - [launch idTx=14725836988]Error: java.lang.Exception: update exception.
+[INFO ] [2019-05-02 15:02:59] (MainClass:86) - [launch idTx=14725836988][FIN de metodo: launch] Tiempo total de proceso(ms): 21108 milisegundos.
+[INFO ] [2019-05-02 15:02:59] (MainClass:46) - [main idTx=14725836988][ERROR: ENVIAR CORREO CON DETALLE]
+[INFO ] [2019-05-02 15:02:59] (MainClass:52) - [main idTx=14725836988][FIN de metodo: main] Tiempo total de proceso(ms): 21733 milisegundos.
+[INFO ] [2019-05-02 15:02:59] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@2d38eb89: startup date [Thu May 02 15:02:37 COT 2019]; root of context hierarchy
+[INFO ] [2019-05-02 15:02:59] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e9ba398: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,INTCOP0223ClientImpl,motorPromDAOImpl,mainClass,mainServiceImpl,EAIUtil,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy

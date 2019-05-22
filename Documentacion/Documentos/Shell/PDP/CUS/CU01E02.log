@@ -1,0 +1,476 @@
+[INFO ] [2019-03-20 20:50:20] (MainClass:66) - [loadLog4J idTx=1212122][INICIO de metodo: loadLog4J]
+[INFO ] [2019-03-20 20:50:20] (MainClass:67) - [loadLog4J idTx=1212122][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 18 milisegundos.
+[INFO ] [2019-03-20 20:50:20] (MainClass:40) - [main idTx=1212122][INICIO de metodo: main]
+[INFO ] [2019-03-20 20:50:20] (MainClass:76) - [launch idTx=1212122][INICIO de metodo: launch]
+[INFO ] [2019-03-20 20:50:21] (MainServiceImpl:47) - 1212122[INICIO - SH03_MOTPROM_ValidaDes_CambioPlan ]
+[INFO ] [2019-03-20 20:50:21] (MainServiceImpl:56) - 1212122  CAMBIOPLANLINEANOMATRIZ
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:53) - 1212122[obtenerCambioPlan Titularidad] [INICIO] - METODO: obtenerCambioPlan Titularidad
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:72) - 1212122 Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:73) - 1212122 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:74) - 1212122 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_titularidad]
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:75) - 1212122 Ejecutando SP 
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:76) - 1212122 [INPUT] 
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:77) - 1212122 [pi_fec_proc]= [13/03/2019]
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:78) - 1212122 [pi_dias]= [20]
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:113) - 1212122 Se ejecuto exitosamente el SP
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:114) - 1212122 [OUTPUT]: 
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:115) - 1212122 [po_cod_err] = 0
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:116) - 1212122 [po_des_err] = OK
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:123) - 1212122 [SIZE LIST] = 3
+[INFO ] [2019-03-20 20:50:21] (MotorPromDAOImpl:162) - 1212122 - Fin del método registrar- Tiempo total de proceso : 104 milisegundos.
+[INFO ] [2019-03-20 20:50:21] (MainServiceImpl:176) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  ======= INICIO - Prueba  INT-CAA-0101 ======
+[INFO ] [2019-03-20 20:50:21] (INTCAA0101ClientImpl:53) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] [GetCustomerInfo] [INICIO] - METODO: GetCustomerInfo
+[INFO ] [2019-03-20 20:50:23] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-03-20 20:50:23] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-03-20 20:50:23] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType
+[INFO ] [2019-03-20 20:50:24] (INTCAA0101ClientImpl:107) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-20T20:50:23.075-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESGetCustomerInfo.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-20T20:50:23.075-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51983711898</ID>
+      </_service>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <name>4</name>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+[INFO ] [2019-03-20 20:50:24] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-20 20:50:24] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-20 20:50:24] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoResponseType
+[INFO ] [2019-03-20 20:50:25] (INTCAA0101ClientImpl:114) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] 
+Datos de [RESPONSE]:
+<pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-03-20T19:41:02.041-05:00</date>
+    <errorDetails/>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_customer>
+        <_party>
+          <partyId>10495455253</partyId>
+          <_partyExtension>
+            <identificationType>2</identificationType>
+          </_partyExtension>
+          <_partyUser>
+            <_partyUserExtension>
+              <type>1</type>
+            </_partyUserExtension>
+          </_partyUser>
+        </_party>
+        <_partyRoleCategory>
+          <categoryName>null</categoryName>
+        </_partyRoleCategory>
+        <_additionalPartyAttributes>
+          <ID>IND00003</ID>
+        </_additionalPartyAttributes>
+        <_contactMedium>
+          <_partyAccountContact>
+            <contactType>4</contactType>
+          </_partyAccountContact>
+        </_contactMedium>
+        <ID>CUST0000000101</ID>
+        <customerStatus>2</customerStatus>
+        <_customerExtension>
+          <blackListCode>Affiliation</blackListCode>
+          <blackListReason>jo</blackListReason>
+          <_attributeValuePair>
+            <attributeName>protectedData</attributeName>
+            <attributeValue>2</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>doNotMail</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>doNotEmail</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>doNotPhone</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>preferredDay</attributeName>
+            <attributeValue>Monday</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>preferredTime</attributeName>
+            <attributeValue>Morning</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>sendMaterial</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+        </_customerExtension>
+      </_customer>
+      <_paymentPlan>
+        <_paymentPlanExtension>
+          <description>1</description>
+        </_paymentPlanExtension>
+      </_paymentPlan>
+      <customerPayment>
+        <_customer>
+          <_customerExtension>
+            <_attributeValuePair>
+              <attributeName>paymentResponsible</attributeName>
+              <attributeValue>true</attributeValue>
+            </_attributeValuePair>
+            <_attributeValuePair>
+              <attributeName>customerPaymentBehavior</attributeName>
+              <attributeValue>2</attributeValue>
+            </_attributeValuePair>
+          </_customerExtension>
+        </_customer>
+      </customerPayment>
+    </_customerAccount>
+    <_organization>
+      <_organizationName>
+        <tradingName>56467646-M</tradingName>
+        <nameType>companyName</nameType>
+      </_organizationName>
+    </_organization>
+    <_individualIdentification>
+      <_individual>
+        <gender>Male</gender>
+        <placeOfBirth>Test</placeOfBirth>
+        <maritalStatus>1</maritalStatus>
+        <aliveDuring>
+          <startDateTime>1991-05-25T00:00:00</startDateTime>
+        </aliveDuring>
+        <_individualExtension>
+          <jobTitle>Goleadorsote</jobTitle>
+        </_individualExtension>
+        <_individualName>
+          <formOfAddress>1</formOfAddress>
+          <givenNames>Saurabhi Singh</givenNames>
+          <familyNames>Saurabhi</familyNames>
+          <_individualNameExtension>
+            <email>sau@gml.com</email>
+          </_individualNameExtension>
+        </_individualName>
+      </_individual>
+    </_individualIdentification>
+    <_telephoneNumber>
+      <number>564676464</number>
+    </_telephoneNumber>
+    <_listSocialNetworksType>
+      <_individualIdentification>
+        <_individual>
+          <_individualExtension>
+            <_attributeValuePair>
+              <attributeName>socialNetworktId</attributeName>
+              <attributeValue>Twitter</attributeValue>
+            </_attributeValuePair>
+          </_individualExtension>
+          <_individualName>
+            <preferredGivenName>chechorizovTw</preferredGivenName>
+          </_individualName>
+        </_individual>
+      </_individualIdentification>
+    </_listSocialNetworksType>
+    <_listSocialNetworksType>
+      <_individualIdentification>
+        <_individual>
+          <_individualExtension>
+            <_attributeValuePair>
+              <attributeName>socialNetworktId</attributeName>
+              <attributeValue>Facebook</attributeValue>
+            </_attributeValuePair>
+          </_individualExtension>
+          <_individualName>
+            <preferredGivenName>SaurabhiS</preferredGivenName>
+          </_individualName>
+        </_individual>
+      </_individualIdentification>
+    </_listSocialNetworksType>
+  </responseData>
+</pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoResponseType>
+[INFO ] [2019-03-20 20:50:25] (INTCAA0101ClientImpl:130) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] [GetCustomerInfo] [FIN] - METODO: GetCustomerInfo
+[INFO ] [2019-03-20 20:50:25] (INTCAA0101ClientImpl:131) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] [GetCustomerInfo]  ::FIN - TiempoEjecucion(ms): 3678.0
+[INFO ] [2019-03-20 20:50:25] (MainServiceImpl:202) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  ======= FIN - Prueba  INT-CAA-0101 ======
+[INFO ] [2019-03-20 20:50:25] (MainServiceImpl:127) - 1212122 Bono a Desactivar : 100036
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:174) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:187) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:188) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:189) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:190) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:191) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [INPUT] 
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:192) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_contract_id]= [92]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:193) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_bono_id]= [100036]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:194) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_bono_id]= [Desactivacion por cambio de  Titularidad]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:217) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:218) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:219) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:220) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:245) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  - Fin del método registrar- Tiempo total de proceso : 13 milisegundos.
+[INFO ] [2019-03-20 20:50:25] (MainServiceImpl:131) - 1212122 Exito  al desactivar Bono 100036
+[INFO ] [2019-03-20 20:50:25] (MainServiceImpl:104) - 1212122 Linea Se encuentra Cargada: 51983711898
+[INFO ] [2019-03-20 20:50:25] (MainServiceImpl:127) - 1212122 Bono a Desactivar : 100037
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:174) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:187) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:188) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:189) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:190) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:191) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [INPUT] 
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:192) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_contract_id]= [92]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:193) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_bono_id]= [100037]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:194) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_bono_id]= [Desactivacion por cambio de  Titularidad]
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:217) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:218) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:219) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:220) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-03-20 20:50:25] (MotorPromDAOImpl:245) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  - Fin del método registrar- Tiempo total de proceso : 10 milisegundos.
+[INFO ] [2019-03-20 20:50:25] (MainServiceImpl:131) - 1212122 Exito  al desactivar Bono 100037
+[INFO ] [2019-03-20 20:50:25] (MainServiceImpl:176) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  ======= INICIO - Prueba  INT-CAA-0101 ======
+[INFO ] [2019-03-20 20:50:25] (INTCAA0101ClientImpl:53) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] [GetCustomerInfo] [INICIO] - METODO: GetCustomerInfo
+[INFO ] [2019-03-20 20:50:26] (INTCAA0101ClientImpl:107) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>1212122</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>1212122</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-20T20:50:26.437-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESGetCustomerInfo.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>1212122</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-20T20:50:26.437-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>994883764</ID>
+      </_service>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <name>4</name>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+[INFO ] [2019-03-20 20:50:26] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-20 20:50:26] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-20 20:50:26] (INTCAA0101ClientImpl:114) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] 
+Datos de [RESPONSE]:
+<pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-03-20T19:41:02.041-05:00</date>
+    <errorDetails/>
+  </responseStatus>
+  <responseData>
+    <_customerAccount>
+      <_customer>
+        <_party>
+          <partyId>10495455253</partyId>
+          <_partyExtension>
+            <identificationType>2</identificationType>
+          </_partyExtension>
+          <_partyUser>
+            <_partyUserExtension>
+              <type>1</type>
+            </_partyUserExtension>
+          </_partyUser>
+        </_party>
+        <_partyRoleCategory>
+          <categoryName>null</categoryName>
+        </_partyRoleCategory>
+        <_additionalPartyAttributes>
+          <ID>IND00003</ID>
+        </_additionalPartyAttributes>
+        <_contactMedium>
+          <_partyAccountContact>
+            <contactType>4</contactType>
+          </_partyAccountContact>
+        </_contactMedium>
+        <ID>CUST0000000101</ID>
+        <customerStatus>2</customerStatus>
+        <_customerExtension>
+          <blackListCode>Affiliation</blackListCode>
+          <blackListReason>jo</blackListReason>
+          <_attributeValuePair>
+            <attributeName>protectedData</attributeName>
+            <attributeValue>2</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>doNotMail</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>doNotEmail</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>doNotPhone</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>preferredDay</attributeName>
+            <attributeValue>Monday</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>preferredTime</attributeName>
+            <attributeValue>Morning</attributeValue>
+          </_attributeValuePair>
+          <_attributeValuePair>
+            <attributeName>sendMaterial</attributeName>
+            <attributeValue>false</attributeValue>
+          </_attributeValuePair>
+        </_customerExtension>
+      </_customer>
+      <_paymentPlan>
+        <_paymentPlanExtension>
+          <description>1</description>
+        </_paymentPlanExtension>
+      </_paymentPlan>
+      <customerPayment>
+        <_customer>
+          <_customerExtension>
+            <_attributeValuePair>
+              <attributeName>paymentResponsible</attributeName>
+              <attributeValue>true</attributeValue>
+            </_attributeValuePair>
+            <_attributeValuePair>
+              <attributeName>customerPaymentBehavior</attributeName>
+              <attributeValue>2</attributeValue>
+            </_attributeValuePair>
+          </_customerExtension>
+        </_customer>
+      </customerPayment>
+    </_customerAccount>
+    <_organization>
+      <_organizationName>
+        <tradingName>56467646-M</tradingName>
+        <nameType>companyName</nameType>
+      </_organizationName>
+    </_organization>
+    <_individualIdentification>
+      <_individual>
+        <gender>Male</gender>
+        <placeOfBirth>Test</placeOfBirth>
+        <maritalStatus>1</maritalStatus>
+        <aliveDuring>
+          <startDateTime>1991-05-25T00:00:00</startDateTime>
+        </aliveDuring>
+        <_individualExtension>
+          <jobTitle>Goleadorsote</jobTitle>
+        </_individualExtension>
+        <_individualName>
+          <formOfAddress>1</formOfAddress>
+          <givenNames>Saurabhi Singh</givenNames>
+          <familyNames>Saurabhi</familyNames>
+          <_individualNameExtension>
+            <email>sau@gml.com</email>
+          </_individualNameExtension>
+        </_individualName>
+      </_individual>
+    </_individualIdentification>
+    <_telephoneNumber>
+      <number>564676464</number>
+    </_telephoneNumber>
+    <_listSocialNetworksType>
+      <_individualIdentification>
+        <_individual>
+          <_individualExtension>
+            <_attributeValuePair>
+              <attributeName>socialNetworktId</attributeName>
+              <attributeValue>Twitter</attributeValue>
+            </_attributeValuePair>
+          </_individualExtension>
+          <_individualName>
+            <preferredGivenName>chechorizovTw</preferredGivenName>
+          </_individualName>
+        </_individual>
+      </_individualIdentification>
+    </_listSocialNetworksType>
+    <_listSocialNetworksType>
+      <_individualIdentification>
+        <_individual>
+          <_individualExtension>
+            <_attributeValuePair>
+              <attributeName>socialNetworktId</attributeName>
+              <attributeValue>Facebook</attributeValue>
+            </_attributeValuePair>
+          </_individualExtension>
+          <_individualName>
+            <preferredGivenName>SaurabhiS</preferredGivenName>
+          </_individualName>
+        </_individual>
+      </_individualIdentification>
+    </_listSocialNetworksType>
+  </responseData>
+</pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoResponseType>
+[INFO ] [2019-03-20 20:50:26] (INTCAA0101ClientImpl:130) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] [GetCustomerInfo] [FIN] - METODO: GetCustomerInfo
+[INFO ] [2019-03-20 20:50:26] (INTCAA0101ClientImpl:131) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122] [GetCustomerInfo]  ::FIN - TiempoEjecucion(ms): 1134.0
+[INFO ] [2019-03-20 20:50:26] (MainServiceImpl:202) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  ======= FIN - Prueba  INT-CAA-0101 ======
+[INFO ] [2019-03-20 20:50:26] (MainServiceImpl:127) - 1212122 Bono a Desactivar : 6932
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:174) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:187) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:188) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:189) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:190) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Ejecutando SP 
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:191) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [INPUT] 
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:192) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_contract_id]= [104]
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:193) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_bono_id]= [6932]
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:194) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [pi_bono_id]= [Desactivacion por cambio de  Titularidad]
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:217) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:218) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [OUTPUT]: 
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:219) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [po_cod_err] = 0
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:220) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  [po_des_err] = OK
+[INFO ] [2019-03-20 20:50:26] (MotorPromDAOImpl:245) - [Descativar Bono Por :Desactivacion por cambio de  Titularidad idTx=1212122]  - Fin del método registrar- Tiempo total de proceso : 11 milisegundos.
+[INFO ] [2019-03-20 20:50:26] (MainServiceImpl:131) - 1212122 Exito  al desactivar Bono 6932
+[INFO ] [2019-03-20 20:50:26] (MainServiceImpl:147) - 1212122FIN  POR : Desactivacion por cambio de  Titularidad
+[INFO ] [2019-03-20 20:50:26] (MainServiceImpl:162) - 1212122[Fin de metodo: run]
+[INFO ] [2019-03-20 20:50:26] (MainServiceImpl:78) - 1212122[Fin - SH03_MOTPROM_ValidaDes_CambioPlan ]
+[INFO ] [2019-03-20 20:50:26] (MainClass:84) - [launch idTx=1212122][FIN de metodo: launch] Tiempo total de proceso(ms): 5647 milisegundos.
+[INFO ] [2019-03-20 20:50:26] (MainClass:51) - [main idTx=1212122][FIN de metodo: main] Tiempo total de proceso(ms): 6309 milisegundos.
+[INFO ] [2019-03-20 20:50:26] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@2d38eb89: startup date [Wed Mar 20 20:50:20 COT 2019]; root of context hierarchy
+[INFO ] [2019-03-20 20:50:26] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e9ba398: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,INTCAA0101ClientImpl,motorPromDAOImpl,mainClass,mainServiceImpl,EAIUtil,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy

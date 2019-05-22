@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="SH06_Baja_Contrato" default="compile">  <!-- EDITABLE -->
+
+	<!-- PROPIEDADES -->
+	<property name="constructor" value="CLARO" />                
+	<property name="rutaClasePrincipal"
+		value="claro.com.pe.bajacontrato.MainClass" />  <!-- EDITABLE -->
+	<property name="jarName" value="SH06_MOTPROM_ValidaDes_BajaContrato.jar" />	<!-- EDITABLE -->
+
+	<property name="rutaResources" value="./resources" />
+	<property name="rutaDestinoJAR" value="jar/${jarName}" />
+	<property name="directorioExportLIB" value="LIB/" />
+
+	<!-- CONFIGURACION -->
+	<path id="idLibreriaProjecto">
+		<fileset dir="lib/">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<manifestclasspath property="lib.list" jarfile=".">
+		<classpath refid="idLibreriaProjecto" />
+	</manifestclasspath>
+
+	<echo>........:::: MAPEANDO LIBRERIAS ::::........</echo>
+	<pathconvert property="string.classpath" pathsep=" ">
+		<path refid="idLibreriaProjecto" />
+		<mapper>
+			<chainedmapper>
+				<flattenmapper />
+				<!-- AGREGA PREFIJO .LIB [MANIFEST] -->
+				<globmapper from="*" to="${directorioExportLIB}/*" />
+			</chainedmapper>
+		</mapper>
+	</pathconvert>
+
+	<echo>........:::: COMPILANDO ::::........</echo>
+	<target name="compile">
+
+		<delete dir="target" />
+		<mkdir dir="target/classes" />
+		<mkdir dir="target/jar" />
+
+		<javac srcdir="src" destdir="target/classes" includeantruntime="false"
+			deprecation="true" debug="true" optimize="true" encoding="iso-8859-1">
+			<classpath>
+				<path refid="idLibreriaProjecto" />
+			</classpath>
+		</javac>
+
+		<echo>........:::: GENERANDO 'MANIFEST.MF' ::::........</echo>
+		<jar destfile="target/${rutaDestinoJAR}" basedir="target/classes">
+			<fileset dir="${rutaResources}" />
+			<manifest>
+				<attribute name="Built-By" value="${constructor}" />
+				<attribute name="Class-Path" value="${string.classpath}" />
+				<attribute name="Main-Class" value="${rutaClasePrincipal}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<echo>........:::: GENERANDO '.JAR' ::::........</echo>
+	<target name="run">
+		<java jar="${rutaDestinoJAR}" fork="true" />
+	</target>
+</project>

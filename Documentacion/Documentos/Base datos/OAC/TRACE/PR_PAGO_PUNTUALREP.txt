@@ -1,0 +1,125 @@
+
+TKPROF: Release 11.2.0.3.0 - Development on Wed May 22 16:21:07 2019
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Trace file: TEST_ora_25906_PR_PAGO_PUNTUALREP.trc
+Sort options: default
+
+********************************************************************************
+count    = number of times OCI procedure was executed
+cpu      = cpu time in seconds executing 
+elapsed  = elapsed time in seconds executing
+disk     = number of physical reads of buffers from disk
+query    = number of buffers gotten for consistent read
+current  = number of buffers gotten in current mode (usually for update)
+rows     = number of rows processed by the fetch or execute call
+********************************************************************************
+
+SQL ID: bqg91jyybvzt0 Plan Hash: 0
+
+alter session  set nls_date_format='DD/MM/YYYY'
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.00          0          0          0           0
+Execute      1      0.00       0.00          0          0          0           0
+Fetch        0      0.00       0.00          0          0          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        2      0.00       0.00          0          0          0           0
+
+Misses in library cache during parse: 0
+Parsing user id: 173  
+********************************************************************************
+
+declare
+pi_customer_id     VARCHAR2(200);
+pi_pin_cantidad_meses     number;
+po_cod_err   VARCHAR2(200);
+po_des_err   Varchar2(200);
+po_pov_indicador_pp       number;
+begin
+ts_oac_cl_cons_pago_pkg.pr_pago_puntualrep(pi_customer_id,
+                     pi_pin_cantidad_meses ,
+                     po_cod_err ,
+                     po_des_err,
+                     po_pov_indicador_pp);
+end;
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.01       0.01          0          0          0           0
+Execute      1      0.00       0.00          0          0          0           1
+Fetch        0      0.00       0.00          0          0          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        2      0.01       0.01          0          0          0           1
+
+Misses in library cache during parse: 1
+Optimizer mode: ALL_ROWS
+Parsing user id: 173  
+********************************************************************************
+
+SQL ID: 0pgs023t72bmb Plan Hash: 0
+
+ALTER SESSION SET SQL_TRACE = FALSE
+
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        1      0.00       0.00          0          0          0           0
+Execute      1      0.00       0.00          0          0          0           0
+Fetch        0      0.00       0.00          0          0          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        2      0.00       0.00          0          0          0           0
+
+Misses in library cache during parse: 1
+Optimizer mode: ALL_ROWS
+Parsing user id: 173  
+
+
+
+********************************************************************************
+
+OVERALL TOTALS FOR ALL NON-RECURSIVE STATEMENTS
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        3      0.01       0.01          0          0          0           0
+Execute      3      0.00       0.00          0          0          0           1
+Fetch        0      0.00       0.00          0          0          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        6      0.01       0.01          0          0          0           1
+
+Misses in library cache during parse: 2
+
+
+OVERALL TOTALS FOR ALL RECURSIVE STATEMENTS
+
+call     count       cpu    elapsed       disk      query    current        rows
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+Parse        0      0.00       0.00          0          0          0           0
+Execute      0      0.00       0.00          0          0          0           0
+Fetch        0      0.00       0.00          0          0          0           0
+------- ------  -------- ---------- ---------- ---------- ----------  ----------
+total        0      0.00       0.00          0          0          0           0
+
+Misses in library cache during parse: 0
+
+    3  user  SQL statements in session.
+    0  internal SQL statements in session.
+    3  SQL statements in session.
+********************************************************************************
+Trace file: TEST_ora_25906_PR_PAGO_PUNTUALREP.trc
+Trace file compatibility: 11.1.0.7
+Sort options: default
+
+       1  session in tracefile.
+       3  user  SQL statements in trace file.
+       0  internal SQL statements in trace file.
+       3  SQL statements in trace file.
+       3  unique SQL statements in trace file.
+      62  lines in trace file.
+       1  elapsed seconds in trace file.
+
+

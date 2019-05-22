@@ -1,0 +1,37 @@
+
+select * from APPS.ra_customer_trx_all
+select * from APPS.ar_payment_schedules_all
+select to_date(to_char(sysdate,'YYYYMM')|| '01', 'YYYYMMDD') from dual --01/05/2019
+select trunc(sysdate) from dual --01/05/2019
+select to_date('31/12/2019','dd/mm/yyyy') from dual --01/05/2019
+           
+           select rct.customer_trx_id, rct.trx_number, aps.due_date,aps.cust_trx_type_id,aps.customer_id,
+                  hca.account_number
+			            from APPS.ra_customer_trx_all      rct , APPS.ar_payment_schedules_all aps,
+                  APPS.hz_cust_accounts hca
+                 where 1 = 1
+                 and aps.status           = 'CL'
+                 and rct.customer_trx_id  = aps.customer_trx_id
+                 and aps.customer_id=hca.cust_account_id
+                 --and aps.due_date >= trunc(sysdate)
+                 and aps.customer_id      = 4664436
+                 and aps.cust_trx_type_id = 1010 
+                 and aps.due_date        >= ADD_MONTHS(to_date(to_char(sysdate,'YYYYMM')|| '01', 'YYYYMMDD'), -3)
+       
+   select aps.customer_id,aps.cust_trx_type_id,aps.due_date,aps.status from
+     APPS.ar_payment_schedules_all aps where aps.customer_trx_id= 6914822 and aps.customer_id= 4664436  for  update  
+   select rct.customer_trx_id,rct.trx_number from APPS.ra_customer_trx_all rct where rct.customer_trx_id=6914822
+   select  * from APPS.hz_cust_accounts hca  where hca.cust_account_id=4664436
+   
+       select case when max(ara.apply_date) > to_date('04/04/2019','dd/mm/yyyy') then 1 else 0 end
+				     , max(ara.apply_date)
+				  from APPS.ar_receivable_applications_all ara
+				 where ara.applied_customer_trx_id = 6914822
+				   and ara.application_type        = 'CASH'
+					 and ara.display                 = 'Y';
+           
+           select ara.receivable_application_id,ara.apply_date,ara.applied_customer_trx_id,ara.application_type
+           from APPS.ar_receivable_applications_all ara where  ara.applied_customer_trx_id = 6914822 for update
+            
+           select  hca.account_number from APPS.hz_cust_accounts hca where hca.cust_account_id=4664436 
+           hca.account_number =' 71775721'

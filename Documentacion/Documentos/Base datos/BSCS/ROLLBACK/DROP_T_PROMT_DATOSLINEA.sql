@@ -1,0 +1,1 @@
+DROP TYPE  MOTPROM.t_prom_venta_lista_one FORCE;

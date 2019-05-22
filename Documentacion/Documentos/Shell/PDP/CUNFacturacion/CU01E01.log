@@ -1,0 +1,276 @@
+[INFO ] [2019-03-21 14:21:24] (MainClass:63) - [loadLog4J idTx=20190321142123][INICIO de metodo: loadLog4J]
+[INFO ] [2019-03-21 14:21:24] (MainClass:64) - [loadLog4J idTx=20190321142123][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 29 milisegundos.
+[INFO ] [2019-03-21 14:21:24] (MainClass:39) - [main idTx=20190321142123][INICIO de metodo: main]
+[INFO ] [2019-03-21 14:21:24] (MainClass:73) - [launch idTx=20190321142123][INICIO de metodo: launch]
+[INFO ] [2019-03-21 14:21:24] (MainServiceImpl:49) - 20190321142123[INICIO - SH09_MOTPROM_ValidaDes_Facturacion ]
+[INFO ] [2019-03-21 14:21:24] (MainServiceImpl:94) - 20190321142123INICIO  por : Desactivacion ciclo de facturación
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:49) - 20190321142123[obtener Cambio Plan Ciclo Facturacion] [INICIO] - METODO: obtener Cambio Plan Ciclo Facturacion
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:63) - 20190321142123 Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:64) - 20190321142123 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:65) - 20190321142123 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_facturacion]
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:66) - 20190321142123 Ejecutando SP 
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:67) - 20190321142123 [INPUT] 
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:68) - 20190321142123 [pi_fec_proc]= [25/02/2019]
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:69) - 20190321142123 [pi_dias]= [0]
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:104) - 20190321142123 Se ejecuto exitosamente el SP
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:105) - 20190321142123 [OUTPUT]: 
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:106) - 20190321142123 [po_cod_err] = 0
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:107) - 20190321142123 [po_des_err] = OK
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:114) - 20190321142123 [SIZE LIST] = 2
+[INFO ] [2019-03-21 14:21:24] (MotorPromDAOImpl:153) - 20190321142123 - Fin del método registrar- Tiempo total de proceso : 134 milisegundos.
+[INFO ] [2019-03-21 14:21:24] (MainServiceImpl:99) - 20190321142123- datos obtenidos a desactivar 2
+[INFO ] [2019-03-21 14:21:24] (MainServiceImpl:140) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-03-21 14:21:24] (INTCOP0223ClientImpl:47) - [Descativar Bono Por Cambio Plan idTx=20190321142123] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-03-21 14:21:25] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-03-21 14:21:26] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-03-21 14:21:26] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType
+[INFO ] [2019-03-21 14:21:26] (INTCOP0223ClientImpl:97) - [Descativar Bono Por Cambio Plan idTx=20190321142123] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190321142123</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190321142123</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-21T14:21:25.905-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190321142123</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-21T14:21:25.905-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001118</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-03-21 14:21:26] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-21 14:21:26] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-21 14:21:27] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType
+[INFO ] [2019-03-21 14:21:28] (INTCOP0223ClientImpl:103) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=20190321142123] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-03-21T14:21:27.659-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000001205</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_189_One</ID>
+                  <name>Claro Max 189</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000001118</ID>
+                  <interactionDate>
+                    <startDateTime>2018-09-12T19:44:46-05:00</startDateTime>
+                    <endDateTime>2018-09-12T19:44:46-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>2</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>01</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919951774</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>CUST0000000236</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-03-21 14:21:28] (INTCOP0223ClientImpl:117) - [Descativar Bono Por Cambio Plan idTx=20190321142123] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-03-21 14:21:28] (INTCOP0223ClientImpl:118) - [Descativar Bono Por Cambio Plan idTx=20190321142123] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 3476.0
+[INFO ] [2019-03-21 14:21:28] (MainServiceImpl:175) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-03-21 14:21:28] (MainServiceImpl:105) - 20190321142123Bono a Desactivar : 6932
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:166) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:179) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:180) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:181) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:182) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Ejecutando SP 
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:183) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [INPUT] 
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:184) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [pi_contract_id]= [104]
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:185) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [pi_bono_id]= [6932]
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:186) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [pi_bono_id]= [Desactivacion por Cambio de ciclo de facturación]
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:209) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:210) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [OUTPUT]: 
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:211) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [po_cod_err] = 0
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:212) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [po_des_err] = OK
+[INFO ] [2019-03-21 14:21:28] (MotorPromDAOImpl:237) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  - Fin del método registrar- Tiempo total de proceso : 13 milisegundos.
+[INFO ] [2019-03-21 14:21:28] (MainServiceImpl:109) - 20190321142123Exito  al desactivar Bono 6932
+[INFO ] [2019-03-21 14:21:28] (MainServiceImpl:140) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  ======= Inicia Invocacion  INT-COP-0223 ======
+[INFO ] [2019-03-21 14:21:28] (INTCOP0223ClientImpl:47) - [Descativar Bono Por Cambio Plan idTx=20190321142123] [retrieveSubscriptions] [INICIO] - METODO: retrieveSubscriptions
+[INFO ] [2019-03-21 14:21:28] (INTCOP0223ClientImpl:97) - [Descativar Bono Por Cambio Plan idTx=20190321142123] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190321142123</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190321142123</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-03-21T14:21:28.664-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190321142123</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-03-21T14:21:28.664-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+  <_customer>
+    <_customerAccount>
+      <_partyRole>
+        <_partyRoleProductOffering>
+          <_agreementItem>
+            <_agreement>
+              <ID>CONTR0000001118</ID>
+            </_agreement>
+          </_agreementItem>
+        </_partyRoleProductOffering>
+      </_partyRole>
+    </_customerAccount>
+  </_customer>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsRequestType>
+[INFO ] [2019-03-21 14:21:28] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-03-21 14:21:28] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-03-21 14:21:29] (INTCOP0223ClientImpl:103) - {} XML [RESPONSE]: response: [{}][Descativar Bono Por Cambio Plan idTx=20190321142123] 
+<pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <date>2019-03-21T14:21:29.482-05:00</date>
+  </responseStatus>
+  <responseData>
+    <_subscriptionsType>
+      <_customer>
+        <_customerAccount>
+          <_partyRole>
+            <partyRoleId>BA0000001205</partyRoleId>
+            <status>A</status>
+            <_partyRoleProductOffering>
+              <_agreementItem>
+                <_productOffering>
+                  <ID>claroMax_189_One</ID>
+                  <name>Claro Max 189</name>
+                </_productOffering>
+                <_agreement>
+                  <ID>CONTR0000001118</ID>
+                  <interactionDate>
+                    <startDateTime>2018-09-12T19:44:46-05:00</startDateTime>
+                    <endDateTime>2018-09-12T19:44:46-05:00</endDateTime>
+                  </interactionDate>
+                  <interactionStatus>2</interactionStatus>
+                  <_agreementExtension>
+                    <statusReason>2001</statusReason>
+                  </_agreementExtension>
+                </_agreement>
+              </_agreementItem>
+            </_partyRoleProductOffering>
+          </_partyRole>
+          <_customerBillSpec>
+            <_customerBillingCycle>
+              <_customerBillingCycleExtension>
+                <BillingCycleDay>01</BillingCycleDay>
+              </_customerBillingCycleExtension>
+            </_customerBillingCycle>
+          </_customerBillSpec>
+        </_customerAccount>
+        <_partyRoleProductSpecification>
+          <_partyRole/>
+          <_productSpecification>
+            <_productSpecificationType>
+              <name>51919951774</name>
+            </_productSpecificationType>
+          </_productSpecification>
+        </_partyRoleProductSpecification>
+        <ID>CUST0000000236</ID>
+      </_customer>
+      <_productCategory>
+        <name>2</name>
+      </_productCategory>
+    </_subscriptionsType>
+  </responseData>
+</pe.com.claro.esb.message.bssagreementmanagement.retrievesubscriptions.v2.RetrieveSubscriptionsResponseType>
+[INFO ] [2019-03-21 14:21:29] (INTCOP0223ClientImpl:117) - [Descativar Bono Por Cambio Plan idTx=20190321142123] [retrieveSubscriptions] [FIN] - METODO: retrieveSubscriptions
+[INFO ] [2019-03-21 14:21:29] (INTCOP0223ClientImpl:118) - [Descativar Bono Por Cambio Plan idTx=20190321142123] [retrieveSubscriptions]  ::FIN - TiempoEjecucion(ms): 1363.0
+[INFO ] [2019-03-21 14:21:29] (MainServiceImpl:175) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  ======= FIN  Invocacion INT-COP-0223 ======
+[INFO ] [2019-03-21 14:21:29] (MainServiceImpl:105) - 20190321142123Bono a Desactivar : 8796
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:166) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  - Inicio del Actualizar Bono
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:179) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:180) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:181) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:182) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Ejecutando SP 
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:183) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [INPUT] 
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:184) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [pi_contract_id]= [104]
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:185) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [pi_bono_id]= [8796]
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:186) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [pi_bono_id]= [Desactivacion por Cambio de ciclo de facturación]
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:209) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  Se ejecuto exitosamente el SP
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:210) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [OUTPUT]: 
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:211) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [po_cod_err] = 0
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:212) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  [po_des_err] = OK
+[INFO ] [2019-03-21 14:21:29] (MotorPromDAOImpl:237) - [Descativar Bono Por Cambio Plan idTx=20190321142123]  - Fin del método registrar- Tiempo total de proceso : 11 milisegundos.
+[INFO ] [2019-03-21 14:21:29] (MainServiceImpl:109) - 20190321142123Exito  al desactivar Bono 8796
+[INFO ] [2019-03-21 14:21:29] (MainServiceImpl:121) - 20190321142123FIN  POR : Desactivacion ciclo de facturación
+[INFO ] [2019-03-21 14:21:29] (MainServiceImpl:132) - 20190321142123[Fin de metodo: run]
+[INFO ] [2019-03-21 14:21:29] (MainServiceImpl:75) - 20190321142123[Fin - SH09_MOTPROM_ValidaDes_Facturacion ]
+[INFO ] [2019-03-21 14:21:29] (MainClass:81) - [launch idTx=20190321142123][FIN de metodo: launch] Tiempo total de proceso(ms): 5559 milisegundos.
+[INFO ] [2019-03-21 14:21:29] (MainClass:48) - [main idTx=20190321142123][FIN de metodo: main] Tiempo total de proceso(ms): 6347 milisegundos.
+[INFO ] [2019-03-21 14:21:29] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@619a5dff: startup date [Thu Mar 21 14:21:23 PET 2019]; root of context hierarchy
+[INFO ] [2019-03-21 14:21:29] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3224f60b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,INTCOP0223ClientImpl,motorPromDAOImpl,mainServiceImpl,EAIUtil,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy

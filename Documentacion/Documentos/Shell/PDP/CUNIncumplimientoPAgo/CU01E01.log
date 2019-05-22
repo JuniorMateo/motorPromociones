@@ -1,0 +1,95 @@
+ INFO  @ [INICIO del proceso][2019-05-09@12:27:57]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Transaccion: 20190509122757
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH01_MOTPROM_ValidaDes_IncumplimientoPago/SH01_MOTPROM_ValidaDes_IncumplimientoPago.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-05-09@12:27:57]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-05-09 12:27:58] (MainClass:64) - [loadLog4J idTx=20190509122757][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-09 12:27:58] (MainClass:65) - [loadLog4J idTx=20190509122757][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 34 milisegundos.
+[INFO ] [2019-05-09 12:27:58] (MainClass:38) - [main idTx=20190509122757][INICIO de metodo: main]
+[INFO ] [2019-05-09 12:27:58] (MainClass:74) - [launch idTx=20190509122757][INICIO de metodo: launch]
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:38) - 20190509122757[INICIO - SH01_MOTPROM_ValidaDes_IncumplimientoPago ]
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:83) - 20190509122757INICIO  : Desactivacion por Incumplimiento Pago
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:50) - 20190509122757[obtener Cambio Plan Ciclo Facturacion] [INICIO] - METODO: obtener Cambio Plan Ciclo Facturacion
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:64) - 20190509122757 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:65) - 20190509122757 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:66) - 20190509122757 SP a ejecutar: [pkg_motprom_proces_transbk.promss_desa_cambio_pagopuntual]
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:67) - 20190509122757 Ejecutando SP 
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:68) - 20190509122757 [INPUT] 
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:97) - 20190509122757 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:98) - 20190509122757 [OUTPUT]: 
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:99) - 20190509122757 [po_cod_err] = 0
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:100) - 20190509122757 [po_des_err] = OK
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:107) - 20190509122757 [SIZE LIST] = 3
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:124) - 20190509122757 - Fin del método registrar- Tiempo total de proceso : 145 milisegundos.
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:88) - 20190509122757- datos obtenidos a desactivar 3
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:39) - 20190509122757 - Inicio Consultar Pago Puntual OAC
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:51) - 20190509122757 Se establecio conexion con la BD OAC
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:52) - 20190509122757 Consultando a la BD: OAC.Detalle: apps
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:53) - 20190509122757 SP a ejecutar: [TS_OAC_CL_CONS_PAGO_PKG.pr_pago_puntual]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:54) - 20190509122757 Ejecutando SP 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:55) - 20190509122757 [INPUT] 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:56) - 20190509122757 [CUSTOMER_ID]= [CU00000616402415]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:57) - 20190509122757 [CANTIDAD_MESES]= [100]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:79) - 20190509122757 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:80) - 20190509122757 [OUTPUT]: 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:81) - 20190509122757 [po_cod_err] = -1
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:82) - 20190509122757 [po_des_err] = Cliente no existe
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:83) - 20190509122757 [pov_INDICADOR_PP] = 0
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:107) - 20190509122757 - Fin del método registrar- Tiempo total de proceso : 93 milisegundos.
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:104) - 20190509122757 No xiste Bono a desactivar 47
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:39) - 20190509122757 - Inicio Consultar Pago Puntual OAC
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:51) - 20190509122757 Se establecio conexion con la BD OAC
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:52) - 20190509122757 Consultando a la BD: OAC.Detalle: apps
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:53) - 20190509122757 SP a ejecutar: [TS_OAC_CL_CONS_PAGO_PKG.pr_pago_puntual]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:54) - 20190509122757 Ejecutando SP 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:55) - 20190509122757 [INPUT] 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:56) - 20190509122757 [CUSTOMER_ID]= [CUST000001157]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:57) - 20190509122757 [CANTIDAD_MESES]= [100]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:79) - 20190509122757 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:80) - 20190509122757 [OUTPUT]: 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:81) - 20190509122757 [po_cod_err] = 0
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:82) - 20190509122757 [po_des_err] = Cliente no paga puntual
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:83) - 20190509122757 [pov_INDICADOR_PP] = 2
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:107) - 20190509122757 - Fin del método registrar- Tiempo total de proceso : 8 milisegundos.
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:94) - 20190509122757 Bono a Desactivar : 1
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:136) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:149) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:150) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:151) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  SP a ejecutar: [pkg_motprom_proces_transbk.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:152) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  Ejecutando SP 
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:153) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  [INPUT] 
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:154) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  [pi_program_id]= [1]
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:155) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  [pi_bono_id]= [Desactivacion por Incumplimiento Pago]
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:176) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:177) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  [OUTPUT]: 
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:178) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  [po_cod_err] = 0
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:179) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  [po_des_err] = OK
+[INFO ] [2019-05-09 12:27:59] (MotorPromDAOImpl:204) - [Descativar Bono Por Incumplimiento de Pago idTx=20190509122757]  - Fin del método registrar- Tiempo total de proceso : 5 milisegundos.
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:98) - 20190509122757 Exito  al desactivar Bono 1
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:39) - 20190509122757 - Inicio Consultar Pago Puntual OAC
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:51) - 20190509122757 Se establecio conexion con la BD OAC
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:52) - 20190509122757 Consultando a la BD: OAC.Detalle: apps
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:53) - 20190509122757 SP a ejecutar: [TS_OAC_CL_CONS_PAGO_PKG.pr_pago_puntual]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:54) - 20190509122757 Ejecutando SP 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:55) - 20190509122757 [INPUT] 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:56) - 20190509122757 [CUSTOMER_ID]= [CUST0000001234]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:57) - 20190509122757 [CANTIDAD_MESES]= [100]
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:79) - 20190509122757 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:80) - 20190509122757 [OUTPUT]: 
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:81) - 20190509122757 [po_cod_err] = -1
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:82) - 20190509122757 [po_des_err] = Cliente no existe
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:83) - 20190509122757 [pov_INDICADOR_PP] = 0
+[INFO ] [2019-05-09 12:27:59] (OACDAOImpl:107) - 20190509122757 - Fin del método registrar- Tiempo total de proceso : 5 milisegundos.
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:104) - 20190509122757 No xiste Bono a desactivar 3
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:110) - 20190509122757 FIN : Desactivacion por Incumplimiento Pago
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:121) - 20190509122757[Fin de metodo: run]
+[INFO ] [2019-05-09 12:27:59] (MainServiceImpl:64) - 20190509122757[Fin - SH01_MOTPROM_ValidaDes_IncumplimientoPago ]
+[INFO ] [2019-05-09 12:27:59] (MainClass:83) - [launch idTx=20190509122757][FIN de metodo: launch] Tiempo total de proceso(ms): 937 milisegundos.
+[INFO ] [2019-05-09 12:27:59] (MainClass:49) - [main idTx=20190509122757][FIN de metodo: main] Tiempo total de proceso(ms): 1769 milisegundos.
+[INFO ] [2019-05-09 12:27:59] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4534b60d: startup date [Thu May 09 12:27:57 PET 2019]; root of context hierarchy
+[INFO ] [2019-05-09 12:27:59] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@43814d18: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,motorPromDAOImpl,OACDAOImpl,mainServiceImpl,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,oac,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+09-05-2019 12:27:57 INFO  @ [FIN de ejecucion de la Shell - SH01_MOTPROM_Incumplimiento_Pago -][2019-05-09@12:27:59]
+2019-05-09@12:27:59 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH01_MOTPROM_ValidaDes_IncumplimientoPago/LOG/SH01_MOTPROM_ValidaDes_IncumplimientoPago.log
+*************************************************************************************************************************************

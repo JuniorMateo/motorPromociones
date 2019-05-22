@@ -1,0 +1,260 @@
+ INFO  @ [INICIO del proceso][2019-05-02@20:14:46]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Transaccion: 20190502201446
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH04_MOTPROM_ValidaDes_Bloqueo_Suspension/SH04_MOTPROM_ValidaDes_Bloqueo_Suspension.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-05-02@20:14:46]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-05-02 20:14:47] (MainClass:67) - [loadLog4J idTx=20190502201446][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-02 20:14:47] (MainClass:68) - [loadLog4J idTx=20190502201446][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 28 milisegundos.
+[INFO ] [2019-05-02 20:14:47] (MainClass:38) - [main idTx=20190502201446][INICIO de metodo: main]
+[INFO ] [2019-05-02 20:14:47] (MainClass:77) - [launch idTx=20190502201446][INICIO de metodo: launch]
+[INFO ] [2019-05-02 20:14:48] (MainServiceImpl:48) - 20190502201446[INICIO - SH06_MOTPROM_ValidaDes_BajaContrato ]
+[INFO ] [2019-05-02 20:14:48] (MainServiceImpl:102) - 20190502201446 INICIO :  Descativar Bono Por  suspension por falta de Pago 
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:47) - 20190502201446[obtener Bonos Por Suspension] [INICIO] - METODO: obtener Bonos Por Suspension
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:61) - 20190502201446 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:62) - 20190502201446 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:63) - 20190502201446 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_bloqueopago]
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:64) - 20190502201446 Ejecutando SP 
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:65) - 20190502201446 [INPUT] 
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:98) - 20190502201446 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:99) - 20190502201446 [OUTPUT]: 
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:100) - 20190502201446 [po_cod_err] = 0
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:101) - 20190502201446 [po_des_err] = OK
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:108) - 20190502201446 [SIZE LIST] = 2
+[INFO ] [2019-05-02 20:14:48] (MotorPromDAOImpl:126) - 20190502201446 - Fin  - Tiempo total de proceso : 133 milisegundos.
+[INFO ] [2019-05-02 20:14:48] (MainServiceImpl:107) - 20190502201446- datos obtenidos a desactivar 2
+[INFO ] [2019-05-02 20:14:48] (MainServiceImpl:166) - [ Descativar Bono Por  idTx=20190502201446]  ======= Inicia Invocacion  INT-COP-0013 ======
+[INFO ] [2019-05-02 20:14:48] (INTCAA0013ClientImpl:53) - [ Descativar Bono Por  idTx=20190502201446] [getStatusReasons] [INICIO] - METODO: getStatusReasons  WS URL: http://172.19.172.37:80/v1.0/plataforma-empresarial/customer_Domain/collection/bssCustomerManagement/getStatusReasons
+[INFO ] [2019-05-02 20:14:49] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-05-02 20:14:49] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-05-02 20:14:49] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsRequestType
+[INFO ] [2019-05-02 20:14:49] (INTCAA0013ClientImpl:106) - [ Descativar Bono Por  idTx=20190502201446] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>E_USR_01</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190502201446</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190502201446</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-02T20:14:49.596-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190502201446</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-02T20:14:49.596-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_customerOrder>
+        <_partyOrder>
+          <interactionStatus>OPEN</interactionStatus>
+        </_partyOrder>
+      </_customerOrder>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000005011</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsRequestType>
+[INFO ] [2019-05-02 20:14:49] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-02 20:14:50] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-02 20:14:50] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsResponseType
+[INFO ] [2019-05-02 20:14:50] (INTCAA0013ClientImpl:113) - [ Descativar Bono Por  idTx=20190502201446] 
+Datos de [RESPONSE]:
+<pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-05-02T20:14:50.391-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData/>
+</pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsResponseType>
+[INFO ] [2019-05-02 20:14:50] (INTCAA0013ClientImpl:128) - [ Descativar Bono Por  idTx=20190502201446] [getStatusReasons] [FIN] - METODO: getStatusReasons
+[INFO ] [2019-05-02 20:14:50] (INTCAA0013ClientImpl:129) - [ Descativar Bono Por  idTx=20190502201446] [getStatusReasons]  ::FIN - TiempoEjecucion(ms): 2652.0
+[INFO ] [2019-05-02 20:14:50] (MainServiceImpl:213) - [ Descativar Bono Por  idTx=20190502201446]  ======= FIN  Invocacion INT-COP-0013 ======
+[INFO ] [2019-05-02 20:14:50] (MainServiceImpl:136) - 20190502201446No existe Bono a Desactivar  para  ProgramId :37
+[INFO ] [2019-05-02 20:14:50] (MainServiceImpl:166) - [ Descativar Bono Por  idTx=20190502201446]  ======= Inicia Invocacion  INT-COP-0013 ======
+[INFO ] [2019-05-02 20:14:50] (INTCAA0013ClientImpl:53) - [ Descativar Bono Por  idTx=20190502201446] [getStatusReasons] [INICIO] - METODO: getStatusReasons  WS URL: http://172.19.172.37:80/v1.0/plataforma-empresarial/customer_Domain/collection/bssCustomerManagement/getStatusReasons
+[INFO ] [2019-05-02 20:14:51] (INTCAA0013ClientImpl:106) - [ Descativar Bono Por  idTx=20190502201446] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>E_USR_01</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190502201446</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190502201446</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-02T20:14:51.451-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESbssAgreementManagement.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190502201446</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-02T20:14:51.451-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_customerOrder>
+        <_partyOrder>
+          <interactionStatus>OPEN</interactionStatus>
+        </_partyOrder>
+      </_customerOrder>
+      <_partyRoleProductOffering>
+        <_agreementItem>
+          <_agreement>
+            <ID>CONTR0000003364</ID>
+          </_agreement>
+        </_agreementItem>
+      </_partyRoleProductOffering>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsRequestType>
+[INFO ] [2019-05-02 20:14:51] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-02 20:14:51] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[INFO ] [2019-05-02 20:14:51] (INTCAA0013ClientImpl:113) - [ Descativar Bono Por  idTx=20190502201446] 
+Datos de [RESPONSE]:
+<pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsResponseType>
+  <responseStatus>
+    <status>0</status>
+    <codeResponse>0</codeResponse>
+    <descriptionResponse>Transaccion OK</descriptionResponse>
+    <errorLocation/>
+    <date>2019-05-02T20:14:51.768-05:00</date>
+    <origin/>
+    <errorDetails>
+      <errorCode/>
+      <errorDescription/>
+    </errorDetails>
+  </responseStatus>
+  <responseData>
+    <_reasonsList>
+      <_customerAccount>
+        <_customerOrder>
+          <_partyOrder>
+            <ID>USR</ID>
+            <interactionDate>
+              <startDateTime>2018-12-18T09:30:00-05:00</startDateTime>
+            </interactionDate>
+            <description>2005|</description>
+            <interactionStatus>OPEN</interactionStatus>
+            <_businessInteractionType>
+              <name>FS</name>
+            </_businessInteractionType>
+            <_businessInteractionExtension>
+              <reasonCode>2005</reasonCode>
+              <reason>s</reason>
+            </_businessInteractionExtension>
+          </_partyOrder>
+        </_customerOrder>
+      </_customerAccount>
+    </_reasonsList>
+  </responseData>
+</pe.com.claro.esb.message.bsscustomermanagement.getstatusreasons.v2.GetStatusReasonsResponseType>
+[INFO ] [2019-05-02 20:14:51] (INTCAA0013ClientImpl:128) - [ Descativar Bono Por  idTx=20190502201446] [getStatusReasons] [FIN] - METODO: getStatusReasons
+[INFO ] [2019-05-02 20:14:51] (INTCAA0013ClientImpl:129) - [ Descativar Bono Por  idTx=20190502201446] [getStatusReasons]  ::FIN - TiempoEjecucion(ms): 908.0
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:213) - [ Descativar Bono Por  idTx=20190502201446]  ======= FIN  Invocacion INT-COP-0013 ======
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:123) - 20190502201446 Bono a Desactivar : 107255
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:137) - [ Descativar Bono Por  idTx=20190502201446]  - Inicio del Actualizar Bono
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:149) - [ Descativar Bono Por  idTx=20190502201446]  Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:150) - [ Descativar Bono Por  idTx=20190502201446]  Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:151) - [ Descativar Bono Por  idTx=20190502201446]  SP a ejecutar: [pkg_motprom_proces_trans.promsu_desa_cambio_planlinea]
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:152) - [ Descativar Bono Por  idTx=20190502201446]  Ejecutando SP 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:153) - [ Descativar Bono Por  idTx=20190502201446]  [INPUT] 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:154) - [ Descativar Bono Por  idTx=20190502201446]  [pi_program_id]= [40]
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:155) - [ Descativar Bono Por  idTx=20190502201446]  [pi_bono_id]= [ Descativar Bono Por ]
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:176) - [ Descativar Bono Por  idTx=20190502201446]  Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:177) - [ Descativar Bono Por  idTx=20190502201446]  [OUTPUT]: 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:178) - [ Descativar Bono Por  idTx=20190502201446]  [po_cod_err] = 0
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:179) - [ Descativar Bono Por  idTx=20190502201446]  [po_des_err] = OK
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:202) - [ Descativar Bono Por  idTx=20190502201446]  - Fin - Tiempo total de proceso : 19 milisegundos.
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:127) - 20190502201446Exito al desactivar Bono: 107255Contract_ID_Text :CONTR0000003364  ProgramId :40
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:146) - 20190502201446 FIN :  Descativar Bono Por  suspension por falta de Pago 
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:157) - 20190502201446[Fin de metodo: run]
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:102) - 20190502201446 INICIO :  Descativar Bono Por  suspension por Robo 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:47) - 20190502201446[obtener Bonos Por Suspension] [INICIO] - METODO: obtener Bonos Por Suspension
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:61) - 20190502201446 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:62) - 20190502201446 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:63) - 20190502201446 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_bloqueopago]
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:64) - 20190502201446 Ejecutando SP 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:65) - 20190502201446 [INPUT] 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:98) - 20190502201446 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:99) - 20190502201446 [OUTPUT]: 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:100) - 20190502201446 [po_cod_err] = 0
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:101) - 20190502201446 [po_des_err] = OK
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:108) - 20190502201446 [SIZE LIST] = 0
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:126) - 20190502201446 - Fin  - Tiempo total de proceso : 9 milisegundos.
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:107) - 20190502201446- datos obtenidos a desactivar 0
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:146) - 20190502201446 FIN :  Descativar Bono Por  suspension por Robo 
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:157) - 20190502201446[Fin de metodo: run]
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:102) - 20190502201446 INICIO :  Descativar Bono Por  Suspension por Fraude 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:47) - 20190502201446[obtener Bonos Por Suspension] [INICIO] - METODO: obtener Bonos Por Suspension
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:61) - 20190502201446 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:62) - 20190502201446 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:63) - 20190502201446 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_bloqueopago]
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:64) - 20190502201446 Ejecutando SP 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:65) - 20190502201446 [INPUT] 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:98) - 20190502201446 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:99) - 20190502201446 [OUTPUT]: 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:100) - 20190502201446 [po_cod_err] = 0
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:101) - 20190502201446 [po_des_err] = OK
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:108) - 20190502201446 [SIZE LIST] = 0
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:126) - 20190502201446 - Fin  - Tiempo total de proceso : 7 milisegundos.
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:107) - 20190502201446- datos obtenidos a desactivar 0
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:146) - 20190502201446 FIN :  Descativar Bono Por  Suspension por Fraude 
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:157) - 20190502201446[Fin de metodo: run]
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:102) - 20190502201446 INICIO :  Descativar Bono Por  Suspencion a  solicitud del cliente 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:47) - 20190502201446[obtener Bonos Por Suspension] [INICIO] - METODO: obtener Bonos Por Suspension
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:61) - 20190502201446 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:62) - 20190502201446 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:63) - 20190502201446 SP a ejecutar: [pkg_motprom_proces_trans.promss_desa_cambio_bloqueopago]
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:64) - 20190502201446 Ejecutando SP 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:65) - 20190502201446 [INPUT] 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:98) - 20190502201446 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:99) - 20190502201446 [OUTPUT]: 
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:100) - 20190502201446 [po_cod_err] = 0
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:101) - 20190502201446 [po_des_err] = OK
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:108) - 20190502201446 [SIZE LIST] = 0
+[INFO ] [2019-05-02 20:14:51] (MotorPromDAOImpl:126) - 20190502201446 - Fin  - Tiempo total de proceso : 13 milisegundos.
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:107) - 20190502201446- datos obtenidos a desactivar 0
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:146) - 20190502201446 FIN :  Descativar Bono Por  Suspencion a  solicitud del cliente 
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:157) - 20190502201446[Fin de metodo: run]
+[INFO ] [2019-05-02 20:14:51] (MainServiceImpl:84) - 20190502201446[FIN - SH06_MOTPROM_ValidaDes_BajaContrato ]
+[INFO ] [2019-05-02 20:14:51] (MainClass:86) - [launch idTx=20190502201446][FIN de metodo: launch] Tiempo total de proceso(ms): 4294 milisegundos.
+[INFO ] [2019-05-02 20:14:51] (MainClass:52) - [main idTx=20190502201446][FIN de metodo: main] Tiempo total de proceso(ms): 5105 milisegundos.
+[INFO ] [2019-05-02 20:14:51] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@619a5dff: startup date [Thu May 02 20:14:46 PET 2019]; root of context hierarchy
+[INFO ] [2019-05-02 20:14:51] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3224f60b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,INTCAA0013ClientImpl,motorPromDAOImpl,mainServiceImpl,EAIUtil,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+02-05-2019 20:14:46 INFO  @ [FIN de ejecucion de la Shell - SH04_MOTPROM_ValidaDes_Bloqueo_Suspension -][2019-05-02@20:14:51]
+2019-05-02@20:14:51 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH04_MOTPROM_ValidaDes_Bloqueo_Suspension/LOG/SH04_MOTPROM_ValidaDes_Bloqueo_Suspension.log
+*************************************************************************************************************************************

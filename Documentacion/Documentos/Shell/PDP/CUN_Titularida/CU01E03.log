@@ -1,0 +1,447 @@
+ INFO  @ [INICIO del proceso][2019-05-20@15:13:07]
+ INFO  @ Usuario: weblogicap 
+ INFO  @ Transaccion: 20190520151307
+ INFO  @ Ruta del archivo properties: /home/weblogicap/shells/SH08_MOTPROM_ValidaDes_Titularidad/SH08_MOTPROM_ValidaDes_Titularidad.properties
+ INFO  @ [INICIO de la ejecucion de la Shell][2019-05-20@15:13:07]
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+[INFO ] [2019-05-20 15:13:08] (MainClass:65) - [loadLog4J idTx=20190520151307][INICIO de metodo: loadLog4J]
+[INFO ] [2019-05-20 15:13:08] (MainClass:66) - [loadLog4J idTx=20190520151307][FIN de metodo: loadLog4J] Tiempo total de proceso(ms): 28 milisegundos.
+[INFO ] [2019-05-20 15:13:08] (MainClass:38) - [main idTx=20190520151307][INICIO de metodo: main]
+[INFO ] [2019-05-20 15:13:08] (MainClass:75) - [launch idTx=20190520151307][INICIO de metodo: launch]
+[INFO ] [2019-05-20 15:13:09] (MainServiceImpl:47) - 20190520151307[INICIO - SH08_MOTPROM_ValidaDes_Titularidad ]
+[INFO ] [2019-05-20 15:13:09] (MainServiceImpl:56) - 20190520151307 Inicia- Para Desactivacion Titularidad por Cambio de DNI a RUC
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:50) - 20190520151307[obtenerCambioPlan Titularidad] [INICIO] - METODO: obtenerCambioPlan Titularidad
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:69) - 20190520151307 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:70) - 20190520151307 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:71) - 20190520151307 SP a ejecutar: [pkg_motprom_proces_transbk.promss_desa_cambio_dniruc]
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:72) - 20190520151307 Ejecutando SP 
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:73) - 20190520151307 [INPUT] 
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:102) - 20190520151307 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:103) - 20190520151307 [OUTPUT]: 
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:104) - 20190520151307 [po_cod_err] = 0
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:105) - 20190520151307 [po_des_err] = OK
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:112) - 20190520151307 [SIZE LIST] = 0
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:132) - 20190520151307 - Fin del método registrar- Tiempo total de proceso : 112 milisegundos.
+[INFO ] [2019-05-20 15:13:09] (MainServiceImpl:151) - 20190520151307FIN  POR : Para Desactivacion Titularidad por Cambio de DNI a RUC
+[INFO ] [2019-05-20 15:13:09] (MainServiceImpl:162) - 20190520151307[Fin de metodo: run]
+[INFO ] [2019-05-20 15:13:09] (MainServiceImpl:62) - 20190520151307Inicia-  Para Desactivacion por cambio de  Titularidad
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:50) - 20190520151307[obtenerCambioPlan Titularidad] [INICIO] - METODO: obtenerCambioPlan Titularidad
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:69) - 20190520151307 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:70) - 20190520151307 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:71) - 20190520151307 SP a ejecutar: [pkg_motprom_proces_transbk.promss_desa_cambio_titularidad]
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:72) - 20190520151307 Ejecutando SP 
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:73) - 20190520151307 [INPUT] 
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:102) - 20190520151307 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:103) - 20190520151307 [OUTPUT]: 
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:104) - 20190520151307 [po_cod_err] = 0
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:105) - 20190520151307 [po_des_err] = OK
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:112) - 20190520151307 [SIZE LIST] = 11
+[INFO ] [2019-05-20 15:13:09] (MotorPromDAOImpl:132) - 20190520151307 - Fin del método registrar- Tiempo total de proceso : 26 milisegundos.
+[INFO ] [2019-05-20 15:13:09] (MainServiceImpl:176) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307]  ======= INICIO - INT-CAA-0101 ======
+[INFO ] [2019-05-20 15:13:09] (INTCAA0101ClientImpl:53) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] [INICIO] - METODO: GetCustomerInfo
+[INFO ] [2019-05-20 15:13:10] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest
+[INFO ] [2019-05-20 15:13:10] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.generic.messageformat.v1.HeaderRequestType
+[INFO ] [2019-05-20 15:13:10] (JAXBUtilitarios:24) - Inicializando jaxcontext... para la clase pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:107) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190520151307</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190520151307</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-20T15:13:10.820-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESGetCustomerInfo.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190520151307</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-20T15:13:10.820-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51919951560</ID>
+      </_service>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <name>4</name>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+[INFO ] [2019-05-20 15:13:11] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-20 15:13:11] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[ERROR] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:118) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] ERROR: [Exception] 1com.sun.xml.internal.ws.client.ClientTransportException: HTTP transport error: java.net.ConnectException: Connection refused
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:117)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:208)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:124)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:862)
+	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:448)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:178)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:93)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:77)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:147)
+	at com.sun.proxy.$Proxy44.getCustomerInfo(Unknown Source)
+	at claro.com.pe.desa.titularidad.client.INTCAA0101ClientImpl.getCustomerInfo(INTCAA0101ClientImpl.java:112)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.CustomerInfo(MainServiceImpl.java:193)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.cambioplanTitularidad(MainServiceImpl.java:106)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.run(MainServiceImpl.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.desa.titularidad.MainClass.launch(MainClass.java:78)
+	at claro.com.pe.desa.titularidad.MainClass.main(MainClass.java:39)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1148)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:104)
+	... 30 more
+
+[ERROR] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:126) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] ERROR[Exception]: Se produjo una excepcion al ejecutar WS http://172.19.172.37:8088/v1.0/plataforma-empresarial/customer_Domain/collection/bssCustomerManagement/getCustomerInfo
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:130) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] [FIN] - METODO: GetCustomerInfo
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:131) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo]  ::FIN - TiempoEjecucion(ms): 1766.0
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:205) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307]  ======= Error  INT-CAA-0101 ======Error: Recurso no disponible - WS 'INT-CAA-0101 - Metodo 'GetCustomerInfo'
+[ERROR] [2019-05-20 15:13:11] (MainServiceImpl:158) - 20190520151307Error Interno: update exception
+java.lang.Exception: update exception
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.CustomerInfo(MainServiceImpl.java:206)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.cambioplanTitularidad(MainServiceImpl.java:106)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.run(MainServiceImpl.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.desa.titularidad.MainClass.launch(MainClass.java:78)
+	at claro.com.pe.desa.titularidad.MainClass.main(MainClass.java:39)
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:162) - 20190520151307[Fin de metodo: run]
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:52) - 20190520151307[se procede  al Reintento :]1
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:62) - 20190520151307Inicia-  Para Desactivacion por cambio de  Titularidad
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:50) - 20190520151307[obtenerCambioPlan Titularidad] [INICIO] - METODO: obtenerCambioPlan Titularidad
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:69) - 20190520151307 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:70) - 20190520151307 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:71) - 20190520151307 SP a ejecutar: [pkg_motprom_proces_transbk.promss_desa_cambio_titularidad]
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:72) - 20190520151307 Ejecutando SP 
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:73) - 20190520151307 [INPUT] 
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:102) - 20190520151307 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:103) - 20190520151307 [OUTPUT]: 
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:104) - 20190520151307 [po_cod_err] = 0
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:105) - 20190520151307 [po_des_err] = OK
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:112) - 20190520151307 [SIZE LIST] = 11
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:132) - 20190520151307 - Fin del método registrar- Tiempo total de proceso : 15 milisegundos.
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:176) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307]  ======= INICIO - INT-CAA-0101 ======
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:53) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] [INICIO] - METODO: GetCustomerInfo
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:107) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190520151307</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190520151307</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-20T15:13:11.809-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESGetCustomerInfo.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190520151307</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-20T15:13:11.809-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51919951560</ID>
+      </_service>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <name>4</name>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+[INFO ] [2019-05-20 15:13:11] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-20 15:13:11] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[ERROR] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:118) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] ERROR: [Exception] 1com.sun.xml.internal.ws.client.ClientTransportException: HTTP transport error: java.net.ConnectException: Connection refused
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:117)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:208)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:124)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:862)
+	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:448)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:178)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:93)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:77)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:147)
+	at com.sun.proxy.$Proxy44.getCustomerInfo(Unknown Source)
+	at claro.com.pe.desa.titularidad.client.INTCAA0101ClientImpl.getCustomerInfo(INTCAA0101ClientImpl.java:112)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.CustomerInfo(MainServiceImpl.java:193)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.cambioplanTitularidad(MainServiceImpl.java:106)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.run(MainServiceImpl.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.desa.titularidad.MainClass.launch(MainClass.java:78)
+	at claro.com.pe.desa.titularidad.MainClass.main(MainClass.java:39)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1148)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:104)
+	... 30 more
+
+[ERROR] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:126) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] ERROR[Exception]: Se produjo una excepcion al ejecutar WS http://172.19.172.37:8088/v1.0/plataforma-empresarial/customer_Domain/collection/bssCustomerManagement/getCustomerInfo
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:130) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] [FIN] - METODO: GetCustomerInfo
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:131) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo]  ::FIN - TiempoEjecucion(ms): 505.0
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:205) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307]  ======= Error  INT-CAA-0101 ======Error: Recurso no disponible - WS 'INT-CAA-0101 - Metodo 'GetCustomerInfo'
+[ERROR] [2019-05-20 15:13:11] (MainServiceImpl:158) - 20190520151307Error Interno: update exception
+java.lang.Exception: update exception
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.CustomerInfo(MainServiceImpl.java:206)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.cambioplanTitularidad(MainServiceImpl.java:106)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.run(MainServiceImpl.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.desa.titularidad.MainClass.launch(MainClass.java:78)
+	at claro.com.pe.desa.titularidad.MainClass.main(MainClass.java:39)
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:162) - 20190520151307[Fin de metodo: run]
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:52) - 20190520151307[se procede  al Reintento :]2
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:62) - 20190520151307Inicia-  Para Desactivacion por cambio de  Titularidad
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:50) - 20190520151307[obtenerCambioPlan Titularidad] [INICIO] - METODO: obtenerCambioPlan Titularidad
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:69) - 20190520151307 Se establecio conexion con la BD BSCS
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:70) - 20190520151307 Consultando a la BD: BSCS.Detalle: tim
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:71) - 20190520151307 SP a ejecutar: [pkg_motprom_proces_transbk.promss_desa_cambio_titularidad]
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:72) - 20190520151307 Ejecutando SP 
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:73) - 20190520151307 [INPUT] 
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:102) - 20190520151307 Se ejecuto exitosamente el SP
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:103) - 20190520151307 [OUTPUT]: 
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:104) - 20190520151307 [po_cod_err] = 0
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:105) - 20190520151307 [po_des_err] = OK
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:112) - 20190520151307 [SIZE LIST] = 11
+[INFO ] [2019-05-20 15:13:11] (MotorPromDAOImpl:132) - 20190520151307 - Fin del método registrar- Tiempo total de proceso : 13 milisegundos.
+[INFO ] [2019-05-20 15:13:11] (MainServiceImpl:176) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307]  ======= INICIO - INT-CAA-0101 ======
+[INFO ] [2019-05-20 15:13:11] (INTCAA0101ClientImpl:53) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] [INICIO] - METODO: GetCustomerInfo
+[INFO ] [2019-05-20 15:13:12] (INTCAA0101ClientImpl:107) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] 
+Datos de [REQUEST]:
+<pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest xmlns:ns2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/">
+  <ns2:channel>CAC</ns2:channel>
+  <ns2:idApplication>SAP</ns2:idApplication>
+  <ns2:userApplication>E_USR_01</ns2:userApplication>
+  <ns2:userSession>E_USR_01</ns2:userSession>
+  <ns2:idESBTransaction>20190520151307</ns2:idESBTransaction>
+  <ns2:idBusinessTransaction>20190520151307</ns2:idBusinessTransaction>
+  <ns2:startDate>2019-05-20T15:13:12.325-05:00</ns2:startDate>
+</pe.com.claro.esb.data.commonbusinessentities.clarogenericheaders.v2.HeaderRequest>
+<pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+  <country>PE</country>
+  <language>ESGetCustomerInfo.</language>
+  <consumer>TLF-</consumer>
+  <system>USSD</system>
+  <modulo>USSD</modulo>
+  <pid>20190520151307</pid>
+  <userId>USRUSSD</userId>
+  <dispositivo>USSD</dispositivo>
+  <wsIp>172.19.74.222</wsIp>
+  <operation>bsscustomermanagement</operation>
+  <timestamp>2019-05-20T15:13:12.325-05:00</timestamp>
+  <msgType>?</msgType>
+</pe.com.claro.generic.messageformat.v1.HeaderRequestType>
+<pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+  <_customerAccount>
+    <_partyRole>
+      <_service>
+        <ID>51919951560</ID>
+      </_service>
+      <_partyRoleProductSpecification>
+        <_productSpecification>
+          <name>4</name>
+        </_productSpecification>
+      </_partyRoleProductSpecification>
+    </_partyRole>
+  </_customerAccount>
+</pe.com.claro.esb.message.bsscustomermanagement.getcustomerinfo.v2.GetCustomerInfoRequestType>
+[INFO ] [2019-05-20 15:13:12] (BssAgreementManagementClientHandler:56) - Agregando credenciales de autenticacion en el Header...
+[INFO ] [2019-05-20 15:13:12] (BssAgreementManagementClientHandler:72) - Credenciales de autenticacion agregadas. Se continua con la invocacion
+[ERROR] [2019-05-20 15:13:12] (INTCAA0101ClientImpl:118) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] ERROR: [Exception] 1com.sun.xml.internal.ws.client.ClientTransportException: HTTP transport error: java.net.ConnectException: Connection refused
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:117)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:208)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:124)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Fiber.java:862)
+	at com.sun.xml.internal.ws.client.Stub.process(Stub.java:448)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(SEIStub.java:178)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:93)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(SyncMethodHandler.java:77)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(SEIStub.java:147)
+	at com.sun.proxy.$Proxy44.getCustomerInfo(Unknown Source)
+	at claro.com.pe.desa.titularidad.client.INTCAA0101ClientImpl.getCustomerInfo(INTCAA0101ClientImpl.java:112)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.CustomerInfo(MainServiceImpl.java:193)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.cambioplanTitularidad(MainServiceImpl.java:106)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.run(MainServiceImpl.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.desa.titularidad.MainClass.launch(MainClass.java:78)
+	at claro.com.pe.desa.titularidad.MainClass.main(MainClass.java:39)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1148)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at com.sun.xml.internal.ws.transport.http.client.HttpClientTransport.getOutput(HttpClientTransport.java:104)
+	... 30 more
+
+[ERROR] [2019-05-20 15:13:12] (INTCAA0101ClientImpl:126) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] ERROR[Exception]: Se produjo una excepcion al ejecutar WS http://172.19.172.37:8088/v1.0/plataforma-empresarial/customer_Domain/collection/bssCustomerManagement/getCustomerInfo
+[INFO ] [2019-05-20 15:13:12] (INTCAA0101ClientImpl:130) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo] [FIN] - METODO: GetCustomerInfo
+[INFO ] [2019-05-20 15:13:12] (INTCAA0101ClientImpl:131) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307] [GetCustomerInfo]  ::FIN - TiempoEjecucion(ms): 509.0
+[INFO ] [2019-05-20 15:13:12] (MainServiceImpl:205) - [Descativar Bono Por :Para Desactivacion por cambio de  Titularidad idTx=20190520151307]  ======= Error  INT-CAA-0101 ======Error: Recurso no disponible - WS 'INT-CAA-0101 - Metodo 'GetCustomerInfo'
+[ERROR] [2019-05-20 15:13:12] (MainServiceImpl:158) - 20190520151307Error Interno: update exception
+java.lang.Exception: update exception
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.CustomerInfo(MainServiceImpl.java:206)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.cambioplanTitularidad(MainServiceImpl.java:106)
+	at claro.com.pe.desa.titularidad.service.MainServiceImpl.run(MainServiceImpl.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy12.run(Unknown Source)
+	at claro.com.pe.desa.titularidad.MainClass.launch(MainClass.java:78)
+	at claro.com.pe.desa.titularidad.MainClass.main(MainClass.java:39)
+[INFO ] [2019-05-20 15:13:12] (MainServiceImpl:162) - 20190520151307[Fin de metodo: run]
+[INFO ] [2019-05-20 15:13:12] (MainServiceImpl:79) - 20190520151307Error al ejecutar Transaccion
+[INFO ] [2019-05-20 15:13:12] (MainServiceImpl:82) - 20190520151307[Fin - SH08_MOTPROM_ValidaDes_Titularidad ]
+[ERROR] [2019-05-20 15:13:12] (MainClass:81) - [launch idTx=20190520151307]Error: java.lang.Exception: update exception.
+[INFO ] [2019-05-20 15:13:12] (MainClass:84) - [launch idTx=20190520151307][FIN de metodo: launch] Tiempo total de proceso(ms): 3462 milisegundos.
+[INFO ] [2019-05-20 15:13:12] (MainClass:44) - [main idTx=20190520151307][ERROR: ENVIAR CORREO CON DETALLE]
+[INFO ] [2019-05-20 15:13:12] (MainClass:50) - [main idTx=20190520151307][FIN de metodo: main] Tiempo total de proceso(ms): 4295 milisegundos.
+[INFO ] [2019-05-20 15:13:12] (ClassPathXmlApplicationContext:1020) - Closing org.springframework.context.support.ClassPathXmlApplicationContext@619a5dff: startup date [Mon May 20 15:13:08 PET 2019]; root of context hierarchy
+[INFO ] [2019-05-20 15:13:12] (DefaultListableBeanFactory:433) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3224f60b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mainClass,INTCAA0101ClientImpl,motorPromDAOImpl,mainServiceImpl,EAIUtil,propertiesExternos,util,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,bscs,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Exception in thread "main" java.lang.NumberFormatException: For input string: "OK"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at claro.com.pe.desa.titularidad.MainClass.main(MainClass.java:46)
+20-05-2019 15:13:07 INFO  @ [FIN de ejecucion de la Shell - SH08_MOTPROM_ValidaDes_Titularidad -][2019-05-20@15:13:12]
+2019-05-20@15:13:12 INFO  @ Ruta del archivo log generado:/home/weblogicap/shells/SH08_MOTPROM_ValidaDes_Titularidad/LOG/SH08_MOTPROM_ValidaDes_Titularidad.log
+*************************************************************************************************************************************
