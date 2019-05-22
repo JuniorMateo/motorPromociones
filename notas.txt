@@ -6,3 +6,5 @@ Añadir archivos al staging area con git add . o git add <<archivo>>
 Confirmar los cambios en el repositorio con git commit -m ‘comentario’
 Ver el estado de un archivo git status -s
 Ver la diferencia entre archivos que están añadidos y los cambios que aún no están con git diff
+
+Actualizar Git hut :  git push -f origin master
